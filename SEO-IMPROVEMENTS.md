@@ -27,7 +27,7 @@ Added rich snippets that help Google understand your organization:
 
 **Organization Schema:**
 - Nonprofit status (501(c)(3))
-- Tax ID (EIN: 92-2847355)
+- Tax ID (EIN: 41-3141550)
 - Founding date
 - Founders (Mike Lee, Liz Lee)
 - Mission and focus areas

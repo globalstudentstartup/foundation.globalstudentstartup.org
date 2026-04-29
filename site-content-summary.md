@@ -361,7 +361,7 @@ Singapore (2027), Ukraine (2027), Australia (2028), Nigeria (2028)
 
 ### CORPORATE IDENTITY
 - Legal Name: Global Student Startup Foundation
-- EIN: 92-2847355
+- EIN: 41-3141550
 - CA Registry #: 6110343e524
 - Incorporated: December 13, 2023
 - 501(c)(3) Approval: December 17, 2023

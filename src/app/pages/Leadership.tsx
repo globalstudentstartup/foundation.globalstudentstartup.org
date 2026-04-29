@@ -580,9 +580,33 @@ export default function Leadership() {
                 <span className="text-sm">LinkedIn</span>
               </a>
               <div className="text-white/70 leading-relaxed">
-                <p>
-                  {truncateText("Grace Li is a software engineer, researcher, and student leader who brings a rare combination of technical depth and institutional range to her role as GSSF's Director of University & Student Relations. A USC student operating at the intersection of computer science, applied AI, and community building, Grace is the connective tissue between GSSF and the universities and students it exists to serve.")}
-                </p>
+                {expandedBios.has('grace') ? (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p className="mb-4">
+                      Grace Li is a software engineer, researcher, and student leader who brings a rare combination of technical depth and institutional range to her role as GSSF's Director of University & Student Relations. A USC student operating at the intersection of computer science, applied AI, and community building, Grace is the connective tissue between GSSF and the universities and students it exists to serve.
+                    </p>
+                    <p className="mb-4">
+                      She spent nine months as a Software Engineering Intern at NASA's Jet Propulsion Laboratory in Los Angeles — one of the most competitive engineering placements in the world — and previously interned as an AI Intern at Blackbox in Singapore, giving her firsthand exposure to how AI is being built and applied across two of the world's most dynamic tech ecosystems.
+                    </p>
+                    <p>
+                      Grace also served as Director of Technology at Trojan Marketing Group and VP of Internal Affairs at the Student Entrepreneurship Program, where she drove the technical infrastructure and student engagement systems for two of USC's largest student-run organizations.
+                    </p>
+                  </motion.div>
+                ) : (
+                  <p>
+                    {truncateText("Grace Li is a software engineer, researcher, and student leader who brings a rare combination of technical depth and institutional range to her role as GSSF's Director of University & Student Relations. A USC student operating at the intersection of computer science, applied AI, and community building, Grace is the connective tissue between GSSF and the universities and students it exists to serve.")}
+                  </p>
+                )}
+                <button
+                  onClick={() => toggleBio('grace')}
+                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
+                >
+                  {expandedBios.has('grace') ? 'Read less' : 'Read more'}
+                </button>
               </div>
             </motion.div>
 
@@ -605,9 +629,33 @@ export default function Leadership() {
                 <span className="text-sm">LinkedIn</span>
               </a>
               <div className="text-white/70 leading-relaxed">
-                <p>
-                  {truncateText("Jongyeop Seon — known as Colin — manages the GSSF footprint in South Korea, serving as the primary liaison for the GSSC Worlds anchor event in Seoul. He oversees participating universities, Korean participant coordination, and local corporate and government engagement to support the annual summit at the Asian Leadership Conference (ALC).")}
-                </p>
+                {expandedBios.has('jongyeop') ? (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p className="mb-4">
+                      Jongyeop Seon — known as Colin — manages the GSSF footprint in South Korea, serving as the primary liaison for the GSSC Worlds anchor event in Seoul. He oversees participating universities, Korean participant coordination, and local corporate and government engagement to support the annual summit at the Asian Leadership Conference (ALC).
+                    </p>
+                    <p className="mb-4">
+                      Colin is himself a builder of exactly the kind of company GSSF exists to elevate. In 2021, he founded Lutra — a student startup that became the youngest Korean team to win at CES and later secured licensing agreements with major partners.
+                    </p>
+                    <p>
+                      His experience includes working with Google and OpenAI startup programs, and he has been honored with Korea's Talent Award for his achievements in AI and blockchain technology. Colin's local credibility, investor relationships, and operational know-how make him an essential anchor for GSSF's South Korea strategy.
+                    </p>
+                  </motion.div>
+                ) : (
+                  <p>
+                    {truncateText("Jongyeop Seon — known as Colin — manages the GSSF footprint in South Korea, serving as the primary liaison for the GSSC Worlds anchor event in Seoul. He oversees participating universities, Korean participant coordination, and local corporate and government engagement to support the annual summit at the Asian Leadership Conference (ALC).")}
+                  </p>
+                )}
+                <button
+                  onClick={() => toggleBio('jongyeop')}
+                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
+                >
+                  {expandedBios.has('jongyeop') ? 'Read less' : 'Read more'}
+                </button>
               </div>
             </motion.div>
 
@@ -630,9 +678,33 @@ export default function Leadership() {
                 <span className="text-sm">LinkedIn</span>
               </a>
               <div className="text-white/70 leading-relaxed">
-                <p>
-                  {truncateText("A builder at heart, Manuela brings a rare combination of computer science and business administration to her role at GSSF. A USC Viterbi student and Teaching Assistant for TAC499: Building Personal AI Agents, she operates at the cutting edge of applied AI — having spoken at the AI4 Artificial Intelligence Conference in Las Vegas and interned across AR/AI/Robotics, UX/UI design, and software development.")}
-                </p>
+                {expandedBios.has('manuela') ? (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p className="mb-4">
+                      A builder at heart, Manuela brings a rare combination of computer science and business administration to her role at GSSF. A USC Viterbi student and Teaching Assistant for TAC499: Building Personal AI Agents, she operates at the cutting edge of applied AI — having spoken at the AI4 Artificial Intelligence Conference in Las Vegas and interned across AR/AI/Robotics, UX/UI design, and software development.
+                    </p>
+                    <p className="mb-4">
+                      Manuela already lives inside the GSSF ecosystem as Director of Programming & Mentor Relations, where she helps shape event flow, mentor matchmaking, and the student experience for competitive programs. Her work bridges technical rigor and human-centered design, ensuring GSSF programs deliver both structured learning and real-world momentum.
+                    </p>
+                    <p>
+                      She is known for connecting the right mentors to the right teams and translating complex program logistics into a clear, student-friendly experience — making her a key operator behind GSSF's global program delivery.
+                    </p>
+                  </motion.div>
+                ) : (
+                  <p>
+                    {truncateText("A builder at heart, Manuela brings a rare combination of computer science and business administration to her role at GSSF. A USC Viterbi student and Teaching Assistant for TAC499: Building Personal AI Agents, she operates at the cutting edge of applied AI — having spoken at the AI4 Artificial Intelligence Conference in Las Vegas and interned across AR/AI/Robotics, UX/UI design, and software development.")}
+                  </p>
+                )}
+                <button
+                  onClick={() => toggleBio('manuela')}
+                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
+                >
+                  {expandedBios.has('manuela') ? 'Read less' : 'Read more'}
+                </button>
               </div>
             </motion.div>
 
@@ -655,9 +727,33 @@ export default function Leadership() {
                 <span className="text-sm">LinkedIn</span>
               </a>
               <div className="text-white/70 leading-relaxed">
-                <p>
-                  {truncateText("Selina Mejia is a first-generation college student and junior at the USC Annenberg School for Communication and Journalism, pursuing a degree in Public Relations & Advertising with a minor in Customer Analytics at the Marshall School of Business — building a foundation that sits squarely at the intersection of global brand strategy and data-driven insight.")}
-                </p>
+                {expandedBios.has('selina') ? (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p className="mb-4">
+                      Selina Mejia is a first-generation college student and junior at the USC Annenberg School for Communication and Journalism, pursuing a degree in Public Relations & Advertising with a minor in Customer Analytics at the Marshall School of Business — building a foundation that sits squarely at the intersection of global brand strategy and data-driven insight.
+                    </p>
+                    <p className="mb-4">
+                      She has worked as a Creative Strategist at Quilly, leading market research, TikTok growth, and campus partnership outreach, and as a Data Analytics Extern at Beats by Dre, where she applied Python and AI tools to analyze Gen Z consumer behavior and translate cultural trends into actionable strategic recommendations.
+                    </p>
+                    <p>
+                      At GSSF, Selina builds the brand voice, digital presence, and marketing strategy that connects student founders across borders — ensuring the foundation's programs are visible, relevant, and credible to both campus communities and global partners.
+                    </p>
+                  </motion.div>
+                ) : (
+                  <p>
+                    {truncateText("Selina Mejia is a first-generation college student and junior at the USC Annenberg School for Communication and Journalism, pursuing a degree in Public Relations & Advertising with a minor in Customer Analytics at the Marshall School of Business — building a foundation that sits squarely at the intersection of global brand strategy and data-driven insight.")}
+                  </p>
+                )}
+                <button
+                  onClick={() => toggleBio('selina')}
+                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
+                >
+                  {expandedBios.has('selina') ? 'Read less' : 'Read more'}
+                </button>
               </div>
             </motion.div>
 
@@ -680,9 +776,33 @@ export default function Leadership() {
                 <span className="text-sm">LinkedIn</span>
               </a>
               <div className="text-white/70 leading-relaxed">
-                <p>
-                  {truncateText("Praew Kedpradit is a multidisciplinary creative who brings rare convergence of visual storytelling, strategic thinking, and cultural intelligence to her role as GSSF's Director of Creative & Brand Strategy. Raised in Bangkok and now based in Los Angeles, she operates across the full creative spectrum — from brand identity and art direction to consumer insight and campaign strategy.")}
-                </p>
+                {expandedBios.has('praew') ? (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p className="mb-4">
+                      Praew Kedpradit is a multidisciplinary creative who brings rare convergence of visual storytelling, strategic thinking, and cultural intelligence to her role as GSSF's Director of Creative & Brand Strategy. Raised in Bangkok and now based in Los Angeles, she operates across the full creative spectrum — from brand identity and art direction to consumer insight and campaign strategy.
+                    </p>
+                    <p className="mb-4">
+                      She has worked as a Creative Direction Intern at Sony Music Entertainment in New York, led PR for artists at Complex Networks, and supported shoots for global brands like Chanel, Samsung, and L'Oréal. At USC, Praew served as Director of Technology for Trojan Marketing Group, Assistant Creative Director for USC Concerts Committee, and Visual Designer for Haute Magazine.
+                    </p>
+                    <p>
+                      At GSSF, Praew shapes how the foundation looks and feels across digital, print, and event experiences — ensuring the brand is both aspirational and grounded for student founders, partners, and advisors.
+                    </p>
+                  </motion.div>
+                ) : (
+                  <p>
+                    {truncateText("Praew Kedpradit is a multidisciplinary creative who brings rare convergence of visual storytelling, strategic thinking, and cultural intelligence to her role as GSSF's Director of Creative & Brand Strategy. Raised in Bangkok and now based in Los Angeles, she operates across the full creative spectrum — from brand identity and art direction to consumer insight and campaign strategy.")}
+                  </p>
+                )}
+                <button
+                  onClick={() => toggleBio('praew')}
+                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
+                >
+                  {expandedBios.has('praew') ? 'Read less' : 'Read more'}
+                </button>
               </div>
             </motion.div>
           </div>

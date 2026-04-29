@@ -54,7 +54,7 @@ export default function Governance() {
                 </div>
                 <div className="border-b border-white/10 pb-4">
                   <div className="text-sm text-white/60 mb-1">EIN:</div>
-                  <div className="text-lg text-white">92-2847355</div>
+                  <div className="text-lg text-white">41-3141550</div>
                 </div>
                 <div className="border-b border-white/10 pb-4">
                   <div className="text-sm text-white/60 mb-1">CA Registry #:</div>
