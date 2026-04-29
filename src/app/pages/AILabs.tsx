@@ -28,7 +28,7 @@ export default function AILabs() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-block mb-6"><span className="text-sm uppercase tracking-widest text-white/80 font-semibold">GLOBAL AI Labs — Launching August 2026</span></div>
+            <div className="inline-block mb-6"><span className="text-sm uppercase tracking-widest text-white/80 font-semibold">GLOBAL AI Labs — Launching August 2026 · Building Now</span></div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
               Build From Day One
             </h1>
@@ -105,7 +105,7 @@ export default function AILabs() {
           {/* Current Project: Venture Innovation Platform */}
           <motion.div {...fadeInUp} className="bg-[#242EC0] p-10 rounded-lg mb-12">
             <div className="inline-block mb-4">
-              <span className="text-sm uppercase tracking-widest text-white/70 font-semibold">Current Project</span>
+              <span className="text-sm uppercase tracking-widest text-white/70 font-semibold">In Development Since April 2026</span>
             </div>
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
               Venture Innovation Platform
