@@ -107,17 +107,22 @@ export default function AILabs() {
             <div className="inline-block mb-4">
               <span className="text-sm uppercase tracking-widest text-white/70 font-semibold">Current Project</span>
             </div>
-            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
               Venture Innovation Platform
             </h3>
-            <p className="text-xl text-white/90 leading-relaxed max-w-4xl mb-8">
-              The Venture Innovation Platform is the operational backbone of GSSF — a unified system for managing all programs, events, teams, students, organizers, mentors, and judges across the global network.
+            <p className="text-lg text-white/80 leading-relaxed max-w-3xl mb-10">
+              A unified platform for running the full lifecycle of global student startup programs — from application to alumni.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {["Programs", "Events", "Teams", "Students", "Organizers", "Mentors", "Judges", "Reports"].map((item) => (
-                <div key={item} className="bg-white/10 rounded-lg px-4 py-3 text-white font-medium text-sm">
-                  {item}
-                </div>
+            <div className="flex flex-wrap gap-3">
+              {[
+                "Program Management", "Event Scheduling", "Team Formation", "Student Profiles",
+                "Mentor Matching", "Judge & Scoring", "Travel Management", "Visa Tracking",
+                "Pitch Submission", "Application Workflows", "Certificate Issuance", "Communications Hub",
+                "Sponsor Portal", "Analytics Dashboard", "Alumni Network", "Reimbursements"
+              ].map((feature) => (
+                <span key={feature} className="bg-white/10 hover:bg-white/20 transition-colors rounded-full px-4 py-2 text-white text-sm font-medium">
+                  {feature}
+                </span>
               ))}
             </div>
           </motion.div>
