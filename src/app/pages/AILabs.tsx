@@ -28,7 +28,7 @@ export default function AILabs() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-block mb-6"><span className="text-sm uppercase tracking-widest text-white/80 font-semibold">GLOBAL AI Labs — Launching August 2026 · Building Now</span></div>
+            <div className="inline-block mb-6"><span className="text-sm uppercase tracking-widest text-white/80 font-semibold">GLOBAL AI Labs</span></div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
               Build From Day One
             </h1>
