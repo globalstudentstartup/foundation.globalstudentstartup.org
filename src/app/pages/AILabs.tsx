@@ -213,41 +213,6 @@ export default function AILabs() {
         </div>
       </section>
 
-      {/* Part of the Platform */}
-      <section className="py-24 bg-[#E4E6F3]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div {...fadeInUp} className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight">
-              Part of a Continuous Global Pipeline
-            </h2>
-            <p className="text-xl text-gray-700 leading-relaxed max-w-4xl">
-              GSSF AI Labs is one of the core programs operated by the Global Student Startup Foundation. Together, they form a continuous pipeline from undergraduate talent to global opportunity.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
-            <Link to="/gssc">
-              <motion.div {...fadeInUp} className="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer">
-                <h3 className="font-bold mb-2 text-[#242EC0]">GSSC</h3>
-                <p className="text-sm text-gray-700">Global competition and convening</p>
-              </motion.div>
-            </Link>
-
-            <Link to="/ai-cup">
-              <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer">
-                <h3 className="font-bold mb-2 text-[#242EC0]">AI Cup</h3>
-                <p className="text-sm text-gray-700">Regional campus-level AI competition</p>
-              </motion.div>
-            </Link>
-
-
-            <motion.div {...fadeInUp} transition={{ delay: 0.4 }} className="bg-[#242EC0] p-6 rounded-lg">
-              <h3 className="font-bold mb-2 text-white">AI Labs</h3>
-              <p className="text-sm text-white/90">Undergraduate product internships</p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
