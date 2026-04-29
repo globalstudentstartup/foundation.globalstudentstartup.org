@@ -118,7 +118,7 @@ export default function AILabs() {
                 "Program Management", "Event Scheduling", "Team Formation", "Student Profiles",
                 "Mentor Matching", "Judge & Scoring", "Travel Management", "Visa Tracking",
                 "Pitch Submission", "Application Workflows", "Certificate Issuance", "Communications Hub",
-                "Sponsor Portal", "Analytics Dashboard", "Alumni Network", "Reimbursements"
+                "Sponsor Portal", "Analytics Dashboard", "Alumni Network", "Onboarding", "Registration"
               ].map((feature) => (
                 <span key={feature} className="bg-white/10 hover:bg-white/20 transition-colors rounded-full px-4 py-2 text-white text-sm font-medium">
                   {feature}
