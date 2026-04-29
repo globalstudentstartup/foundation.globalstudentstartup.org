@@ -17,7 +17,6 @@ export default function Navigation() {
       subItems: [
         { path: "/gssc", label: "Competition", description: "Global Student Startup Competition" },
         { path: "/ai-cup", label: "AI Cup", description: "Global AI prototype competition" },
-        { path: "/advisory", label: "Advisory", description: "Executive Advisory Program" },
         { path: "/ai-labs", label: "AI Labs", description: "Applied AI Product Internships" }
       ]
     },

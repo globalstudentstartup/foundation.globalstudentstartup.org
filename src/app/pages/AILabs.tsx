@@ -98,27 +98,39 @@ export default function AILabs() {
               What You'll Build
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mb-16">
-              AI Labs students build applied AI products for use across the GSSF ecosystem — including tools that support foundation operations, university programs, and the broader student innovation pipeline. Projects are functional and deployed, not archived.
+              AI Labs students build applied products for use across the GSSF ecosystem. Projects are functional and deployed, not archived.
             </p>
-            <div className="bg-[#E4E6F3] p-8 rounded-lg max-w-4xl border-l-4 border-[#242EC0] mb-16">
-              <h3 className="text-xl font-bold mb-4 tracking-tight">Tools We Use</h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Figma for website and presentations, Claude for Knowledge Repository, n8n for AI agents.
-              </p>
+          </motion.div>
+
+          {/* Current Project: Venture Innovation Platform */}
+          <motion.div {...fadeInUp} className="bg-[#242EC0] p-10 rounded-lg mb-12">
+            <div className="inline-block mb-4">
+              <span className="text-sm uppercase tracking-widest text-white/70 font-semibold">Current Project</span>
+            </div>
+            <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
+              Venture Innovation Platform
+            </h3>
+            <p className="text-xl text-white/90 leading-relaxed max-w-4xl mb-8">
+              The Venture Innovation Platform is the operational backbone of GSSF — a unified system for managing all programs, events, teams, students, organizers, mentors, and judges across the global network.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {["Programs", "Events", "Teams", "Students", "Organizers", "Mentors", "Judges", "Reports"].map((item) => (
+                <div key={item} className="bg-white/10 rounded-lg px-4 py-3 text-white font-medium text-sm">
+                  {item}
+                </div>
+              ))}
             </div>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Focus Area 1 */}
             <motion.div {...fadeInUp} className="bg-[#E4E6F3] p-10 rounded-lg">
               <div className="bg-[#242EC0] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-6">1</div>
               <h3 className="text-2xl font-bold mb-6 tracking-tight">Foundation Tools</h3>
               <p className="text-gray-700 leading-relaxed text-lg">
-                Internal AI products that support GSSF operations — from program management and selection to communications and data systems.
+                Internal products that support GSSF operations — from program management and selection to communications and data systems.
               </p>
             </motion.div>
 
-            {/* Focus Area 2 */}
             <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="bg-[#E4E6F3] p-10 rounded-lg">
               <div className="bg-[#242EC0] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-6">2</div>
               <h3 className="text-2xl font-bold mb-6 tracking-tight">University-Facing Products</h3>
@@ -127,12 +139,11 @@ export default function AILabs() {
               </p>
             </motion.div>
 
-            {/* Focus Area 3 */}
             <motion.div {...fadeInUp} transition={{ delay: 0.2 }} className="bg-[#E4E6F3] p-10 rounded-lg">
               <div className="bg-[#242EC0] text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mb-6">3</div>
               <h3 className="text-2xl font-bold mb-6 tracking-tight">Ecosystem Infrastructure</h3>
               <p className="text-gray-700 leading-relaxed text-lg">
-                Applied AI products that extend the capabilities of GSSF programs — including tools that support the AI Cup, GSSC competition management, and regional operations.
+                Products that extend the capabilities of GSSF programs — including tools that support the AI Cup, GSSC competition management, and regional operations.
               </p>
             </motion.div>
           </div>
@@ -225,14 +236,7 @@ export default function AILabs() {
             </Link>
 
 
-            <Link to="/advisory">
-              <motion.div {...fadeInUp} transition={{ delay: 0.4 }} className="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer">
-                <h3 className="font-bold mb-2 text-[#242EC0]">Advisory</h3>
-                <p className="text-sm text-gray-700">Ecosystem and institutional advisory</p>
-              </motion.div>
-            </Link>
-
-            <motion.div {...fadeInUp} transition={{ delay: 0.5 }} className="bg-[#242EC0] p-6 rounded-lg">
+            <motion.div {...fadeInUp} transition={{ delay: 0.4 }} className="bg-[#242EC0] p-6 rounded-lg">
               <h3 className="font-bold mb-2 text-white">AI Labs</h3>
               <p className="text-sm text-white/90">Undergraduate product internships</p>
             </motion.div>
