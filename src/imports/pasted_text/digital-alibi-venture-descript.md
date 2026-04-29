@@ -1,0 +1,355 @@
+타임스탬프	Venture Name	Primary Email for Venture (this will be our primary point of contact)	"Please submit your venture picture. 
+*Picture must include all members in your venture."	Member #1 	Member #2	Member #3 	Member #4 	Member #5 	Describe your venture in one sentence.	Describe your startup idea, the problem you're solving, your solution, and your target market. (300-500 words)	Please describe any areas you would like support in for your venture's development. (Please be as specific as possible to ensure tailored support.)	First Choice Mentor	Second Choice Mentor	Third Choice Mentor						
+2026. 3. 14 오전 9:10:24	Team Europe	sethimahnoor12@gmail.com	https://drive.google.com/open?id=1FCUop0b1BtAJ4JgqZK_OdgZVwdxmy7uE	Adam Rakab	Mahnoor Sethi 	Francisco Livraghi	Maisie Mcguigan	N/A	"Our venture turns the passive data your phone already collects, like GPS location, motion activity, and connectivity logs, into cryptographically verified, shareable proof of objective reality in an era of deepfakes and AI fabrication.
+"	"Every day, smartphones passively collect substantial amounts of sensor data: GPS coordinates, Wi Fi connection records, motion and activity patterns, step counts, and photo metadata. For users with a paired smartwatch, heart rate and biometric data add yet another layer. This data already exists on billions of devices, yet none of it is accessible to users in a way that matters when they need to prove something is real.
+
+At the same time, AI generated content is making it nearly impossible to distinguish truth from fabrication. Someone creates a deepfake video of you at a location you've never been to. Someone takes a selfie you posted and runs it through an AI tool to generate a nude version of you that never existed. Someone fabricates an entirely synthetic photo of you doing something you never did. These scenarios are no longer hypothetical. They happen every day, and the victims are left with almost no way to fight back because fabricated evidence now looks identical to the real thing.
+
+Digital Alibi solves this by transforming passive phone sensor data into verifiable, tamperproof proof.
+
+Our core innovation is the Truth Block: a statement about objective reality that has been cross referenced and verified against multiple independent data streams on the user's device. Imagine a deepfake surfaces showing you at a park at 8 PM on a Tuesday. You open Digital Alibi, and it generates a Truth Block confirming you were actually at a movie theater across town, corroborated by your GPS logs, the theater's Wi Fi network your phone connected to, your motion activity data, and your step count patterns. Because these independent signals all align, the block is sealed with a cryptographic hash, creating immutable evidence you fully own and control.
+
+Truth Blocks also verify photo authenticity. If a manipulated version of your photo circulates online, the app can confirm the original image's provenance through device metadata, lens data, and embedded GPS coordinates, proving your version is the authentic one and exposing the alteration. And if a completely fabricated photo or video of you appears, Truth Blocks can verify that no such media was ever captured on your device, because the cryptographic hash simply does not exist.
+
+The experience is completely frictionless. No manual check ins, no behavior changes. The app runs in the background, continuously indexing and encrypting sensor data. It can also scan the web passively, alerting you the moment manipulated content involving you surfaces, so you can respond proactively rather than scrambling after the damage is done.
+
+Truth Blocks are designed to be shared. Users can post them to social media as verified snapshots of reality, and within the app, friends and communities can independently verify each other's blocks. This creates a social layer of accountability where verified truth travels just as fast as misinformation.
+
+Our target market includes individuals concerned about false accusations, families navigating legal disputes or custody battles, victims of deepfakes and online harassment, legal professionals seeking objective digital evidence, and eventually enterprise clients in HR, compliance, and insurance who need reliable provenance verification."	"We are building a platform that sits at the intersection of device level security, cryptographic verification, and scalable system architecture, and we would greatly benefit from mentorship in several specific areas.
+
+First, our cryptographic sealing mechanism is foundational to the entire product. We need guidance on designing a robust, tamperproof hashing and verification protocol that can withstand adversarial attacks while remaining lightweight enough to run on consumer mobile devices. Understanding best practices for identity verification and access control at the platform level is equally important, since users must be able to prove that a Truth Block was generated by their specific device and was not spoofed or replayed.
+
+Second, we are working within the real constraints of mobile operating systems, particularly iOS, which restricts access to certain data like cell tower information and limits background processing. We need architectural guidance on maximizing the forensic value of the sensor data we can access (GPS, Wi Fi SSID, motion activity, step counts, altitude, photo metadata, and wearable biometrics) while designing a cross referencing pipeline that is reliable, performant, and secure at scale.
+
+Third, as we develop the social verification layer where users share and independently verify each other's Truth Blocks, we need to think carefully about trust models, permissioning, and how to prevent abuse of the system itself. Designing safe and reliable foundations for this kind of distributed verification system is a challenge we would love expert input on.
+
+Finally, as a growing team, we would value mentorship on engineering leadership and organizational scaling, specifically how to build a security first engineering culture from the ground up as we hire and expand.
+"	Adrian Spanu	Rick Rasmussen	Andres Barreto						
+2026. 3. 14 오전 9:39:27	Parcelle	mjk366@cornell.edu	https://drive.google.com/open?id=19Aw9p4C-4XK17ba0o_NAjTX2bGlHfXU9	Matthew Kahn/CEO	Andy Marous/CTO	Brij Garg/CMO	Shannon Lin/COO		We help small- and medium-sized businesses create a curated digital presence  	"The Startup: Parcelle
+The Problem
+Small and medium-sized businesses today face a fundamental disconnect. They understand that a professional digital presence—a sharp website and active social media—is a prerequisite for growth, yet they are stuck. In my conversations with founders, the same pain points recur: they lack the specific skillset, the objective perspective, or simply the time required to craft a brand that feels both professional and genuine. They know they need to be ""out there,"" but the gap between that realization and the actual execution of high-quality content is a barrier most can't bridge on their own.
+
+The Solution
+Parcelle is a digital branding service designed to solve the ""what"" and the ""how"" of digital presence simultaneously. We are building agentic-AI software that doesn't just act as a basic generator, but as a proactive branding partner. Our tool identifies the structural needs of a company’s digital footprint and autonomously creates customized content for their websites and social channels. By focusing on an agentic workflow, Parcelle takes the burden of content architecture off the founder, transforming raw business values into a honed, consistent brand presence that actually resonates with their audience.
+
+Target Market
+While our system is built to scale across various sectors, we are currently focusing our ICP on small e-commerce companies. These businesses represent a significant opportunity because their digital presence is their primary engine for revenue. For these founders, the disconnect between their product quality and their digital branding is a direct bottleneck to scaling. Parcelle allows them to automate the ""branding"" side of their business with the same efficiency they bring to their logistics, ensuring their online storefront finally matches the quality of what they’re selling."	"We are open to all types of support but are looking for a few things in particular:
+
+1.Deep knowledge and expertise within branding and social media
+2. Creative and effective go-to-market strategy 
+3. Tested operational know-how
+4. Pitching expertise
+
+But again, we are open to any sort of support that GSSC can provide!"	Harald Lepisk	Angelina Song	Andres Barreto 						
+2026. 3. 14 오후 2:19:01	Now or Never	sound23@ewhain.net	https://drive.google.com/open?id=1HUOXyqt_h8j2tP2Qnge040tAD465LmA9	Sori Kim	Confirming Soon				Our venture is a platform that enables creators and fans to fund livestream data in real time through data credits, lowering the cost and barriers of outdoor streaming.	"Our startup is building a platform that allows fans to support their favorite creators by sending data credits that power livestreams in real time.
+
+The problem we aim to solve is the high cost of mobile data for outdoor livestreaming. Creators who want to stream outside—such as YouTubers, TikTokers, or IRL streamers—face significant data limitations. For example, a 2-hour outdoor livestream can consume around 8GB of data, costing roughly $68–$70 per stream depending on the region. Because of this expense, many creators avoid livestreaming in real time and instead resort to pre-recorded and edited content, such as travel vlogs, street interviews, or event recaps or streaming indoors.
+
+As a result, audiences often consume content that is already edited and curated, rather than experiencing events as they happen. We aim to shift this dynamic toward more spontaneous, real-time interaction between creators and viewers.
+
+Our solution is a platform that allows viewers to directly contribute to the data required to keep a livestream running. During a livestream, viewers can see a data status bar displayed at the top of the stream, showing the remaining data percentage in real time. By clicking the bar, viewers can purchase data credits, which are instantly allocated to the creator’s stream. These credits extend the livestream by providing additional data in real time. (creators can also buy data credits as well)
+
+The platform functions as an overlay on existing streaming services such as YouTube or TikTok. This allows creators to continue using familiar platforms while seamlessly integrating our data-support system.
+
+In addition to the software platform, we are also developing a hardware bonding device that operates exclusively with eSIM technology. Current professional livestreaming hardware is expensive because it bonds multiple internet connections—both wired and wireless—to ensure stability. These devices typically cost between $1,330 and $3,000, making them inaccessible for many creators.
+
+Our device simplifies this system by focusing on eSIM-based bonding, reducing complexity while maintaining reliability. This approach significantly lowers the cost of entry for outdoor livestreaming equipment, making professional-level streaming more accessible.
+
+Our target market consists primarily of mid-sized creators and IRL streamers who frequently produce outdoor content but lack access to expensive broadcasting equipment or unlimited mobile data. This includes YouTubers, TikTok creators, travel vloggers, street interviewers, and event streamers with active fan communities that are willing to support live content. As the creator economy continues to grow globally, we expect demand for real-time, interactive content to increase alongside it.
+
+What differentiates our solution from existing products is that most current solutions focus only on network stability through hardware. In contrast, we combine affordable hardware with a platform that redistributes data costs across the community. By allowing fans to collectively support livestreams, we create a decentralized model where the burden of connectivity is shared.
+
+By lowering both hardware and data barriers, our platform enables creators to livestream more freely outdoors, increasing mobility, spontaneity, and real-time engagement between creators and audiences."	"Our venture requires support across several areas of development, including platform engineering, hardware development, regulatory strategy, and product design.
+
+First, on the platform side, we are building a system that overlays on existing livestreaming platforms and enables real-time data contributions from viewers. To achieve this, we need support with building a full technical infrastructure including the mobile application, backend architecture, database management, CDN integration, roaming APIs, and customer support systems. In addition, expertise in RTMP streaming protocols and network bonding technology would be extremely valuable for ensuring stable livestream delivery.
+
+Second, on the hardware side, we are developing an affordable bonding device that uses eSIM-based connectivity. The device will require a bonding server and hardware capable of operating at least six modems simultaneously, along with integrated components such as modems, antennas, hotspot modules, and eSIM connectivity. Our team currently lacks deep expertise in bonding infrastructure and modem-to-eSIM integration, particularly in connecting these systems reliably to RTMP servers. Therefore, mentorship or collaboration with professionals experienced in bonding services and livestreaming transmission hardware would be highly beneficial.
+
+Beyond technical development, we also need guidance on intellectual property and licensing strategy. Our school mentor raised concerns about how defensible our business model is, as the core mechanisms of our technology could potentially be replicated by competitors. While we are considering filing international patents for our IP and business model, we understand that patents and licensing alone may not fully prevent competitors from designing around them. As a result, we would appreciate expert advice on building a long-term competitive advantage that goes beyond licensing, such as ecosystem strategy, platform lock-in, or network effects.
+
+Another key area where we need support is UI/UX design and user behavior strategy. Our platform introduces a data credit system that allows fans to contribute data to sustain a livestream. However, this mechanism is somewhat similar to existing donation or sponsorship systems already present on platforms like YouTube. This creates the potential issue of “double funding,” where viewers might feel they are being asked to support creators twice—once through traditional donations and again through data credits. We would appreciate guidance on designing the user experience so that the data credit system feels natural, transparent, and valuable, rather than like an additional financial burden for fans.
+
+Additionally, we are exploring different usage scenarios that may affect fan behavior. For example, if a viewer contributes 2GB of data but the creator ends the stream earlier than expected, our current system reallocates the remaining data to the creator’s next broadcast or allows the creator to convert the unused data into revenue, with the platform taking a 20% fee. However, this raises a potential concern: fans may not want their contribution used for a future stream that they are not interested in. We would benefit from guidance on designing fair and transparent policies for handling unused data credits and identifying additional edge cases or scenarios we should consider.
+
+Finally, we need support with market validation and storytelling. Our current narrative focuses on enabling creators to livestream outdoors more freely, but we believe this story could be stronger. The livestreaming industry has clear estimates of overall market size, but it is difficult to quantify the IRL streaming segment, especially creators who livestream outdoors, due to the existing barriers of device cost and mobile data expenses. Our mentor recommended conducting creator and viewer interviews to better understand real user demand and strengthen our narrative with primary research. We would appreciate guidance on how to design these interviews, collect meaningful insights, and translate them into a compelling story for investors and stakeholders."	JK	Derek Sung	Zoe Beach						
+2026. 3. 14 오후 4:02:44	!nsight	lsjricky1212@postech.ac.kr	https://drive.google.com/open?id=1hCUxdS8V7n4eeqI1VDVjmUMtowlhtSWS	SANGJOON LEE/TEAM LEADER	KANGHYUN PARK/LEAD PRODUCT DEVELOPER	GYUHYEON KIM/LEAD DATA ANALYST	HAESOL JEONG/PM DESIGNER		TASTE is a data-driven media platform that transforms forgotten photo logs into personalized lifestyle insights for Gen Z.	"In our modern digital lives, we are constantly capturing moments, style references, and ideas. However, we noticed a strange paradox. Even though we produce gigabytes of data every single day, most of it remains lost in our galleries. We call this Dark data it is stored but never accessed again. This create a state of digital fatigue and what we call a Vibe Gap. People have the records, but they lack a tool to synthesize that 59 deep interviews with Gen Z users, and we found that 85% of them feel this gap. They archive a high volume of content but still struggle to define what their real vibe is. 
+
+This is why we started TΛSTE. Our idea is to transform this digital garbage into a meaningful life story. Unlike typical cloud services that act only as passive warehouses, TΛSTE uses a unique technology we call Cross-data Contextualization. Instead of just analyzing a single photo, our AI connects the dots between fragmented records like photos, brief notes, and even GPS logs. By analyzing these different data points together, we can find hidden patterns in a user’s true taste that they might not even notice themselves. We deliver these insights through a personalized Vibe Report, which feels more like a private digital magazine than a standard data report.
+
+Privacy is at the heart of our solution. While we currently use cloud-based models for speed and validation, our roadmap is focused on an On-device AI architecture. This means sensitive data can be processed right on the user's phone, ensuring complete privacy while also making our operations more cost-effective as we scale.
+
+We are targeting the high-income Gen Z market in Asia, where the demand for self-discovery is higher than ever. Our business model is designed to be a win-win for everyone. We earn through a performance based commission from fashion sales through a risk-free, performance-based model for brands. Additionally, we provide real-time trend insights to corporate partners who are desperate to understand Gen Z's fast-moving tastes. We chose fashion as our entry point because it's the most visible way to express identity, but we believe Vibe is the key to all consumption. Eventually, we will expand into furniture, travel, and the entire lifestyle market. TΛSTE is not just an app; it is the next generation of media that helps people finally see their true selves in a sea of data."	"As we prepare for the GSSC finals, we are seeking specific mentorship in three key areas. First, we need expert guidance on the technical implementation of our AI architecture. While our Cross-data Contextualization concept is strong, we want to refine the logic of fusing multimodal data (photos, text, GPS) into a single cohesive insight. Specifically, we want to discuss how to build a lightweight On-device AI engine that can handle this complex fusion while navigating the privacy and battery constraints of iOS and Android.
+
+Second, we are looking for support in refining our B2B business strategy. We want to transform our Vibe data into a high-value asset for global brands. We need advice on how to structure our trend reports and data products so they become essential tools for corporate partners in the fashion and lifestyle industries. Learning how to pitch this value proposition to global stakeholders is a major goal for us.
+
+Finally, we want to solidify our global scaling roadmap. As a team of engineers from POSTECH, we have the technical grit, but we need a mentor's perspective on how to adapt our product for diverse international markets. We want to ensure that our narrative of ""Next-Gen Media"" is not only technically sound but also commercially irresistible to global investors. We are ready to move fast, and the right mentorship will help us build the necessary technical and business moats to lead the market."	NAZZERIINE WALDON	J K	ADRIAN SPANU						
+2026. 3. 14 오후 5:55:35	Cognate	alice.lemaire@berkeley.edu	https://drive.google.com/open?id=1eVUYy6PXPBa0QlqpWUd-Q3oFJpuV-oLV	Alice Lemaire CMO	Faris Babsail CFO	Annalee Ambler COO	Hala Boges CTO	Marilyn Jia CEO	Cognate is an AI-driven language learning platform that helps people learn English faster by tailoring lessons to their native language and real-world communication needs, rather than using a one-size-fits-all approach.	"Cognate is an AI-driven language learning platform designed to help non-native English speakers learn faster by tailoring lessons to their native language and real-world communication needs. Millions of people struggle with English proficiency, which can limit their access to jobs, education, healthcare, and daily services. In the United States alone, about 27 million people have limited English proficiency, meaning communication barriers can significantly affect their ability to navigate everyday life and fully participate in society. Traditional language learning apps attempt to solve this problem, but many use a one-size-fits-all approach that ignores how a learner’s first language influences the way they acquire a second language.
+The core problem Cognate addresses is that most language learning platforms teach English the same way to everyone, regardless of their linguistic background. Apps like Duolingo or Babbel focus heavily on vocabulary memorization and repetition rather than on the specific grammatical, pronunciation, and structural challenges that arise when speakers of different languages learn English. For example, an Arabic speaker and a French speaker face very different difficulties when learning English sentence structure or pronunciation. Because existing platforms rarely adapt to these differences, learners often progress slowly, struggle with retention, and have difficulty applying what they learn in real conversations.
+Cognate solves this problem by creating personalized language learning pathways based on a learner’s native language. Using AI-driven corrective feedback and scalable modules, the platform analyzes how a user’s first language interacts with English and designs lessons that directly address common mistakes and linguistic transfer patterns. Instead of relying solely on memorization, Cognate emphasizes real-world communication skills, active learning, and scientifically supported linguistic principles such as contrastive learning and interlanguage theory. The platform provides immediate feedback, contextualized practice, and structured learning modules that help users build practical communication skills more quickly and retain them longer.
+Our initial target market is Arabic speakers living in the Bay Area, where there is a large community of immigrants, students, and professionals seeking to improve their English proficiency. This community serves as our beachhead market, allowing us to pilot the product, refine the curriculum, and build partnerships with universities and community organizations. From there, Cognate plans to expand to other major language groups such as Spanish speakers and additional global markets. The broader opportunity is significant: the global online language learning market is estimated to be worth over $54 billion, with English learners representing a majority of that demand.
+By focusing on linguistic personalization, community partnerships, and AI-driven feedback, Cognate aims to create a more effective and inclusive way for millions of people to gain the language skills they need to fully participate in their communities and opportunities."	"We would appreciate support in several key areas to help develop and scale Cognate.
+First, we are looking for guidance on refining our go-to-market strategy. While we have identified Arabic speakers in the Bay Area as our initial beachhead market, we would benefit from help identifying our first institutional partners (such as universities, ESL programs, and community organizations) and building a clear plan to acquire our first users.
+Second, we would value support with marketing and user acquisition. We are interested in advice on how to effectively reach immigrant communities through channels such as social media, micro-influencers, community outreach, and referral programs, while prioritizing the most impactful strategies for an early-stage startup.
+Third, we would appreciate guidance on curriculum development to ensure our language learning modules are pedagogically sound and scalable. Since Cognate focuses on teaching English through a learner’s native language, input from experts in linguistics and ESL education would help us design effective lessons and learning progressions.
+Finally, we would welcome mentorship on product development and scaling, particularly around integrating AI-driven corrective feedback and expanding the platform to additional language groups in the future."	Amy Jiang	Zoe Beach	Isaac W. Kim						
+2026. 3. 14 오후 6:40:57	Atlix	kirtisub@usc.edu	https://drive.google.com/open?id=1-LSu8QfidyIc7lXdOAqFQUngcbOE7qEp	Kirti Subramanian/Product Manager	Eric Ye/VC/Finance	Margaret Luwena/Designer	Vishnu Kadaba/Developer	David Han/Developer	Atlix is a Bloomberg Terminal for digital narratives, helping organizations detect and understand emerging stories before they shape politics, markets, and society.	"Problem
+Since the invention of social media in the 1990s, the world has become much more digital, with over 3 billion users on Meta in 2025 and 1.9 billion on TikTok in 2026. The world became infinitely more connected with opportunities to connect with people from opposite sides of the world, to engage with opposing ideas, and to experience new narratives that were previously unavailable. Social media also began to significantly affect consumer behavior, with consumers following influencers and celebrity trends, creating new billion-dollar markets in the process. 
+However, this same infrastructure that enabled unprecedented connectivity also introduced a structural blind spot. Trends can move from niche online communities to national relevance in a matter of days, yet there is no system-level visibility into how these narratives cluster, intensify, and cross into national issues. The lead-up to the January 6 insurrection in 2021 illustrates one example of this structural blind spot. Narratives about the “stolen elections in 2020” developed across Facebook groups, Twitter threads, and YouTube channels months before the insurrection took place. By the time the rioters had arrived at the Capitol, it was too late for policymakers and security to respond. 
+In a digital environment where social media shapes political stability, public trust, and even market behavior, this absence of real-time narrative intelligence results not only in matters of national security but also in a billion-dollar infrastructure gap. Organizations already spend billions annually on public relations, risk analytics, political strategy, and alternative data, yet none of these tools map where ideas and narratives cluster or form. Closing this gap represents a scalable, multi-billion-dollar market opportunity for businesses, policymakers, and many other stakeholders. 
+
+Our Solution
+We are building Atlix, a Bloomberg Terminal for culture and media. Our unique approach is to treat cultural narratives like markets that can be measured, tracked, and compared in real time. Instead of relying on scattered news reading, slow polling, or brand-focused social listening tools, our platform ingests public data from news, social media, and online discourse across regions, then uses AI to detect emerging topics, measure sentiment and emotion (fear, anger, hope, etc.), identify polarization between communities, and track how narratives spread across platforms and countries. All of this is surfaced in a structured dashboard with clear metrics like volume spikes, week-over-week change, sentiment balance, and polarization index. Unlike existing tools that focus on marketing or deliver static consulting reports, Atlix provides real-time, cross-platform, geographically filtered cultural intelligence designed specifically for policymakers, NGOs, and institutions that need to understand public sentiment before it becomes crisis, and to be able to use the information we provide to act in ethical ways.
+
+Customers
+Our target customers are NGOs, government agencies, and policy think tanks, that currently depend on slow consulting reports or manual media monitoring to understand cultural shifts, as well as corporate communications teams that need to get ahead of narratives before they escalate into crises. Our go-to-market strategy starts with direct outreach through USC's policy and international relations networks, building credibility through early adopter case studies to land larger institutional contracts. The business model is tiered SaaS based on regions and topics tracked, with a premium tier for custom dashboards and API access. The cultural intelligence market today is highly fragmented, with tools like Brandwatch and Meltwater built for marketers rather than policymakers, and consulting firms charging six figures for static reports. Atlix sits directly in between, offering real-time, structured intelligence at a fraction of the cost."	"One area where we would greatly value mentorship is technical architecture for large-scale narrative detection systems. Atlix aims to ingest and analyze discourse across multiple platforms including social media, news media, and online communities, then identify emerging narratives, sentiment shifts, and polarization patterns in real time. We would appreciate guidance on how to structure a scalable pipeline for cross-platform data ingestion, narrative clustering, and temporal analysis.
+
+Second, we are seeking support on customer discovery and product-market fit. While we believe Atlix could serve a range of stakeholders (including NGOs, policymakers, think tanks, and corporate communications teams) we want to better understand which groups experience this problem most acutely and what specific insights they would actually pay for.
+
+Finally, we would benefit from guidance on responsible deployment and ethical safeguards. Because Atlix analyzes public discourse and cultural narratives, we want to ensure the platform is designed to promote transparency and understanding rather than manipulation. Input on media, policy, and technology governance would help us build these considerations into the product from the beginning."	Danielle Vivo	Cheryl Edison 	Adrian Spânu						
+2026. 3. 14 오후 10:06:49	KUnnect	hyunsun4819@korea.ac.kr	https://drive.google.com/open?id=1UDFsIkJSMjqR5-QDE3kFaAav6XnfhXmg	Hyunsun Hwang/CEO	Dayeon Kim/CEO				A global AI-driven e-book ecosystem that eliminates language barriers and publishing delays through real-time, high-fidelity translation, enabling creators to reach a worldwide audience simultaneously.	"The Problem: The 'Lost in Translation' Gap
+
+The current global publishing industry suffers from a significant ""time-to-market"" lag. When a popular work is released in its home country, international fans often wait months, or even years, for a localized version. This delay not only frustrates readers but also fuels digital piracy. Furthermore, traditional translation is prohibitively expensive for independent authors and small publishers, creating a high entry barrier to global markets. Existing machine translations often fail to capture the cultural nuances and the author's original intent, resulting in a suboptimal reading experience.
+
+The Solution: Real-Time Multilingual Synchronized Publishing
+Our platform, the ""Netflix of E-books,"" leverages advanced AI-driven neural translation technology specifically tuned for literary and creative contexts. We solve the core issues through:
+
+1. Simultaneous Global Release: Our proprietary AI engine processes original manuscripts to provide high-quality translations in real-time, allowing for ""Day 1"" global launches across multiple languages.
+
+2. Context-Aware Localization: Beyond simple word-for-word translation, our system utilizes Large Language Models (LLMs) to preserve cultural idioms and the stylistic signature of the author.
+
+3. Cost Efficiency for Creators: By automating the primary translation layer, we reduce localization costs by over 80%, empowering indie authors to become global creators without massive upfront investment.
+
+Target Market
+Our primary target market includes Gen Z and Millennial digital readers who consume web novels and e-books at a high frequency and demand immediate access to global trends. On the supply side, we target independent authors and mid-sized publishers in content-rich hubs (such as Korea, Japan, and the US) looking to scale internationally. The global e-book market, projected to continue its steady growth, combined with the booming $25B+ web novel industry, provides a massive staging ground for our scalable subscription model."	"To successfully scale this platform, we require specialized support in the following three areas:
+
+1. Global Intellectual Property (IP) & Legal Strategy: Navigating international copyright laws and digital distribution rights is complex. We seek expert guidance on structuring licensing agreements that protect both the creator and the platform across multiple jurisdictions.
+
+2. Localization & Cultural Validation Networks: While our AI handles the bulk of the translation, we need support in building a network of ""cultural consultants"" or native editors who can provide high-level feedback to further refine our AI's stylistic accuracy for specific regions (e.g., Middle East, SE Asia).
+
+3. Strategic Partnerships with Content Aggregators: We are looking for introductions to global publishing houses and web-content platforms to secure a robust initial library of titles, ensuring a competitive content volume at launch."	AMY JIANG	ISAAC W. KIM	DEREK SUNG						
+2026. 3. 14 오후 10:27:42	Kowi	lauri.torvinen@aalto.fi	https://drive.google.com/open?id=1DVqM8WEQc-DCQ88hzpXgxqRoga1nCE6L	Sreekrishna Praveen / COO	Elžbieta Mieldažytė / CPO	Nguyễn Hoàng Dũng / CTO	Lauri Torvinen / CEO		Location-based media app where you have to be physically in a specific space to be able to join a community.	"Startup idea
+
+A hyperlocal social media platform that connects real-world communities, enabling people to discover local events, interact with others nearby, and engage with the places and groups around them.
+
+Problem
+Social media has become increasingly inauthentic and disconnected from real life. Much of the content is AI-generated noise, people curating lifestyles they don’t actually live, or only showing the most polished parts of their lives. Instead of meaningful interaction, platforms are filled with content optimized for attention and engagement. As a result, many users feel that social media no longer reflects reality and are growing tired of it.
+At the same time, social media connects people with the entire world while largely ignoring the communities around them. Users see content from influencers, brands, and strangers across the globe, but rarely from the people, places, and events that are actually part of their daily lives. The platforms prioritize global reach over local relevance, even though the people physically around you often have a much greater impact on your life.
+Solution
+
+A social media platform that lets users join specific, real-world communities by scanning a QR code. Once inside, they have one week to explore and interact with that community, discovering local events, chatting with people nearby, and engaging in different ways with others who share that space. After a week, access resets, encouraging users to reconnect with the community intentionally and maintain authentic, timely interactions rather than passive scrolling. This also automatically removes them from communities that are not relevant anymore.
+
+Target market
+Our first target market is universities. Students are easier to reach because they are open-minded, tech-savvy, and more willing to scan QR codes than other demographics. Universities also have dense, active communities with frequent events, clubs, and social activities, making them ideal for testing hyperlocal engagement. Additionally, new students are constantly looking for ways to connect with peers, discover what’s happening around them, and participate in new experiences, which aligns perfectly with our platform’s purpose.
+
+The customers, on the other hand, are local businesses such as restaurants, bars, and event organizers. Through our app, they can run highly targeted advertisements because they know exactly which communities are active at a given time and location. This allows them to reach potential customers who are nearby and genuinely interested in local events or experiences, increasing engagement and return on investment compared to traditional, broad advertising channels.
+"	"User retention – guidance on strategies to keep users coming back after their first week in a community, including notifications, gamification, or habit-forming features.
+
+
+Onboarding experience – advice on designing a smooth first-time user flow, from scanning the QR code to joining a community, so that new users understand the platform quickly and start interacting immediately.
+
+
+UI/UX design – help in making the platform intuitive, visually appealing, and engaging, ensuring users can easily find events, chat, and interact without confusion.
+
+Data – Help with using the data we gather to develop the product in the right direction. What metrics to track and how can we use that to validate features and core product features.  "	J K 	Isaiah Harvin	Angelina Song						
+2026. 3. 14 오후 10:51:08	Health Atlas	Nayel.huda@gmail.com	https://drive.google.com/open?id=1p10Kv9eZaaSOJPZTv2LIVMVu5JrROB7n	Nayel huda/CEO	Tareef Ahmed/CFO	Siddhanth Nagrath/CTO	Yicheng Li/Head of partnerships	Abigail Moss/ Head of B2B sales	Medical tourism	"Our startup is building a trusted platform that helps patients access high-quality, affordable healthcare abroad in a safer and more transparent way. We are addressing a growing problem: many patients, particularly in the UK, face long waiting times, high private healthcare costs, and difficulty accessing timely diagnostics, health screening, and elective treatment. At the same time, many excellent hospitals overseas offer faster access and competitive pricing, but patients often struggle to identify reputable providers or navigate the process with confidence.
+
+The core problem is trust and fragmentation. Medical travel is still an opaque market. Patients are often forced to rely on word of mouth, unreliable online information, or intermediaries with unclear incentives. That makes it difficult to compare providers, understand what is included in a treatment package, assess quality, or plan travel and follow-up care safely.
+
+Our solution is a curated platform and care-navigation service that connects patients with vetted international clinics and hospitals. We aim to provide transparent comparisons, clear information on providers and treatment packages, and practical support throughout the journey. Rather than acting as a simple referral site, we want to create a more end-to-end experience, helping patients choose the right provider, organise logistics, and access structured support before and after treatment.
+
+Our initial focus is on diagnostics, preventive health screening, elective procedures, and second-opinion pathways, where demand is strong and patients are actively seeking faster, more flexible options. Our target market is UK-based patients looking for quicker or more affordable private care, as well as internationally minded consumers and diaspora communities already comfortable seeking treatment abroad.
+
+Ultimately, we want to make cross-border healthcare more trustworthy, accessible, and patient-centred by combining transparency, curation, and personalised support in one platform.
+"	"We would particularly value support in four areas.
+
+First, we need help refining our go-to-market strategy. Our initial focus is UK-based patients seeking faster access to diagnostics, health screening, elective procedures, and second opinions abroad, but we would benefit from guidance on how to narrow this further into the most commercially viable early customer segment. Support with customer discovery, pricing strategy, and pilot design would be especially useful.
+
+Second, we would welcome support on partnership development. A major part of the venture depends on building trusted relationships with high-quality overseas clinics and hospitals, as well as related service providers such as insurers, travel coordinators, and patient support networks. Guidance on how to structure these partnerships, validate provider quality, and create a credible initial supply base would be extremely valuable.
+
+Third, we need help navigating the legal and regulatory side of the model. Cross-border healthcare raises important questions around liability, patient safety, advertising standards, data protection, consent, and the extent to which we operate as a marketplace, referral platform, or care-navigation service. Support in understanding the UK regulatory landscape and designing the model in a compliant way would be critical.
+
+Finally, we would benefit from support on early-stage venture building and fundraising. We are currently shaping the MVP and broader business model, and would value advice on what to prioritise in the earliest stage, how to test demand efficiently, and how best to position the company for pre-seed or seed investors. Introductions to relevant mentors, healthcare operators, and early-stage investors would also be highly beneficial.
+
+Overall, the most useful support would combine commercial strategy, healthcare-specific regulatory insight, and practical guidance on building a credible, trust-based platform in a complex sector.
+"	Angelina song	Isaac w kim	Carolina avila						
+2026. 3. 14 오후 11:50:13	aim	purieu@ewha.ac.kr	https://drive.google.com/open?id=1KTKgeBZjNy5f-Jv-WaTHnACACHqtSpEe	Eugine Kim / CEO	YoonJung Lee / Design				We are an educational-technology-driven, customer-obsessed team that moves from insight to execution with unusual speed—interviewing 100 users in two weeks and turning those insights into an MVP.	"At aim, we are focused on a costly and persistent hiring problem: companies still make critical recruiting decisions based on low-signal, one-way media such as resumes, portfolios, and short interviews. These static formats do a poor job of predicting real-world execution and often create an expectation mismatch between employers and candidates. As a result, startups can lose approximately KRW 20 million and significant productivity per bad hire, while 16% of new hires leave within their first year. Through interviews with more than 20 companies, we consistently heard the same frustration: they want to understand how candidates actually prioritize, communicate, solve problems, collaborate, and respond to real work contexts, but the data available to them has barely changed beyond resumes, portfolios, and interview answers. This problem is especially severe in early-career hiring, where candidates often have limited formal work history and employers struggle to distinguish true potential from polished self-presentation.
+
+Our solution is a structured Recruitment Simulation platform that functions as both a Realistic Job Preview and a skills-based assessment. Instead of asking candidates to describe what they have done, we place them directly into the future of the role. We work closely with employers to identify how their proven high performers actually execute: task flow, decision-making patterns, communication norms, and measurable outcomes. We then translate those patterns into a role-specific simulation, typically consisting of a short hiring manager briefing, a realistic business case or workflow-based task, and a facilitated debrief with structured feedback.
+
+This gives employers more standardized, comparable, and behavior-based evidence for hiring decisions, rather than relying primarily on self-description and interview performance. At the same time, candidates gain a more realistic preview of the role, the team’s working style, and the expectations behind the job before they join. Rather than telling candidates what the role and culture are like, we let them experience the work and demonstrate fit through action.
+
+To make this process consistent and scalable, we anchor our assessment in a competency framework built for university and early-career talent, with 15 core competencies and 265 sub-indicators. This allows us to convert simulation performance into structured, employer-ready reports and build a more repeatable infrastructure for skills-based hiring.
+
+Using weakly supervised labeling, we map these signals to a competency framework built for university students, with 15 core competencies and 265 sub-indicators, and generate consistent, employer-ready reports. In our combined system, v2 creates high-quality employer-specific calibration data and role rubrics, while v1 extends the evidence longitudinally, turning process data into a reusable skills record. This is how we move from one-off hiring events to a scalable infrastructure for skills-based hiring.
+
+Our initial target market includes startups, employers hiring interns and early-career talent, universities, and workforce-development partners seeking higher-signal, lower-bias ways to assess potential and reduce early mismatch."	"1. ICP, PMF and productization:
+We are actively validating our model through offline recruitment simulation workshops and startup case-study sessions, with a goal of running 5+ events to test how employers and candidates respond to the experience. We would value guidance on identifying the strongest initial customer segment, clarifying who is most likely to pay first, and translating qualitative pilot insights into a repeatable, scalable product that HR teams will adopt and pay for.
+
+2. B2B go-to-market and commercialization
+We would appreciate support in refining our go-to-market strategy for employers, universities, and workforce-development partners. In particular, we want to better understand how to package the simulation as a repeatable offering, design the right pricing and delivery model, and determine the most effective entry point for early adoption.
+
+3. Strategic partnerships and network access
+Because our mission aligns strongly with skills-based hiring and economic mobility, we would appreciate support in identifying strategic partnerships and global networks that could accelerate adoption in the future-of-work ecosystem."	Andres Barreto	Danielle Vivo	Bob Upham						
+2026. 3. 15 오전 3:09:44	AEOsim	narang.arnav30@gmail.com	https://drive.google.com/open?id=1dQMiMkfTToGusRzkZjT4dMn7s_pQ6IlU	Arnav Narang/CEO	Arnav Singhal/Growth	Chatanya Maheshwari/Technology	Jay Shah/Product and Ops	Dhaanya Aditi/Strategy	AEOsim is the sandbox environment for AI Search.	"Problem: Forced to rely on static playbooks and slow feedback loops, enterprise growth teams lack visibility into AI search and blindly publish content, wasting massive AEO budgets on pages that fail to rank.
+
+Solution: AEOsim is a dedicated staging environment that enables teams to
+A/B test against live AI models instantly, cutting feedback loops by ~3 OOMs.
+
+Target Market: High-complexity, high-trust enterprise sectors "	"Firstly , we are seeking deep technical mentorship on accurately modeling AI-driven search environments (Answer Engines). Specifically, we need expert guidance on reverse-engineering and simulating complex real-world Retrieval-Augmented Generation (RAG) pipelines, dynamic LLM ranking algorithms, and citation mechanics to ensure our simulator's predictive outputs are mathematically robust and defensible for enterprise clients.
+
+Secondly, on the commercial side: navigating complex B2B sales cycles and structuring enterprise R&D pilots to ensure early corporate partnerships (like Tata 1mg, and soon Fortune 500) convert into long-term contracts."	Adrian Spânu	Danielle Vivo	Andres Barreto						
+2026. 3. 15 오전 3:52:50	Tether	cdleach@usc.edu	https://drive.google.com/open?id=1ztOE_og9lSC0HRRFadEAz4P8hnrkkdBt	Cedar Rose Leach, Product Designer	Amulya Harish, Product Engineer	Chloe Ha, Product Manager	Jeffrey Yang, Technical Product Manager	Shubhayan Srivastava, Full-Stack Developer	A storytelling platform that helps elders share their lived experiences as short-form media, preserving culture and truth across generations.	"Venture Introduction
+
+Every day, we lose irreplaceable cultural memories across generations. The last WWII veterans, Civil Rights witnesses, and immigrant pioneers are aging out, taking their stories with them. Meanwhile, 83% of Gen Z regretfully never hear their grandparents' full life stories, and nursing home residents spend an average of 11 hours daily in social isolation. Everyone has a story, and the elderly have the most lessons learned, memories saved, and stories to share. We have a catastrophic disconnect: elders with wisdom and stories to share, younger generations hungry for authentic connection and perspective, and no bridge between them.
+
+Current solutions fail on both ends. Traditional oral history tapes produce hours of unedited footage that goes unwatched. Family members intend to record grandparents but most never do. They don't know what questions to ask, lack time, or wait until it's too late. Social media celebrates youth while rendering older voices invisible. We're losing not just individual memories, but collective cultural truth, historical context, and intergenerational bonds.
+
+Our Solution
+
+Tether is a storytelling platform that transforms elder oral histories into engaging short-form video content. Our AI-guided interview system prompts elderly residents with thoughtful questions about pivotal life experiences such as immigration journeys, career milestones, social movements they witnessed, family traditions, and lessons learned. The technology extracts narrative highlights and structures them into compelling short-form videos with archival graphics and personal photos brought to life.
+
+Unlike current interview methods, our AI interviewer knows how to draw out details, ask follow-up questions, and identify the most compelling story beats. The output isn't a documentary, but is shareable media optimized for how younger generations actually consume content, while maintaining the authenticity and emotional weight of the original narrative.
+
+Target Market
+
+We're launching B2B with nursing homes and assisted living facilities (15,600+ in the US). Elder care providers face intense competition and struggle with resident engagement. Tether becomes both a premium amenity for families and a proven engagement tool that reduces isolation. For each resident, we provide unlimited story captures that families can access and share.
+
+Our secondary market is direct-to-consumer: those who want to preserve parents' or grandparents' stories before it's too late. The ""StoryCorps meets Instagram"" model serves the 56 million Americans over 65, with emotional urgency driving conversion.
+Long-term, we're building a searchable cultural archive: a Library of Congress for lived experience. With consent, stories contribute to an accessible historical database for educators, researchers, and future generations seeking authentic accounts of the past.
+
+Impact
+Tether addresses three crises simultaneously: elder isolation (giving residents purpose and voice), cultural amnesia (preserving heritage before it disappears), and generational polarization (creating empathy through storytelling). We're not just building a product, we're ensuring the next generation inherits the wisdom of the last."	"As Tether is a form social media, it requires both activity from the elderly story creators and engagement from the younger viewing generation. We would appreciate help regarding social media platforms, what it takes to grow an audience, and how we can best design Tether to pull in these two very different groups of people.
+
+We would also greatly appreciate help other aspects as well, like development, project scope, market research."	Adrian Spanu	Zoe Beach	J K						
+2026. 3. 16 오전 3:08:14	Timeline	yuvna@stanford.edu	https://drive.google.com/open?id=1OjTqpU3eD12gxUYFV_40b4AH0_lNVkJr	Yuvna Gupta/CEO	Mudit Baid/CTO	Manasvini Kothari/CPO	Thomas Poimenidis/CFO	Hnin Yupar Mon/CMO	Timeline is a collaboration software built on top of Adobe Premiere Pro that brings version control to video editing.	"Video production has exploded—from independent filmmakers and YouTubers to marketing teams and media companies—but the tools used to collaborate on video haven’t evolved to match. Most editing workflows still rely on duplicating project files, passing folders through Dropbox or Google Drive, and manually tracking versions like “final_v3_really_final.” As projects grow and multiple editors contribute, teams frequently lose work, overwrite changes, or struggle to compare different creative directions. Professional editing software like Adobe Premiere Pro is powerful, but it was never designed for modern, collaborative workflows.
+
+Timeline is building the collaboration layer for video editing. Our mission is to bring the principles that transformed software development—version control, merging, and structured collaboration—to the creative process of video production.
+
+Timeline integrates directly with the professional editing tool Adobe Premiere Pro and allows editors to manage their work the way developers manage code. Instead of duplicating project files, editors can share versions directly to explore various creative directions, track every change made to a project, compare edits side-by-side, and instantly revert to earlier versions if needed. This creates a clear history of the creative process while eliminating the chaos of file-based collaboration.
+
+In addition to version control, Timeline also addresses a major usability barrier in video editing: complexity. Many creators—especially independent filmmakers and small teams—find professional editing tools difficult to navigate. Timeline includes an AI-assisted editing interface that helps users interact with their project more intuitively. Editors can ask the assistant to find clips, organize sequences, or explain editing tools directly inside their workflow, reducing the friction of complex software.
+
+Our initial target market is independent filmmakers, small production teams, and creator studios who collaborate frequently but lack the infrastructure used by large studios. These creators produce a massive amount of video content but often rely on fragile workflows that slow them down."	"Beachhead market validation: Help identifying which early user segment (indie filmmakers, creator studios, post-production teams, etc.) has the highest willingness to pay and fastest adoption potential.
+
+Go-to-market strategy: Guidance on early distribution channels, growth strategies within creative communities, and how to drive adoption among editors and production teams.
+
+Pricing & business model: Advice on structuring pricing for creative software (e.g., SaaS subscriptions, seat-based pricing, team plans).
+
+Industry introductions: Connections to filmmakers, creator studios, post-production houses, and media teams who could act as early design partners and pilot customers.
+
+Positioning & storytelling: Support refining how we communicate Timeline’s value in the creator economy to both users and potential investors."	Isaac Kim	Nitin Kale	Derek Sung						
+2026. 3. 16 오전 4:55:34	Acre	rishab_jain@college.harvard.edu	https://drive.google.com/open?id=1rfifphPEP5IXkVI5pjB0i1ULyshM478f	Rishab Jain/PM	Param Thakkar/Developer	Daniella Biblin/PM	Tomiris Ospan/Developer		A satellite-triggered parametric insurance platform that helps climate-vulnerable smallholder farmers recover from natural disasters by delivering automatic payouts without the delays of traditional claims.	"Our startup is building a climate risk platform for smallholder farmers that uses satellite data and parametric insurance to deliver rapid automatic payouts after severe weather shocks. We are addressing a structural problem faced by millions of farmers across India, Nigeria, and Southeast Asia. When a farmer loses a harvest to drought or flooding, the harm is not limited to one season of lost income. In many cases, that farmer also loses the working capital needed to buy seeds, fertilizer, labor, and other inputs for the next planting cycle. A single climate event can therefore trigger a longer cycle of financial instability, reduced food security, and persistent vulnerability.
+Existing insurance systems are poorly designed for this context. Traditional crop insurance depends on claims filing, in person verification, and long administrative timelines. For smallholder farmers, this process is often too slow, too opaque, and too difficult to navigate. Even where products exist, they frequently fail to deliver support at the moment it matters most. The real failure is not simply lack of insurance coverage. It is the lack of fast, trusted, and accessible recovery capital after a shock.
+Our solution is a parametric insurance model that replaces claims based reimbursement with objective event based triggers. Instead of asking farmers to prove individual loss, we use satellite imagery, rainfall data, and related climatic indicators to detect when a predefined threshold for drought or flood conditions has been met. Once that threshold is crossed, payout is triggered automatically. This removes the most friction heavy part of the insurance process and creates a system that is faster, more transparent, and more compatible with low resource rural settings. It also allows the product to be designed around the actual recovery needs of the farmer rather than around the administrative requirements of legacy insurers.
+Our initial approach is intentionally focused. We would begin with a specific geography, a specific crop cluster, and a specific climate peril in order to calibrate triggers carefully, reduce basis risk, and validate farmer outcomes in a real operating environment. The first product would be designed to cover critical replanting costs rather than full income replacement, since preserving the next planting season is often the highest leverage intervention. Distribution would take place through trusted local channels such as cooperatives, agricultural input networks, rural lenders, microfinance institutions, or mobile money ecosystems. Our target market is climate exposed smallholder farmers who are underserved by conventional insurance infrastructure and highly sensitive to even a single failed season. Over time, we envision a scalable resilience platform that combines remote sensing, financial protection, and local distribution to make climate recovery more immediate, reliable, and inclusive."	"We would value support in two specific areas
+
+Insurance structuring and technical validation
+We would appreciate support from experts in parametric insurance design, especially around trigger calibration, basis risk reduction, and the most practical way to structure an early stage product within existing regulatory and insurance frameworks.
+
+Data access and product design feedback
+We would benefit from support identifying the most useful datasets and external partners for building the MVP, especially around satellite, rainfall, and crop level risk data. We would also value feedback on how to design the product clearly and intuitively so that the trigger, payout mechanism, and farmer value proposition are easy to understand."	Adrian Spanu	Bob Upham	Timothy Li						
+2026. 3. 16 오후 4:49:50	Touch of Love	lsjberrylove@naver.com	https://drive.google.com/open?id=1Q7kKeTTNOjf64iCaZBa1hMGn3vCN4jhB	Su jung LEE	Su Hyeon Heo 	Ji hyeok Choi			We offer a 'Shared Pairing Dessert System' using 100% local Yeongdo sweet potatoes, allowing humans and pets to share the same taste and emotional connection.	"[Problem] Despite 34% of households being single-person and many referring to pets as 'family,' there is a lack of shared experiences. Many pet owners feel 'emotional disconnection' or guilt when eating alone, as they cannot share the same culinary experience with their pets.
+
+[Solution] Our brand, 'Hands of Love,' introduces the world’s first 'Same-Taste Pairing Dessert System.' Using 100% Yeongdo sweet potatoes—a local heritage crop—we create high-quality desserts safe and delicious for both humans and pets. By aligning ingredients and flavors, we break down the species barrier and maximize emotional bonding through the 'one bite for you, one bite for me' experience.
+
+[Target Market] Our primary target is the growing 'Pet-fam' market, specifically single-person households and MZ generation owners who value emotional connection. Additionally, we target tourists visiting Yeongdo, positioning our dessert as a 'must-buy' local landmark souvenir, similar to the success of Tokyo Banana."	We are looking for expert mentorship in global branding and supply chain optimization. Specifically, we need guidance on how to effectively communicate our 'human-pet sharing' concept to international markets and develop a world-class brand identity. We also hope to connect with strategic partners in the F&B and pet industry to expand our 'shared pairing' system globally.	I am a multi-talented entrepreneur with a dual major in Visual Design and Exercise Prescription. Leveraging my background, I have experience as both a fitness trainer and a certified dog trainer/kindergarten teacher. This dual expertise in human and canine physical health allows me to develop desserts with perfect nutritional balance. I am also a certified pet aroma therapy instructor and a menu developer specializing in trendy desserts. Beyond my technical skills, I possess creative talents in music composition and exceptional interpersonal skills that naturally attract and engage people. This unique combination of professional health knowledge, creative branding, and magnetic leadership allows me to oversee every aspect of my venture	Majoring in International Trade, Jihyuk Choi possesses global business insight and is fluent in Japanese, which is a key asset for our future expansion into international markets. He is currently dedicated to professional baking and oversees the entire production process. His primary responsibilities include recipe development and menu streamlining to ensure consistent quality and operational efficiency. Furthermore, he manages critical business areas such as marketing, product development, and food safety management, ensuring a high-standard supply chain for our venture	Majoring in Broadcasting and Video Production, I possess comprehensive skills in planning, filming, editing, and post-production. Furthermore, I am expanding my technical boundaries by studying coding and 3D graphics for game development, while independently researching AI-driven video production to lead the future of content creation						
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				

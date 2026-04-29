@@ -1,0 +1,10 @@
+# robots.txt for Global Student Startup Foundation
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://gssf.org/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
