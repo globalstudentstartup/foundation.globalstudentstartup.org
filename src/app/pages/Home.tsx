@@ -172,33 +172,6 @@ export default function Home() {
                 </Link>
               </motion.div>
 
-              <motion.div {...fadeInUp} transition={{ delay: 0.2 }}>
-                <Link to="/academy">
-                  <div className="bg-white p-8 rounded-lg hover:shadow-xl transition-shadow group cursor-pointer h-full flex flex-col">
-                    <div className="flex items-start justify-between mb-3">
-                      <h3 className="text-2xl font-bold group-hover:text-[#242EC0] transition-colors uppercase">Academy</h3>
-                      <span className="bg-[#242EC0] text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap ml-3">Summer 2027</span>
-                    </div>
-                    <p className="text-gray-900 font-semibold mb-2">Global Innovation Academy</p>
-                    <p className="text-gray-600 mb-3 flex-grow">A practitioner-led, three-week regional summer abroad program focused on moving students from concepts to prototypes.</p>
-                    <p className="text-[#242EC0] font-semibold text-sm">Limited scholarships available</p>
-                  </div>
-                </Link>
-              </motion.div>
-
-              <motion.div {...fadeInUp} transition={{ delay: 0.3 }}>
-                <Link to="/ventures">
-                  <div className="bg-white p-8 rounded-lg hover:shadow-xl transition-shadow group cursor-pointer h-full flex flex-col">
-                    <div className="flex items-start justify-between mb-3">
-                      <h3 className="text-2xl font-bold group-hover:text-[#242EC0] transition-colors uppercase">Ventures</h3>
-                      <span className="bg-[#242EC0] text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap ml-3">Pilot 2027</span>
-                    </div>
-                    <p className="text-gray-900 font-semibold mb-2">Connecting founders with global investors</p>
-                    <p className="text-gray-600 mb-3 flex-grow">Identifying exceptional undergraduate founding teams and connecting them in-person with accelerators and investors.</p>
-                    <p className="text-[#242EC0] font-semibold text-sm">At no cost to founders</p>
-                  </div>
-                </Link>
-              </motion.div>
 
               <motion.div {...fadeInUp} transition={{ delay: 0.4 }}>
                 <Link to="/ai-labs">

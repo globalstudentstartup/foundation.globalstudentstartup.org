@@ -191,7 +191,7 @@ export default function AILabs() {
               Built Within a World-Class Network
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed max-w-4xl">
-              AI Labs students operate within the GSSF Friends & Family network — the same mentor and advisor network that powers GSSC Worlds, the Academy, and Ventures.
+              AI Labs students operate within the GSSF Friends & Family network — the same mentor and advisor network that powers GSSC Worlds.
             </p>
           </motion.div>
         </div>
@@ -224,19 +224,6 @@ export default function AILabs() {
               </motion.div>
             </Link>
 
-            <Link to="/academy">
-              <motion.div {...fadeInUp} transition={{ delay: 0.2 }} className="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer">
-                <h3 className="font-bold mb-2 text-[#242EC0]">Academy</h3>
-                <p className="text-sm text-gray-700">In-person global innovation residency</p>
-              </motion.div>
-            </Link>
-
-            <Link to="/ventures">
-              <motion.div {...fadeInUp} transition={{ delay: 0.3 }} className="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer">
-                <h3 className="font-bold mb-2 text-[#242EC0]">Ventures</h3>
-                <p className="text-sm text-gray-700">Venture access and signal</p>
-              </motion.div>
-            </Link>
 
             <Link to="/advisory">
               <motion.div {...fadeInUp} transition={{ delay: 0.4 }} className="bg-white p-6 rounded-lg hover:shadow-lg transition-shadow cursor-pointer">

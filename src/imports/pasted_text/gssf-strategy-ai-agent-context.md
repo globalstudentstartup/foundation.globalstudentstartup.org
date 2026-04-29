@@ -425,18 +425,6 @@ Her professional background spans product design and creative entrepreneurship. 
 Yeseul brings a builder's eye and a competitor's perspective to the GSSF mission — having experienced the program as a student, she now shapes it as a leader.
 
 Read less
-Zoe Beach
-Zoe Beach
-Managing Director, Ventures
-
-LinkedIn
-Zoe Beach is the Managing Director of GSSF Ventures and a mentor for GSSC Worlds 2026 in Seoul — a role she steps into having competed on that same stage herself. As a GSSC Finalist, Zoe led a team of five to develop a digital platform for informal dementia caregivers, representing USC at the inaugural Global Student Startup Competition in Korea. She now returns to the GSSF ecosystem as both a leader and mentor.
-
-GSSF Ventures was created to close a gap Zoe witnessed firsthand through GSSC: exceptional undergraduate talent exists everywhere, but access to venture networks does not. As Managing Director, she identifies high-potential student founding teams globally and connects them to leading venture capital firms and accelerators through the GSSF Selection Protocol.
-
-Professionally, Zoe is an Associate Product Marketing Manager at Google working on AI Responsibility and Science. Her background spans product marketing, brand, and creative leadership across consumer tech and AI, with experience at Google, Partiful, The Browser Company, and Studio — a Google Ventures-backed AI startup. She also co-founded Supasilly, a college lifestyle brand that generated over $35K in revenue within its first two months. Her design thinking, entrepreneurial track record, and front-row seat to AI's evolution at Google make her uniquely positioned to identify and elevate the next generation of global student founders.
-
-Read less
 Grace Li
 Grace Li
 Director, University & Student Relations

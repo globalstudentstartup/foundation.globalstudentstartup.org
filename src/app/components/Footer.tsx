@@ -45,18 +45,18 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/academy" className="text-gray-600 hover:text-[#242EC0] transition-colors">
-                  Academy
-                </Link>
-              </li>
-              <li>
-                <Link to="/ventures" className="text-gray-600 hover:text-[#242EC0] transition-colors">
-                  Ventures
+                <Link to="/ai-cup" className="text-gray-600 hover:text-[#242EC0] transition-colors">
+                  AI Cup
                 </Link>
               </li>
               <li>
                 <Link to="/ai-labs" className="text-gray-600 hover:text-[#242EC0] transition-colors">
                   AI Labs
+                </Link>
+              </li>
+              <li>
+                <Link to="/advisory" className="text-gray-600 hover:text-[#242EC0] transition-colors">
+                  Advisory
                 </Link>
               </li>
               <li>

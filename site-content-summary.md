@@ -269,9 +269,6 @@ Founder of the GSSC movement and operational architect of the global competition
 **Yeseul Byun - Director, Global Competitions**
 Co-leads the Global Competition pillar, focusing on strategic expansion of the GSSC brand, and revolutionizing the "satellite" model across all regional qualifiers and global finals.
 
-**Zoe Beach - Director, Global Site Sponsors**
-Embodies the GSSF "Organizers as Leaders" pipeline, having moved from program participant to Foundation leader. Connects world-class driven talent with Silicon Valley venture capital and international innovators.
-
 ### REGIONAL LEADERSHIP
 
 **MiRaya Agarwal - Regional Director, Mumbai**

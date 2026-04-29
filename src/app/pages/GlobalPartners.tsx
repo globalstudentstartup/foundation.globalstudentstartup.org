@@ -102,7 +102,7 @@ export default function GlobalPartners() {
                 <div>
                   <h3 className="text-2xl font-bold mb-3 uppercase">Program Sponsors</h3>
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    Support specific programs like GSSC Worlds, AI Cup, or Academy. Program sponsors help cover travel, accommodation, and program costs to ensure students can participate regardless of financial means.
+                    Support specific programs like GSSC Worlds and AI Cup. Program sponsors help cover travel, accommodation, and program costs to ensure students can participate regardless of financial means.
                   </p>
                   <p className="text-sm font-semibold text-[#242EC0]">
                     Impact: Make programs fully funded for qualifying students

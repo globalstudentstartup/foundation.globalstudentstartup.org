@@ -4,8 +4,6 @@ import Home from "./pages/Home";
 import Programs from "./pages/Programs";
 import GSSC from "./pages/GSSC";
 import AICup from "./pages/AICup";
-import Academy from "./pages/Academy";
-import Ventures from "./pages/Ventures";
 import Advisory from "./pages/Advisory";
 import AILabs from "./pages/AILabs";
 import Leadership from "./pages/Leadership";
@@ -38,8 +36,6 @@ export const router = createHashRouter([
       { path: "programs", Component: Programs },
       { path: "gssc", Component: GSSC },
       { path: "ai-cup", Component: AICup },
-      { path: "academy", Component: Academy },
-      { path: "ventures", Component: Ventures },
       { path: "advisory", Component: Advisory },
       { path: "ai-labs", Component: AILabs },
       { path: "leadership", Component: Leadership },

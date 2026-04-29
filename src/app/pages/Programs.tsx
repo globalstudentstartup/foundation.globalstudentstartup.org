@@ -27,20 +27,6 @@ export default function Programs() {
       color: "#242EC0"
     },
     {
-      path: "/academy",
-      label: "GSSF Academy",
-      title: "The \"Theory to Execution\" residency",
-      description: "A practitioner-led, three-week regional summer abroad program focused on moving students from startup concepts to functional, high-fidelity prototypes. Faculty: Taught by industry operators and mentors from Big Tech and top-tier VCs. Scholarship Scaling: The objective is to scale the number of full-scholarships to reach 2,000 students annually, ensuring financial and geographic diversity.",
-      color: "#242EC0"
-    },
-    {
-      path: "/ventures",
-      label: "GSSF Ventures",
-      title: "The high-velocity bridge to Silicon Valley",
-      description: "A venture access and signal platform created to identify exceptional undergraduate founding teams and connect them with global investors. Zero Equity: Not a traditional incubator; GSSF takes no equity, focusing instead on identification, baselining, and signal creation. The Golden Ticket: Grants select teams structured access to a venture bootcamp and private pitches with Silicon Valley venture capital firms.",
-      color: "#242EC0"
-    },
-    {
       path: "/advisory",
       label: "GSSF Advisory",
       title: "The \"Architecture of Innovation\" for nations",
@@ -59,8 +45,8 @@ export default function Programs() {
   return (
     <div className="bg-white">
       <SEO 
-        title="Programs - Global Competitions and Academies"
-        description="GSSF operates GSSC Worlds, Global AI Cup, GSSF Academy, GSSF Ventures, and GSSF Advisory — supporting undergraduate founders through competitions, residencies, and venture access."
+        title="Programs - Global Competitions and Advisory"
+        description="GSSF operates GSSC Worlds, Global AI Cup, GSSF Advisory, and GSSF AI Labs — supporting undergraduate founders through competitions and innovation support."
         path="/programs"
       />
       {/* Hero Section */}

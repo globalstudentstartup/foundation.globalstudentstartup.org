@@ -13,12 +13,10 @@ export default function Navigation() {
       path: "/#programs", 
       label: "Programs",
       title: "Explore Our Programs",
-      description: "From campus competitions to global stages, executive education to venture capital access.",
+      description: "From campus competitions to global stages and executive advisory programs.",
       subItems: [
         { path: "/gssc", label: "Competition", description: "Global Student Startup Competition" },
         { path: "/ai-cup", label: "AI Cup", description: "Global AI prototype competition" },
-        { path: "/academy", label: "Academy", description: "Global Undergraduate Innovation Academy" },
-        { path: "/ventures", label: "Ventures", description: "Venture Capital Access" },
         { path: "/advisory", label: "Advisory", description: "Executive Advisory Program" },
         { path: "/ai-labs", label: "AI Labs", description: "Applied AI Product Internships" }
       ]

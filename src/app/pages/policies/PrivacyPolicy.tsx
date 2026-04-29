@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
             </p>
             
             <p className="text-gray-700 leading-relaxed">
-              This Policy applies to all websites and digital properties operated by GSSF, including but not limited to globalstudentstartup.org and foundation.globalstudentstartup.org, as well as any program-specific websites affiliated with the Global Student Startup Competition (GSSC), Global AI Cup, GSSF Academy, GSSF Ventures, and GSSF Advisory.
+              This Policy applies to all websites and digital properties operated by GSSF, including but not limited to globalstudentstartup.org and foundation.globalstudentstartup.org, as well as any program-specific websites affiliated with the Global Student Startup Competition (GSSC), Global AI Cup, and GSSF Advisory.
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-4 uppercase">1. Information We Collect</h2>
@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
               We collect information you voluntarily submit when you:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-              <li>Register for a GSSF program, competition, or event (e.g., GSSC Worlds, Global AI Cup, GSSF Academy)</li>
+              <li>Register for a GSSF program, competition, or event (e.g., GSSC Worlds, Global AI Cup)</li>
               <li>Apply as a student participant, organizer, mentor, advisor, or fellow</li>
               <li>Submit an application, proposal, or project for evaluation</li>
               <li>Contact us by email, form submission, or social media</li>

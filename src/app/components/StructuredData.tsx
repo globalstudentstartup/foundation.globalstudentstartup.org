@@ -8,7 +8,7 @@ export function OrganizationStructuredData() {
     "alternateName": "GSSF",
     "url": "https://gssf.org",
     "logo": "https://gssf.org/logo.png",
-    "description": "A 501(c)(3) nonprofit organization dedicated to fostering undergraduate entrepreneurship and global leadership through competitions, academy programs, and venture support.",
+    "description": "A 501(c)(3) nonprofit organization dedicated to fostering undergraduate entrepreneurship and global leadership through competitions and student innovation support.",
     "taxID": "41-3141550",
     "nonprofitStatus": "501(c)(3)",
     "foundingDate": "2023-12-13",

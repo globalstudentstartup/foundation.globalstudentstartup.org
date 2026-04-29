@@ -195,7 +195,7 @@ export default function GSSC() {
                   Earn Your Spot
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed mb-8">
-                  GSSC Worlds is not an open application. Teams qualify by winning their regional GSSC competition or through the GSSF Academy and Global AI Cup pathways. Every team on the Worlds stage has been vetted against the same global standard.
+                  GSSC Worlds is not an open application. Teams qualify by winning their regional GSSC competition or through the Global AI Cup pathway. Every team on the Worlds stage has been vetted against the same global standard.
                 </p>
               </motion.div>
             </div>

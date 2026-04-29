@@ -10,7 +10,6 @@ import carolinaAvilaPhoto from "figma:asset/62e2a4046c2fe8aabff0a6b436b6bdbdbf29
 import bobUphamPhoto from "figma:asset/4cc6664cecf4040ac0565b378c8794054f72b049.png";
 import jadeBahngPhoto from "figma:asset/d2c9e1aee1c44fc8f99fb83757e8474fff9cf8c1.png";
 import yeseulByunPhoto from "figma:asset/13a152e4f83beef47fed2ca4c8fccb33d4df97c6.png";
-import zoeBeachPhoto from "figma:asset/b39fb8b8fc6a7b5c29e3bf0d9ae6db0a66bf79f4.png";
 import graceLiPhoto from "figma:asset/5abecfe768c87e45c1c3bb43ee9a86afe5c0aaf5.png";
 import jongyeopSeonPhoto from "figma:asset/1765809e59ad76b6d65eca139c51438455393ad9.png";
 import manuelaBerrioPhoto from "figma:asset/6d444e55f7b68624b4b3a2bbe116b88e35f34a81.png";
@@ -183,7 +182,7 @@ export default function Leadership() {
                       A veteran of Silicon Valley's most defining era, Mike has led technology from early-stage startups to Fortune 100 companies — including executive roles at Fox, Warner Bros., and Netscape, the pioneering browser company that helped shape the modern Internet. Having made it his mission to engage with and learn from students, he now teaches at the USC Viterbi School of Engineering, focusing on digital entrepreneurship and applied artificial intelligence. A recipient of the USC Marshall Golden Apple Award for teaching excellence — voted on by students — he brings the same credibility to the classroom that he brought to the boardroom.
                     </p>
                     <p>
-                      An expert in global entrepreneurship programs, Mike served as Head of Mentors for the European Innovation Academy and is now defining a new model of global undergraduate entrepreneurship as a co-founder of the GSSF Academy. As Co-Founder of GSSF and the Global Student Startup Competition (GSSC), he has built a global platform that brings the world's top undergraduate entrepreneurs — from USC, UC Berkeley, Harvard, Stanford, Oxford, Aalto, Seoul National University, and beyond — to compete on the world stage at the Asian Leadership Conference in Seoul. His mission is simple and unwavering: talent is global, opportunity is not — and GSSF exists to close that gap.
+                      An expert in global entrepreneurship programs, Mike served as Head of Mentors for the European Innovation Academy and is now defining new models of global undergraduate entrepreneurship in partnership with GSSF. As Co-Founder of GSSF and the Global Student Startup Competition (GSSC), he has built a global platform that brings the world's top undergraduate entrepreneurs — from USC, UC Berkeley, Harvard, Stanford, Oxford, Aalto, Seoul National University, and beyond — to compete on the world stage at the Asian Leadership Conference in Seoul. His mission is simple and unwavering: talent is global, opportunity is not — and GSSF exists to close that gap.
                     </p>
                   </motion.div>
                 ) : (
@@ -314,7 +313,7 @@ export default function Leadership() {
               />
               <h3 className="text-2xl font-bold text-white mb-2 uppercase">Carolina Avila</h3>
               <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">
-                CEO, Academy
+                Chief Program Officer
               </p>
               <a
                 href="https://www.linkedin.com/in/caroavi/"
@@ -333,7 +332,7 @@ export default function Leadership() {
                     transition={{ duration: 0.3 }}
                   >
                     <p className="mb-4">
-                      Carolina Avila is the CEO of the GSSF Academy and one of the world's most experienced builders of global innovation and entrepreneurship programs. Over 15+ years, she has designed and led transformative programs across two continents — at the intersection of innovation strategy, education, and ecosystem building — helping startups, students, and institutions unlock creativity and drive real-world impact.
+                      Carolina Avila is a global innovation leader and one of the world's most experienced builders of entrepreneurship programs. Over 15+ years, she has designed and led transformative programs across two continents — at the intersection of innovation strategy, education, and ecosystem building — helping startups, students, and institutions unlock creativity and drive real-world impact.
                     </p>
                     <p className="mb-4">
                       Her career spans some of the most respected organizations in global innovation. As Project Director for the Mayor's Office of Bogotá, Carolina led Ciempiés — an award-winning initiative that redesigned safe school commutes for children and won the 2016 Bloomberg Mayors Challenge, one of the most prestigious recognitions for bold public sector innovation. She has consulted for the UNDP across Colombia, Bolivia, and the Dominican Republic, designing innovation portfolios and sustainable development strategies for some of the world's most complex challenges.
@@ -342,12 +341,12 @@ export default function Leadership() {
                       As Head of Program Development and Innovation at the European Innovation Academy — one of the world's largest innovation programs for students and startups — Carolina led the end-to-end design and delivery of a flagship three-week program serving 350+ students and 50+ mentors across multiple international locations. She has also led the achievement of Ashoka Changemaker Campus designation, launched university innovation centers, and built global partnerships with NGOs, accelerators, and leading institutions worldwide.
                     </p>
                     <p>
-                      At GSSF, Carolina brings this rare depth of program-building expertise to the GSSF Academy — designing the in-person, theory-to-execution experience that prepares the world's most promising undergraduate founders to compete and lead on the global stage.
+                      At GSSF, Carolina brings this rare depth of program-building expertise to design in-person, theory-to-execution experiences that prepare the world's most promising undergraduate founders to compete and lead on the global stage.
                     </p>
                   </motion.div>
                 ) : (
                   <p>
-                    {truncateText("Carolina Avila is the CEO of the GSSF Academy and one of the world's most experienced builders of global innovation and entrepreneurship programs. Over 15+ years, she has designed and led transformative programs across two continents — at the intersection of innovation strategy, education, and ecosystem building — helping startups, students, and institutions unlock creativity and drive real-world impact.")}
+                    {truncateText("Carolina Avila is a global innovation leader and one of the world's most experienced builders of entrepreneurship programs. Over 15+ years, she has designed and led transformative programs across two continents — at the intersection of innovation strategy, education, and ecosystem building — helping startups, students, and institutions unlock creativity and drive real-world impact.")}
                   </p>
                 )}
                 <button
@@ -512,54 +511,6 @@ export default function Leadership() {
               </div>
             </motion.div>
 
-            {/* Zoe Beach */}
-            <motion.div {...fadeInUp} transition={{ delay: 0.7 }}>
-              <img
-                src={zoeBeachPhoto}
-                alt="Zoe Beach"
-                className="w-48 h-48 object-cover rounded-lg mb-6 grayscale"
-              />
-              <h3 className="text-2xl font-bold text-white mb-2 uppercase">Zoe Beach</h3>
-              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Managing Director, Ventures</p>
-              <a
-                href="https://www.linkedin.com/in/zoebeach/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span className="text-sm">LinkedIn</span>
-              </a>
-              <div className="text-white/70 leading-relaxed">
-                {expandedBios.has('zoe') ? (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <p className="mb-4">
-                      Zoe Beach is the Managing Director of GSSF Ventures and a mentor for GSSC Worlds 2026 in Seoul — a role she steps into having competed on that same stage herself. As a GSSC Finalist, Zoe led a team of five to develop a digital platform for informal dementia caregivers, representing USC at the inaugural Global Student Startup Competition in Korea. She now returns to the GSSF ecosystem as both a leader and mentor.
-                    </p>
-                    <p className="mb-4">
-                      GSSF Ventures was created to close a gap Zoe witnessed firsthand through GSSC: exceptional undergraduate talent exists everywhere, but access to venture networks does not. As Managing Director, she identifies high-potential student founding teams globally and connects them to leading venture capital firms and accelerators through the GSSF Selection Protocol.
-                    </p>
-                    <p>
-                      Professionally, Zoe is an Associate Product Marketing Manager at Google working on AI Responsibility and Science. Her background spans product marketing, brand, and creative leadership across consumer tech and AI, with experience at Google, Partiful, The Browser Company, and Studio — a Google Ventures-backed AI startup. She also co-founded Supasilly, a college lifestyle brand that generated over $35K in revenue within its first two months. Her design thinking, entrepreneurial track record, and front-row seat to AI's evolution at Google make her uniquely positioned to identify and elevate the next generation of global student founders.
-                    </p>
-                  </motion.div>
-                ) : (
-                  <p>
-                    {truncateText("Zoe Beach is the Managing Director of GSSF Ventures and a mentor for GSSC Worlds 2026 in Seoul — a role she steps into having competed on that same stage herself. As a GSSC Finalist, Zoe led a team of five to develop a digital platform for informal dementia caregivers, representing USC at the inaugural Global Student Startup Competition in Korea.")}
-                  </p>
-                )}
-                <button
-                  onClick={() => toggleBio('zoe')}
-                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
-                >
-                  {expandedBios.has('zoe') ? 'Read less' : 'Read more'}
-                </button>
-              </div>
-            </motion.div>
 
             {/* Grace Li */}
             <motion.div {...fadeInUp} transition={{ delay: 0.8 }}>
@@ -1266,7 +1217,7 @@ export default function Leadership() {
                 className="w-48 h-48 object-cover rounded-lg mb-6 grayscale"
               />
               <h3 className="text-2xl font-bold text-white mb-2 uppercase">Danielle Vivo</h3>
-              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Academy Advisor</p>
+              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Program Advisor</p>
               <a
                 href="https://www.linkedin.com/in/daniellevivo/"
                 target="_blank"
@@ -1290,10 +1241,10 @@ export default function Leadership() {
                       As Director of Programs at Alchemist Accelerator, Danielle leads high-impact initiatives across four continents, collaborating with partners including AWS, the University of Chicago, the Qatar Foundation, and the Japan Trade Organization. Her career spans Big Tech, academia, and venture capital: she has held roles at Uber, UC Berkeley's Sutardja Center for Entrepreneurship and Technology (SCET), Bridge Funding Global, and the European Innovation Academy — where she also serves as a Life & Leadership Coach. Having worked across Silicon Valley, Europe, Asia, and the Middle East, she brings a rare cross-sector, cross-cultural lens to the design of inclusive innovation programs.
                     </p>
                     <p className="mb-4">
-                      Born in Brazil and a first-generation college graduate, Danielle approaches her work with a deeply human and systems-driven mindset. She designs programs not just to drive innovation, but to expand who gets to participate in it — a philosophy that aligns directly with the GSSF Academy's mission of parity, access, and in-person global experience.
+                      Born in Brazil and a first-generation college graduate, Danielle approaches her work with a deeply human and systems-driven mindset. She designs programs not just to drive innovation, but to expand who gets to participate in it — a philosophy that aligns directly with GSSF's mission of parity, access, and in-person global experience.
                     </p>
                     <p>
-                      As an Advisor to the GSSF Academy, Danielle brings the operational expertise and global relationships to help shape the Academy into a world-class innovation residency for the next generation of undergraduate founders.
+                      As an advisor, Danielle brings the operational expertise and global relationships to help shape world-class innovation experiences for the next generation of undergraduate founders.
                     </p>
                   </motion.div>
                 ) : (
@@ -1318,7 +1269,7 @@ export default function Leadership() {
                 className="w-48 h-48 object-cover rounded-lg mb-6 grayscale"
               />
               <h3 className="text-2xl font-bold text-white mb-2 uppercase">Ricardo Marvão</h3>
-              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Academy Advisor & Regional Advisor, Europe</p>
+              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Program Advisor & Regional Advisor, Europe</p>
               <a
                 href="https://www.linkedin.com/in/ricardomarvao/"
                 target="_blank"
@@ -1336,24 +1287,24 @@ export default function Leadership() {
                     transition={{ duration: 0.3 }}
                   >
                     <p className="mb-4">
-                      Ricardo Marvão is one of Europe's most prolific entrepreneurship ecosystem builders and an Advisor to the GSSF Academy.
+                      Ricardo Marvão is one of Europe's most prolific entrepreneurship ecosystem builders and a trusted advisor.
                     </p>
                     <p className="mb-4">
                       He is the Co-Founder and Partner of Beta-i — born in Lisbon in 2010 and recognized by Wired Magazine as Portugal's top player in the startup ecosystem. Beta-i is a global collaborative innovation consultancy that has helped organizations like Novartis, Unilever, Airbus, Santander, and Carrefour design and scale innovation programs from strategy to pilot.
                     </p>
                     <p className="mb-4">
-                      Ricardo's commitment to entrepreneurship education runs deep. He co-founded the European Innovation Academy Portugal — a program that challenges university students to build a startup in three weeks, directly parallel to the GSSF Academy model. He also co-founded Singularity University Portugal, Próxima Geração, and Space for Business, among others. He is a frequent keynote speaker, a former Forbes Portugal columnist, and a jury member for the European Innovation Council of the European Commission. He is also a founding member of Allied for Startups and the European Startup Network.
+                      Ricardo's commitment to entrepreneurship education runs deep. He co-founded the European Innovation Academy Portugal — a program that challenges university students to build a startup in three weeks, directly parallel to the best global innovation models. He also co-founded Singularity University Portugal, Próxima Geração, and Space for Business, among others. He is a frequent keynote speaker, a former Forbes Portugal columnist, and a jury member for the European Innovation Council of the European Commission. He is also a founding member of Allied for Startups and the European Startup Network.
                     </p>
                     <p className="mb-4">
                       As an investor, Ricardo deployed a 21M€ pre-seed fund across 60+ startups over seven years. Prior to Beta-i, he co-founded Evolve Space Solutions — a space tech startup with clients including ESA, Airbus, Boeing, and Embraer — which he sold in 2011.
                     </p>
                     <p>
-                      Ricardo brings to the GSSF Academy a uniquely European perspective, a proven model for student venture-building at scale, and the institutional relationships to help anchor the Academy's home in Europe.
+                      Ricardo brings a uniquely European perspective, a proven model for student venture-building at scale, and the institutional relationships to help anchor global innovation programs in Europe.
                     </p>
                   </motion.div>
                 ) : (
                   <p>
-                    {truncateText("Ricardo Marvão is one of Europe's most prolific entrepreneurship ecosystem builders and an Advisor to the GSSF Academy. He is the Co-Founder and Partner of Beta-i — born in Lisbon in 2010 and recognized by Wired Magazine as Portugal's top player in the startup ecosystem.")}
+                    {truncateText("Ricardo Marvão is one of Europe's most prolific entrepreneurship ecosystem builders and a trusted advisor. He is the Co-Founder and Partner of Beta-i — born in Lisbon in 2010 and recognized by Wired Magazine as Portugal's top player in the startup ecosystem.")}
                   </p>
                 )}
                 <button
