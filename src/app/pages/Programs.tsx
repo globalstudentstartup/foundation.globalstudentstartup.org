@@ -27,13 +27,6 @@ export default function Programs() {
       color: "#242EC0"
     },
     {
-      path: "/advisory",
-      label: "GSSF Advisory",
-      title: "The \"Architecture of Innovation\" for nations",
-      description: "Strategic consulting to governments, embassies, and universities to design the physical and legal infrastructure required to support a modern startup ecosystem. Service Areas: Ecosystem architecture, technical workforce strategy (AI for non-engineers), and institutional de-risking through the application of the GSSF Vetting IP.",
-      color: "#242EC0"
-    },
-    {
       path: "/ai-labs",
       label: "GSSF AI Labs",
       title: "Undergraduate Product Internships",
@@ -45,8 +38,8 @@ export default function Programs() {
   return (
     <div className="bg-white">
       <SEO 
-        title="Programs - Global Competitions and Advisory"
-        description="GSSF operates GSSC Worlds, Global AI Cup, GSSF Advisory, and GSSF AI Labs — supporting undergraduate founders through competitions and innovation support."
+        title="Programs - Global Competitions and Innovation"
+        description="GSSF operates GSSC Worlds, Global AI Cup, and GSSF AI Labs — supporting undergraduate founders through competitions and innovation programs."
         path="/programs"
       />
       {/* Hero Section */}
