@@ -1,12 +1,11 @@
 import { motion, AnimatePresence } from "motion/react";
-import { Link } from "react-router";
 import { useState } from "react";
-import { Button } from "../components/ui/button";
-import { Code, Wrench, Users, ArrowRight, Zap, Rocket, Building2, CheckCircle, Target } from "lucide-react";
+import { Zap, Target } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 export default function AILabs() {
   const [binnyExpanded, setBinnyExpanded] = useState(false);
+  const [tunExpanded, setTunExpanded] = useState(false);
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -274,7 +273,55 @@ export default function AILabs() {
               <img src="/src/assets/tun-onraksa.jpg" alt="Tun Onraksa" className="w-full h-64 object-cover object-top" />
               <div className="p-8">
                 <h3 className="text-xl font-bold mb-1 tracking-tight">Tun Onraksa</h3>
-                <p className="text-[#242EC0] font-semibold text-sm uppercase tracking-wide">AI Engineer</p>
+                <p className="text-[#242EC0] font-semibold text-sm uppercase tracking-wide mb-4">AI Engineer</p>
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  I'm passionate about creating technology that brings clarity, purpose, and connection to people's lives.
+                </p>
+                <AnimatePresence>
+                  {tunExpanded && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="mt-3 space-y-3 text-gray-700 leading-relaxed text-sm">
+                        <p>With a background in Computer Science and Business at USC, I approach my work as the bridge between code, business, and people. I enjoy translating complex technical ideas into intuitive, human-centered products — combining analytical problem-solving with curiosity for how design and technology shape the way we live and work.</p>
+                        <p>Rooted in my Thai upbringing, I value hospitality, empathy, and attentiveness in how I collaborate and lead. I strive to bring these qualities into product development by creating experiences that feel genuine, inclusive, and welcoming.</p>
+                        <p>I'm driven by the belief that great products come from empathy — understanding both the user and the system behind the experience.</p>
+
+                        <div className="pt-2 border-t border-gray-100">
+                          <p className="font-semibold text-gray-900 mb-3">Experience</p>
+                          <ul className="space-y-3">
+                            {[
+                              { role: "AI Engineer", org: "Global Student Startup Competition", detail: "Building the Venture Innovation Platform" },
+                              { role: "Incoming Software Engineer Intern", org: "Agoda", detail: "Bangkok, Thailand" },
+                              { role: "Assistant Director, International Student Assembly", org: "USC Undergraduate Student Government", detail: "2+ years in student government leadership and event programming" },
+                              { role: "Product Manager", org: "ProductSC", detail: "Year-long PM role at USC's product management organization" },
+                              { role: "FinTech Commercial Intern", org: "Agoda", detail: "Bangkok, Thailand" },
+                              { role: "Associate Backend Developer", org: "Q-CHANG", detail: "Golang & Next.js, Bangkok (hybrid)" },
+                              { role: "Project Member", org: "Engineers Without Borders – USC", detail: "Uganda and Malawi projects" },
+                              { role: "Human Practices Leader & Lab Member", org: "iGEM Competition – Thailand RIS", detail: "Stakeholder management, team leadership, Bangkok" },
+                            ].map((item) => (
+                              <li key={item.role + item.org} className="flex flex-col gap-0.5">
+                                <span className="font-semibold text-gray-900">{item.role}</span>
+                                <span className="text-[#242EC0]">{item.org}</span>
+                                <span className="text-gray-500">{item.detail}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+                <button
+                  onClick={() => setTunExpanded(!tunExpanded)}
+                  className="mt-4 text-[#242EC0] text-sm font-semibold hover:underline focus:outline-none"
+                >
+                  {tunExpanded ? "Read Less" : "Read More"}
+                </button>
               </div>
             </motion.div>
           </div>
