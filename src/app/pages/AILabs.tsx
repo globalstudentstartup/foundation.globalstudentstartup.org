@@ -1,11 +1,23 @@
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 import { useState } from "react";
-import { Zap, Target } from "lucide-react";
+import { Linkedin, Zap, Target } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 export default function AILabs() {
-  const [binnyExpanded, setBinnyExpanded] = useState(false);
-  const [tunExpanded, setTunExpanded] = useState(false);
+  const [expandedBios, setExpandedBios] = useState<Set<string>>(new Set());
+
+  const toggleBio = (name: string) => {
+    setExpandedBios(prev => {
+      const next = new Set(prev);
+      next.has(name) ? next.delete(name) : next.add(name);
+      return next;
+    });
+  };
+
+  const truncateText = (text: string, maxLength: number = 200) => {
+    if (text.length <= maxLength) return text;
+    return text.slice(0, maxLength) + '...';
+  };
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
@@ -128,112 +140,6 @@ export default function AILabs() {
               ))}
             </div>
 
-            {/* Team */}
-            <p className="text-sm uppercase tracking-widest text-white/70 font-semibold mb-6">The Team</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl">
-              <div className="bg-white rounded-lg overflow-hidden">
-                <img src="/binny-park.jpg" alt="Su Bin Park" className="w-full h-56 object-cover object-top" />
-                <div className="p-6">
-                  <h4 className="text-lg font-bold mb-1 tracking-tight">Su Bin "Binny" Park</h4>
-                  <p className="text-[#242EC0] font-semibold text-xs uppercase tracking-wide mb-3">Product Manager</p>
-                  <p className="text-gray-700 leading-relaxed text-sm">
-                    I'm drawn to the places where skill and opportunity don't align — and to the ways to bridge that gap.
-                  </p>
-                  <AnimatePresence>
-                    {binnyExpanded && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="overflow-hidden"
-                      >
-                        <div className="mt-3 space-y-3 text-gray-700 leading-relaxed text-sm">
-                          <p>In my writing, this means studying how capital flows around scientific uncertainty: how investors price risk in markets where the underlying biology is still being written, and how the structures of scientific inquiry shape what we believe is possible. I think about this through a philosophical and historical lens — understanding how our methods of doing science are themselves changing, and how innovation always inherits the assumed knowledge of those who came before.</p>
-                          <p>That same instinct follows me into my entrepreneurship work connecting founders to capital and legal foundations, as a teaching assistant helping PhD researchers communicate their findings to the world, and as a Science Olympiad supervisor supporting the next generation of scientists.</p>
-                          <p>On my Substack, <em>The Art of Perceiving</em>, I follow the same thread inward — exploring how the natural laws I encounter in science shape the way we experience life, language, and what we're able to say to each other.</p>
-                          <p>Feel free to reach out at <a href="mailto:sp2587@cornell.edu" className="text-[#242EC0] hover:underline">sp2587@cornell.edu</a></p>
-                          <div className="pt-2 border-t border-gray-100">
-                            <p className="font-semibold text-gray-900 mb-3">Experience</p>
-                            <ul className="space-y-3">
-                              {[
-                                { role: "Organizational Associate", org: "Global Student Startup Competition", detail: "Logistics for GSSC 2026 Seoul · Pre-Seed Campus Expansion team" },
-                                { role: "Marketing Director & Senior Analyst", org: "180 Degrees Consulting at Cornell", detail: "Sustainability consulting for Fortune 300 brands and Better Cotton Initiative" },
-                                { role: "Fellow", org: "Blackstone LaunchPad at Cornell", detail: "Managing Startup Office Hours · Emcee, Big Idea Pitch Competition" },
-                                { role: "Undergraduate Consultant", org: "International Teaching Assistant Program, Cornell", detail: "English communications support for international PhD researchers" },
-                                { role: "Finance & Markets Analyst", org: "RemNeuro (Cornell Tech)", detail: "Health-tech SaaS startup in senior care and mental health" },
-                                { role: "Nexus Summer Scholar", org: "Hirschman Lab of Sociology, Cornell", detail: "Modeled P&C insurance investment portfolios; analyzed climate risk disclosure trends 2012–2023" },
-                              ].map((item) => (
-                                <li key={item.role} className="flex flex-col gap-0.5">
-                                  <span className="font-semibold text-gray-900">{item.role}</span>
-                                  <span className="text-[#242EC0]">{item.org}</span>
-                                  <span className="text-gray-500">{item.detail}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                  <button onClick={() => setBinnyExpanded(!binnyExpanded)} className="mt-4 text-[#242EC0] text-sm font-semibold hover:underline focus:outline-none">
-                    {binnyExpanded ? "Read Less" : "Read More"}
-                  </button>
-                </div>
-              </div>
-
-              <div className="bg-white rounded-lg overflow-hidden">
-                <img src="/tun-onraksa.jpg" alt="Tun Onraksa" className="w-full h-56 object-cover object-top" />
-                <div className="p-6">
-                  <h4 className="text-lg font-bold mb-1 tracking-tight">Tun Onraksa</h4>
-                  <p className="text-[#242EC0] font-semibold text-xs uppercase tracking-wide mb-3">AI Engineer</p>
-                  <p className="text-gray-700 leading-relaxed text-sm">
-                    I'm passionate about creating technology that brings clarity, purpose, and connection to people's lives.
-                  </p>
-                  <AnimatePresence>
-                    {tunExpanded && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="overflow-hidden"
-                      >
-                        <div className="mt-3 space-y-3 text-gray-700 leading-relaxed text-sm">
-                          <p>With a background in Computer Science and Business at USC, I approach my work as the bridge between code, business, and people. I enjoy translating complex technical ideas into intuitive, human-centered products — combining analytical problem-solving with curiosity for how design and technology shape the way we live and work.</p>
-                          <p>Rooted in my Thai upbringing, I value hospitality, empathy, and attentiveness in how I collaborate and lead. I strive to bring these qualities into product development by creating experiences that feel genuine, inclusive, and welcoming.</p>
-                          <p>I'm driven by the belief that great products come from empathy — understanding both the user and the system behind the experience.</p>
-                          <div className="pt-2 border-t border-gray-100">
-                            <p className="font-semibold text-gray-900 mb-3">Experience</p>
-                            <ul className="space-y-3">
-                              {[
-                                { role: "AI Engineer", org: "Global Student Startup Competition", detail: "Building the Venture Innovation Platform" },
-                                { role: "Incoming Software Engineer Intern", org: "Agoda", detail: "Bangkok, Thailand" },
-                                { role: "Assistant Director, International Student Assembly", org: "USC Undergraduate Student Government", detail: "2+ years in student government leadership and event programming" },
-                                { role: "Product Manager", org: "ProductSC", detail: "Year-long PM role at USC's product management organization" },
-                                { role: "FinTech Commercial Intern", org: "Agoda", detail: "Bangkok, Thailand" },
-                                { role: "Associate Backend Developer", org: "Q-CHANG", detail: "Golang & Next.js, Bangkok (hybrid)" },
-                                { role: "Project Member", org: "Engineers Without Borders – USC", detail: "Uganda and Malawi projects" },
-                                { role: "Human Practices Leader & Lab Member", org: "iGEM Competition – Thailand RIS", detail: "Stakeholder management, team leadership, Bangkok" },
-                              ].map((item) => (
-                                <li key={item.role + item.org} className="flex flex-col gap-0.5">
-                                  <span className="font-semibold text-gray-900">{item.role}</span>
-                                  <span className="text-[#242EC0]">{item.org}</span>
-                                  <span className="text-gray-500">{item.detail}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                  <button onClick={() => setTunExpanded(!tunExpanded)} className="mt-4 text-[#242EC0] text-sm font-semibold hover:underline focus:outline-none">
-                    {tunExpanded ? "Read Less" : "Read More"}
-                  </button>
-                </div>
-              </div>
-            </div>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -260,6 +166,63 @@ export default function AILabs() {
                 Products that extend the capabilities of GSSF programs — including tools that support the AI Cup, GSSC competition management, and regional operations.
               </p>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="py-16 bg-[#161616]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <motion.p {...fadeInUp} className="text-sm uppercase tracking-widest text-white/60 mb-12">The Team</motion.p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+
+            {/* Binny */}
+            <motion.div {...fadeInUp}>
+              <img src="/binny-park.jpg" alt="Su Bin Park" className="w-48 h-48 object-cover object-top rounded-lg mb-6 grayscale" />
+              <h3 className="text-2xl font-bold text-white mb-2 uppercase">Su Bin "Binny" Park</h3>
+              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Product Manager · Venture Innovation Platform</p>
+              <a href="mailto:sp2587@cornell.edu" className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4">
+                <span className="text-sm">sp2587@cornell.edu</span>
+              </a>
+              <div className="text-white/70 leading-relaxed">
+                {expandedBios.has('binny') ? (
+                  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
+                    <p className="mb-4">Su Bin "Binny" Park is a Product Manager on the Venture Innovation Platform at GSSF AI Labs, where she brings her instinct for bridging gaps between skill and opportunity into the infrastructure that powers global student entrepreneurship.</p>
+                    <p className="mb-4">At Cornell University, Binny studies the places where capital and talent fail to connect — writing on how investors price risk in markets shaped by scientific uncertainty, and how the structures of inquiry determine what we believe is possible. She approaches this through a philosophical and historical lens, tracking how methods of science evolve and how innovation inherits the assumptions of those who came before.</p>
+                    <p className="mb-4">That same instinct shapes her work across campus. As a Fellow at Blackstone LaunchPad, she manages Startup Office Hours and has served as Emcee for the Big Idea Pitch Competition. As a Marketing Director and Senior Analyst at 180 Degrees Consulting, she advises on sustainability for Fortune 300 brands. As an Undergraduate Consultant at Cornell's International Teaching Assistant Program, she helps PhD researchers communicate complex findings to broader audiences.</p>
+                    <p>On her Substack, <em>The Art of Perceiving</em>, she follows the same thread inward — exploring how the natural laws of science shape the way we experience life, language, and what we're able to say to each other.</p>
+                  </motion.div>
+                ) : (
+                  <p>{truncateText('Su Bin "Binny" Park is a Product Manager on the Venture Innovation Platform at GSSF AI Labs, where she brings her instinct for bridging gaps between skill and opportunity into the infrastructure that powers global student entrepreneurship.')}</p>
+                )}
+                <button onClick={() => toggleBio('binny')} className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors">
+                  {expandedBios.has('binny') ? 'Read less' : 'Read more'}
+                </button>
+              </div>
+            </motion.div>
+
+            {/* Tun */}
+            <motion.div {...fadeInUp} transition={{ delay: 0.1 }}>
+              <img src="/tun-onraksa.jpg" alt="Tun Onraksa" className="w-48 h-48 object-cover object-top rounded-lg mb-6 grayscale" />
+              <h3 className="text-2xl font-bold text-white mb-2 uppercase">Tun Onraksa</h3>
+              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">AI Engineer · Venture Innovation Platform</p>
+              <div className="text-white/70 leading-relaxed">
+                {expandedBios.has('tun') ? (
+                  <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
+                    <p className="mb-4">Tun Onraksa is an AI Engineer on the Venture Innovation Platform at GSSF AI Labs, building the operational backbone of global student startup programs. A Computer Science and Business student at the University of Southern California, he works at the intersection of code, product, and people — translating complex technical systems into intuitive, human-centered experiences.</p>
+                    <p className="mb-4">At USC, Tun has led as Assistant Director of the International Student Assembly within USC Undergraduate Student Government, where he directed programming for one of the university's largest student communities. As a Product Manager at ProductSC, he spent a year developing his craft in product strategy and cross-functional collaboration. He has also served as a FinTech Commercial Intern at Agoda in Bangkok and as an Associate Backend Developer at Q-CHANG, building in Golang and Next.js.</p>
+                    <p className="mb-4">Rooted in his Thai upbringing, Tun brings hospitality, empathy, and attentiveness to everything he builds — a conviction that great products begin with understanding both the user and the system behind the experience.</p>
+                    <p>He is also an incoming Software Engineer Intern at Agoda and a former member of Engineers Without Borders USC, where he contributed to projects in Uganda and Malawi.</p>
+                  </motion.div>
+                ) : (
+                  <p>{truncateText("Tun Onraksa is an AI Engineer on the Venture Innovation Platform at GSSF AI Labs, building the operational backbone of global student startup programs.")}</p>
+                )}
+                <button onClick={() => toggleBio('tun')} className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors">
+                  {expandedBios.has('tun') ? 'Read less' : 'Read more'}
+                </button>
+              </div>
+            </motion.div>
+
           </div>
         </div>
       </section>
