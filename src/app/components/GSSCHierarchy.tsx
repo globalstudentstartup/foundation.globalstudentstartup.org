@@ -150,7 +150,7 @@ export function GSSCHierarchy() {
               </div>
               <div className="bg-white/10 rounded-lg p-4 backdrop-blur-sm">
                 <p className="text-sm uppercase tracking-wider text-white/70 mb-2">Funding</p>
-                <p className="font-bold text-lg">100% Covered by GSSF</p>
+                <p className="font-bold text-lg">Free For Students</p>
               </div>
             </div>
           </div>

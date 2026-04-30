@@ -1,7 +1,5 @@
 import { motion } from "motion/react";
 import { Trophy, Code, Brain, Target, DollarSign, Users, TrendingUp, CheckCircle } from "lucide-react";
-import { Button } from "../components/ui/button";
-import { Link } from "react-router";
 import { SEO } from "../components/SEO";
 
 export default function AICup() {
@@ -60,10 +58,6 @@ export default function AICup() {
               <div className="text-sm uppercase tracking-wider text-gray-600">Cost Per Student</div>
             </motion.div>
 
-            <motion.div {...fadeInUp} transition={{ delay: 0.3 }} className="text-center">
-              <div className="text-4xl font-bold text-[#242EC0] mb-2">20</div>
-              <div className="text-sm uppercase tracking-wider text-gray-600">Target Annual Competitions by 2030</div>
-            </motion.div>
           </div>
         </div>
       </section>
@@ -217,89 +211,56 @@ export default function AICup() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div {...fadeInUp} className="bg-[#E4E6F3] p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">India</h3>
+              <div className="flex items-start justify-between mb-4">
+                <h3 className="text-2xl font-bold">India</h3>
+                <span className="bg-[#242EC0] text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap ml-3">2027</span>
+              </div>
               <p className="text-sm text-gray-600 mt-3">Host University: Ashoka University</p>
             </motion.div>
 
             <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="bg-[#E4E6F3] p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">United States</h3>
-              <p className="text-sm text-gray-600 mt-3">Host Universities: University of Southern California · Harvard University</p>
+              <div className="flex items-start justify-between mb-4">
+                <h3 className="text-2xl font-bold">United States</h3>
+                <span className="bg-[#242EC0] text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap ml-3">2027</span>
+              </div>
+              <p className="text-sm text-gray-600 mt-3">Host University: University of Southern California</p>
             </motion.div>
 
             <motion.div {...fadeInUp} transition={{ delay: 0.2 }} className="bg-[#E4E6F3] p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Ukraine</h3>
+              <div className="flex items-start justify-between mb-4">
+                <h3 className="text-2xl font-bold">Colombia</h3>
+                <span className="bg-[#242EC0] text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap ml-3">2027</span>
+              </div>
               <p className="text-sm text-gray-600 mt-3">Host University: TBD</p>
             </motion.div>
 
             <motion.div {...fadeInUp} transition={{ delay: 0.3 }} className="bg-[#E4E6F3] p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Colombia</h3>
+              <div className="flex items-start justify-between mb-4">
+                <h3 className="text-2xl font-bold">South Korea</h3>
+                <span className="bg-[#242EC0] text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap ml-3">2027</span>
+              </div>
               <p className="text-sm text-gray-600 mt-3">Host University: TBD</p>
             </motion.div>
 
             <motion.div {...fadeInUp} transition={{ delay: 0.4 }} className="bg-[#E4E6F3] p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">Singapore</h3>
+              <h3 className="text-2xl font-bold mb-4">Ukraine</h3>
               <p className="text-sm text-gray-600 mt-3">Host University: TBD</p>
             </motion.div>
 
             <motion.div {...fadeInUp} transition={{ delay: 0.5 }} className="bg-[#E4E6F3] p-8 rounded-lg">
-              <h3 className="text-2xl font-bold mb-4">South Korea</h3>
-              <p className="text-sm text-gray-600 mt-3">Host University: Ewha Womans University</p>
+              <h3 className="text-2xl font-bold mb-4">Singapore</h3>
+              <p className="text-sm text-gray-600 mt-3">Host University: TBD</p>
+            </motion.div>
+
+            <motion.div {...fadeInUp} transition={{ delay: 0.6 }} className="bg-[#E4E6F3] p-8 rounded-lg">
+              <h3 className="text-2xl font-bold mb-4">Nigeria</h3>
+              <p className="text-sm text-gray-600 mt-3">Host University: TBD</p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Support CTAs */}
-      <section className="py-24 bg-[#E4E6F3]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div {...fadeInUp} className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
-              Support the Students
-            </h2>
-            <p className="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Help bring the Global AI Cup to more regions and send student founders to GSSC Worlds.
-            </p>
-          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            <motion.div {...fadeInUp} className="bg-white p-8 rounded-lg text-center border-2 border-gray-200 hover:border-[#242EC0] transition-all">
-              <h3 className="text-xl font-bold mb-4">Named Scholarships - Regions</h3>
-              <p className="text-gray-700 mb-6">Fund an entire region's participation for one annual cycle ($25,000)</p>
-              <a href="/support#regions">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button className="bg-[#242EC0] text-white hover:bg-[#08044C] font-semibold">
-                    Learn More →
-                  </Button>
-                </motion.div>
-              </a>
-            </motion.div>
-
-            <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="bg-white p-8 rounded-lg text-center border-2 border-gray-200 hover:border-[#242EC0] transition-all">
-              <h3 className="text-xl font-bold mb-4">Named Scholarships - Universities</h3>
-              <p className="text-gray-700 mb-6">Support a specific university team competing at GSSC Worlds</p>
-              <a href="/support#universities">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button className="bg-[#242EC0] text-white hover:bg-[#08044C] font-semibold">
-                    Learn More →
-                  </Button>
-                </motion.div>
-              </a>
-            </motion.div>
-
-            <motion.div {...fadeInUp} transition={{ delay: 0.2 }} className="bg-white p-8 rounded-lg text-center border-2 border-gray-200 hover:border-[#242EC0] transition-all">
-              <h3 className="text-xl font-bold mb-4">Global Sponsorships</h3>
-              <p className="text-gray-700 mb-6">Support all teams competing at GSSC Worlds 2026</p>
-              <a href="/support#general">
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button className="bg-[#242EC0] text-white hover:bg-[#08044C] font-semibold">
-                    Learn More →
-                  </Button>
-                </motion.div>
-              </a>
-            </motion.div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

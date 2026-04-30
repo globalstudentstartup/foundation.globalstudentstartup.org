@@ -133,7 +133,7 @@ export default function IndiaDonation() {
               
               <div className="space-y-6 text-xl text-gray-700 leading-relaxed mb-10">
                 <p>
-                  GSSC Worlds 2026 takes place May 17–21 at the Asian Leadership Conference. The IIT Delhi team will pitch alongside teams from Harvard, Stanford, USC, UC Berkeley, Cornell, Oxford, Aalto, POSTECH, Korea University, Ewha Womans University, Dongseo University, and CMU-Qatar — mentored by professionals from Google, OpenAI, Netflix, TikTok, YouTube, Disney+, and Live Nation.
+                  GSSC Worlds 2026 takes place May 17–21 at the Asian Leadership Conference. The IIT Delhi team will pitch alongside teams from Harvard, Stanford, USC, UC Berkeley, Cornell, Oxford, Aalto, POSTECH, Korea University, Ewha Womans University, Dongseo University, and CMU-Qatar — mentored by professionals from Google, OpenAI, Netflix, TikTok, Apple, Disney+, and Live Nation.
                 </p>
                 <p>
                   India's Regional Advisor is Nitin Kale, Professor of AI and Applied Computing at the USC Viterbi School of Engineering.

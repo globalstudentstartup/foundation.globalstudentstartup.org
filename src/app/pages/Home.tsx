@@ -205,7 +205,7 @@ export default function Home() {
               <motion.div {...fadeInUp} className="text-center">
                 <Users className="text-[#242EC0] mx-auto mb-6" size={64} />
                 <h3 className="text-2xl font-bold mb-4 uppercase">Global Mentors</h3>
-                <p className="text-gray-600 leading-relaxed">Industry leaders from Google, Microsoft, Netflix, Youtube, Amazon, OpenAI, NASA, Fox, Warner Bros. and more</p>
+                <p className="text-gray-600 leading-relaxed">Industry leaders from Google, Microsoft, Netflix, Apple, Amazon, OpenAI, NASA, Fox, Warner Bros. and more</p>
               </motion.div>
 
               <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="text-center">

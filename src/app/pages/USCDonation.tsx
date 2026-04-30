@@ -133,7 +133,7 @@ export default function USCDonation() {
               
               <div className="space-y-6 text-xl text-gray-700 leading-relaxed mb-10">
                 <p>
-                  GSSC Worlds 2026 takes place May 17–21 at the Asian Leadership Conference. Both USC teams will pitch alongside teams from Harvard, Stanford, UC Berkeley, Cornell, Oxford, Aalto, IIT Delhi, POSTECH, Korea University, Ewha Womans University, Dongseo University, and CMU-Qatar — mentored by professionals from Google, OpenAI, Netflix, TikTok, YouTube, Disney+, and Live Nation.
+                  GSSC Worlds 2026 takes place May 17–21 at the Asian Leadership Conference. Both USC teams will pitch alongside teams from Harvard, Stanford, UC Berkeley, Cornell, Oxford, Aalto, IIT Delhi, POSTECH, Korea University, Ewha Womans University, Dongseo University, and CMU-Qatar — mentored by professionals from Google, OpenAI, Netflix, TikTok, Apple, Disney+, and Live Nation.
                 </p>
               </div>
 

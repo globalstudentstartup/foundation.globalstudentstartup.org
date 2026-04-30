@@ -152,7 +152,7 @@ export default function Network() {
               <div className="flex flex-wrap gap-3">
                 <Badge>Disney+</Badge>
                 <Badge>Netflix</Badge>
-                <Badge>YouTube</Badge>
+                <Badge>Apple</Badge>
                 <Badge>TikTok LIVE</Badge>
                 <Badge>Fox</Badge>
                 <Badge>Warner Bros</Badge>

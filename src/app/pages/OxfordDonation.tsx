@@ -114,7 +114,7 @@ export default function OxfordDonation() {
                   Medical tourism is a massive industry built on opacity. Patients searching for faster, more affordable care abroad face a fragmented, trust-broken market — unreliable information, unclear incentives, no way to compare providers with confidence. The result is that people who need care either overpay at home or navigate the process alone and exposed.
                 </p>
                 <p>
-                  The Oxford team is building the trust layer that medical travel has always been missing. Health Atlas curates and vets international clinics and hospitals, gives patients transparent comparisons, and navigates the full journey — from choosing a provider to post-treatment follow-up. Starting with UK patients seeking faster access to diagnostics and elective care, it brings structure and safety to a market that has never had it. The team is working with a mentor from YouTube.
+                  The Oxford team is building the trust layer that medical travel has always been missing. Health Atlas curates and vets international clinics and hospitals, gives patients transparent comparisons, and navigates the full journey — from choosing a provider to post-treatment follow-up. Starting with UK patients seeking faster access to diagnostics and elective care, it brings structure and safety to a market that has never had it. The team is working with a mentor from Apple.
                 </p>
               </div>
             </motion.div>
@@ -133,7 +133,7 @@ export default function OxfordDonation() {
               
               <div className="space-y-6 text-xl text-gray-700 leading-relaxed mb-10">
                 <p>
-                  GSSC Worlds 2026 takes place May 17–21 at the Asian Leadership Conference. The Oxford team will pitch alongside teams from Harvard, Stanford, USC, UC Berkeley, Cornell, Aalto, IIT Delhi, POSTECH, Korea University, Ewha Womans University, Dongseo University, and CMU-Qatar — mentored by professionals from Google, OpenAI, Netflix, TikTok, YouTube, Disney+, and Live Nation.
+                  GSSC Worlds 2026 takes place May 17–21 at the Asian Leadership Conference. The Oxford team will pitch alongside teams from Harvard, Stanford, USC, UC Berkeley, Cornell, Aalto, IIT Delhi, POSTECH, Korea University, Ewha Womans University, Dongseo University, and CMU-Qatar — mentored by professionals from Google, OpenAI, Netflix, TikTok, Apple, Disney+, and Live Nation.
                 </p>
               </div>
 
