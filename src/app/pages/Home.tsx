@@ -177,7 +177,6 @@ export default function Home() {
                   <div className="bg-white p-8 rounded-lg hover:shadow-xl transition-shadow group cursor-pointer h-full flex flex-col">
                     <div className="flex items-start justify-between mb-3">
                       <h3 className="text-2xl font-bold group-hover:text-[#242EC0] transition-colors uppercase">AI Labs</h3>
-                      <span className="bg-[#242EC0] text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap ml-3">Pilot Mar 2026</span>
                     </div>
                     <p className="text-gray-900 font-semibold mb-2">Undergraduate product internships</p>
                     <p className="text-gray-600 mb-3 flex-grow">Placing top undergraduate product designers and AI engineers into real-world projects for the foundation and partner organizations.</p>
