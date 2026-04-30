@@ -83,16 +83,15 @@ export default function Home() {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-wrap gap-4">
-                  <a href="#programs">
-                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                      <Button 
-                        size="lg"
-                        className="bg-white text-[#242EC0] hover:bg-white/90 px-8 py-6 h-auto uppercase tracking-wide text-sm font-semibold"
-                      >
-                        Programs
-                      </Button>
-                    </motion.div>
-                  </a>
+                  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                    <Button
+                      size="lg"
+                      className="bg-white text-[#242EC0] hover:bg-white/90 px-8 py-6 h-auto uppercase tracking-wide text-sm font-semibold"
+                      onClick={() => document.getElementById('programs')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
+                      Programs
+                    </Button>
+                  </motion.div>
                   <Link to="/leadership#global-leadership">
                     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                       <Button
