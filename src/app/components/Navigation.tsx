@@ -13,7 +13,7 @@ export default function Navigation() {
       path: "/#programs", 
       label: "Programs",
       title: "Explore Our Programs",
-      description: "From campus competitions to global stages and executive advisory programs.",
+      description: "From campus competitions to global stages and applied AI internships.",
       subItems: [
         { path: "/gssc", label: "Competition", description: "Global Student Startup Competition" },
         { path: "/ai-cup", label: "AI Cup", description: "Global AI prototype competition" },
