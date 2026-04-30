@@ -1,10 +1,13 @@
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { Link } from "react-router";
+import { useState } from "react";
 import { Button } from "../components/ui/button";
 import { Code, Wrench, Users, ArrowRight, Zap, Rocket, Building2, CheckCircle, Target } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 export default function AILabs() {
+  const [binnyExpanded, setBinnyExpanded] = useState(false);
+
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
@@ -194,6 +197,65 @@ export default function AILabs() {
               <p className="text-white/90 leading-relaxed">
                 Products are built for a global user base — university students, organizers, and program participants around the world.
               </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Team */}
+      <section className="py-24 bg-[#E4E6F3]">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <motion.div {...fadeInUp} className="mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
+              Meet the Team
+            </h2>
+            <p className="text-xl text-gray-700 leading-relaxed max-w-2xl">
+              The first cohort of AI Labs builders, working on the Venture Innovation Platform.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl">
+            <motion.div {...fadeInUp} className="bg-white rounded-lg overflow-hidden">
+              <img src="/src/assets/binny-park.jpg" alt="Su Bin Park" className="w-full h-64 object-cover object-top" />
+              <div className="p-8">
+                <h3 className="text-xl font-bold mb-1 tracking-tight">Su Bin "Binny" Park</h3>
+                <p className="text-[#242EC0] font-semibold text-sm uppercase tracking-wide mb-4">Product Manager</p>
+                <p className="text-gray-700 leading-relaxed text-sm">
+                  I'm drawn to the places where skill and opportunity don't align — and to the ways to bridge that gap.
+                </p>
+                <AnimatePresence>
+                  {binnyExpanded && (
+                    <motion.div
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="mt-3 space-y-3 text-gray-700 leading-relaxed text-sm">
+                        <p>In my writing, this means studying how capital flows around scientific uncertainty: how investors price risk in markets where the underlying biology is still being written, and how the structures of scientific inquiry shape what we believe is possible. I think about this through a philosophical and historical lens — understanding how our methods of doing science are themselves changing, and how innovation always inherits the assumed knowledge of those who came before.</p>
+                        <p>That same instinct follows me into my entrepreneurship work connecting founders to capital and legal foundations, as a teaching assistant helping PhD researchers communicate their findings to the world, and as a Science Olympiad supervisor supporting the next generation of scientists.</p>
+                        <p>On my Substack, <em>The Art of Perceiving</em>, I follow the same thread inward — exploring how the natural laws I encounter in science shape the way we experience life, language, and what we're able to say to each other.</p>
+                        <p>Feel free to reach out at <a href="mailto:sp2587@cornell.edu" className="text-[#242EC0] hover:underline">sp2587@cornell.edu</a></p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+                <button
+                  onClick={() => setBinnyExpanded(!binnyExpanded)}
+                  className="mt-4 text-[#242EC0] text-sm font-semibold hover:underline focus:outline-none"
+                >
+                  {binnyExpanded ? "Read Less" : "Read More"}
+                </button>
+              </div>
+            </motion.div>
+
+            <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="bg-white rounded-lg overflow-hidden">
+              <img src="/src/assets/tun-onraksa.jpg" alt="Tun Onraksa" className="w-full h-64 object-cover object-top" />
+              <div className="p-8">
+                <h3 className="text-xl font-bold mb-1 tracking-tight">Tun Onraksa</h3>
+                <p className="text-[#242EC0] font-semibold text-sm uppercase tracking-wide">AI Engineer</p>
+              </div>
             </motion.div>
           </div>
         </div>
