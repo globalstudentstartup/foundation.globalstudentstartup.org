@@ -54,19 +54,19 @@ export default function AILabs() {
       </section>
 
       {/* What Is GSSF AI Labs */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#161616]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div {...fadeInUp} className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight text-white">
               What Is GSSF AI Labs?
             </h2>
-            <p className="text-xl text-gray-700 leading-relaxed max-w-4xl">
+            <p className="text-xl text-white/70 leading-relaxed max-w-4xl">
               GSSF AI Labs is an undergraduate product internship program. Students are placed directly into building functional AI tools for internal foundation and university use — not as observers or contributors to hypothetical projects, but as the primary builders. The program is built on a single conviction: the best way to develop product and engineering talent is to give students real problems and trust them to solve them.
             </p>
           </motion.div>
 
-          <motion.div {...fadeInUp} className="bg-[#E4E6F3] p-10 rounded-lg max-w-4xl border-l-4 border-[#242EC0]">
-            <p className="text-xl italic text-gray-800 leading-relaxed">
+          <motion.div {...fadeInUp} className="bg-white/5 p-10 rounded-lg max-w-4xl border-l-4 border-white/30">
+            <p className="text-xl italic text-white/80 leading-relaxed">
               "Day-one product management and engineering experience — not simulations, not case studies. Real products. Real use."
             </p>
           </motion.div>
@@ -74,29 +74,27 @@ export default function AILabs() {
       </section>
 
       {/* Who We're Looking For */}
-      <section className="py-24 bg-[#E4E6F3]">
+      <section className="py-24 bg-[#161616]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div {...fadeInUp} className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-white">
               Who We're Looking For
             </h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Product Managers */}
-            <motion.div {...fadeInUp} className="bg-white p-10 rounded-lg">
-              <Target className="text-[#242EC0] mb-6" size={40} />
-              <h3 className="text-2xl font-bold mb-6 tracking-tight">Product Managers</h3>
-              <p className="text-gray-700 leading-relaxed text-lg">
+            <motion.div {...fadeInUp} className="bg-white/5 p-10 rounded-lg">
+              <Target className="text-white/60 mb-6" size={40} />
+              <h3 className="text-2xl font-bold mb-6 tracking-tight text-white">Product Managers</h3>
+              <p className="text-white/70 leading-relaxed text-lg">
                 Undergraduate students with strong product thinking, an ability to translate ambiguous problems into clear requirements, and a drive to ship products that real users depend on.
               </p>
             </motion.div>
 
-            {/* AI Engineers */}
-            <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="bg-white p-10 rounded-lg">
-              <Zap className="text-[#242EC0] mb-6" size={40} />
-              <h3 className="text-2xl font-bold mb-6 tracking-tight">AI Engineers</h3>
-              <p className="text-gray-700 leading-relaxed text-lg">
+            <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="bg-white/5 p-10 rounded-lg">
+              <Zap className="text-white/60 mb-6" size={40} />
+              <h3 className="text-2xl font-bold mb-6 tracking-tight text-white">AI Engineers</h3>
+              <p className="text-white/70 leading-relaxed text-lg">
                 Undergraduate students with applied machine learning, software engineering, or AI development experience. Builders who want their work to ship and be used.
               </p>
             </motion.div>
