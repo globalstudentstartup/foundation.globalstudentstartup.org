@@ -69,12 +69,12 @@ export default function AILabs() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Product Designers */}
+            {/* Product Managers */}
             <motion.div {...fadeInUp} className="bg-white p-10 rounded-lg">
-              <Code className="text-[#242EC0] mb-6" size={40} />
-              <h3 className="text-2xl font-bold mb-6 tracking-tight">Product Designers</h3>
+              <Target className="text-[#242EC0] mb-6" size={40} />
+              <h3 className="text-2xl font-bold mb-6 tracking-tight">Product Managers</h3>
               <p className="text-gray-700 leading-relaxed text-lg">
-                Undergraduate students with strong UI/UX skills and a demonstrated interest in building human-centered AI products. Experience with Figma, design systems, or product thinking preferred.
+                Undergraduate students with strong product thinking, an ability to translate ambiguous problems into clear requirements, and a drive to ship products that real users depend on.
               </p>
             </motion.div>
 
