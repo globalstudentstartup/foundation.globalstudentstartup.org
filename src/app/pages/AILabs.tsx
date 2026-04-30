@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useState } from "react";
-import { Zap, Target } from "lucide-react";
+import { Linkedin, Zap, Target } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 export default function AILabs() {
@@ -179,6 +179,10 @@ export default function AILabs() {
               <img src="/binny-park.jpg" alt="Su Bin Park" className="w-48 h-48 object-cover object-top rounded-lg mb-6 grayscale" />
               <h3 className="text-2xl font-bold text-white mb-2 uppercase">Su Bin "Binny" Park</h3>
               <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Product Manager · Venture Innovation Platform</p>
+              <a href="https://www.linkedin.com/in/subin-binny-park/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4">
+                <Linkedin className="w-5 h-5" />
+                <span className="text-sm">LinkedIn</span>
+              </a>
               <div className="text-white/70 leading-relaxed">
                 {expandedBios.has('binny') ? (
                   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
@@ -201,6 +205,10 @@ export default function AILabs() {
               <img src="/tun-onraksa.jpg" alt="Tun Onraksa" className="w-48 h-48 object-cover object-top rounded-lg mb-6 grayscale" />
               <h3 className="text-2xl font-bold text-white mb-2 uppercase">Tun Onraksa</h3>
               <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">AI Engineer · Venture Innovation Platform</p>
+              <a href="https://www.linkedin.com/in/tun-onraksa/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4">
+                <Linkedin className="w-5 h-5" />
+                <span className="text-sm">LinkedIn</span>
+              </a>
               <div className="text-white/70 leading-relaxed">
                 {expandedBios.has('tun') ? (
                   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
