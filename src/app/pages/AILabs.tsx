@@ -115,7 +115,7 @@ export default function AILabs() {
             <p className="text-lg text-white/80 leading-relaxed max-w-3xl mb-10">
               A unified platform for running the full lifecycle of global student startup programs — from application to alumni.
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 mb-12">
               {[
                 "Program Management", "Event Scheduling", "Team Formation", "Student Profiles",
                 "Mentor Matching", "Judge & Scoring", "Travel Management", "Visa Tracking",
@@ -126,6 +126,113 @@ export default function AILabs() {
                   {feature}
                 </span>
               ))}
+            </div>
+
+            {/* Team */}
+            <p className="text-sm uppercase tracking-widest text-white/70 font-semibold mb-6">The Team</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl">
+              <div className="bg-white rounded-lg overflow-hidden">
+                <img src="/binny-park.jpg" alt="Su Bin Park" className="w-full h-56 object-cover object-top" />
+                <div className="p-6">
+                  <h4 className="text-lg font-bold mb-1 tracking-tight">Su Bin "Binny" Park</h4>
+                  <p className="text-[#242EC0] font-semibold text-xs uppercase tracking-wide mb-3">Product Manager</p>
+                  <p className="text-gray-700 leading-relaxed text-sm">
+                    I'm drawn to the places where skill and opportunity don't align — and to the ways to bridge that gap.
+                  </p>
+                  <AnimatePresence>
+                    {binnyExpanded && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mt-3 space-y-3 text-gray-700 leading-relaxed text-sm">
+                          <p>In my writing, this means studying how capital flows around scientific uncertainty: how investors price risk in markets where the underlying biology is still being written, and how the structures of scientific inquiry shape what we believe is possible. I think about this through a philosophical and historical lens — understanding how our methods of doing science are themselves changing, and how innovation always inherits the assumed knowledge of those who came before.</p>
+                          <p>That same instinct follows me into my entrepreneurship work connecting founders to capital and legal foundations, as a teaching assistant helping PhD researchers communicate their findings to the world, and as a Science Olympiad supervisor supporting the next generation of scientists.</p>
+                          <p>On my Substack, <em>The Art of Perceiving</em>, I follow the same thread inward — exploring how the natural laws I encounter in science shape the way we experience life, language, and what we're able to say to each other.</p>
+                          <p>Feel free to reach out at <a href="mailto:sp2587@cornell.edu" className="text-[#242EC0] hover:underline">sp2587@cornell.edu</a></p>
+                          <div className="pt-2 border-t border-gray-100">
+                            <p className="font-semibold text-gray-900 mb-3">Experience</p>
+                            <ul className="space-y-3">
+                              {[
+                                { role: "Organizational Associate", org: "Global Student Startup Competition", detail: "Logistics for GSSC 2026 Seoul · Pre-Seed Campus Expansion team" },
+                                { role: "Marketing Director & Senior Analyst", org: "180 Degrees Consulting at Cornell", detail: "Sustainability consulting for Fortune 300 brands and Better Cotton Initiative" },
+                                { role: "Fellow", org: "Blackstone LaunchPad at Cornell", detail: "Managing Startup Office Hours · Emcee, Big Idea Pitch Competition" },
+                                { role: "Undergraduate Consultant", org: "International Teaching Assistant Program, Cornell", detail: "English communications support for international PhD researchers" },
+                                { role: "Finance & Markets Analyst", org: "RemNeuro (Cornell Tech)", detail: "Health-tech SaaS startup in senior care and mental health" },
+                                { role: "Nexus Summer Scholar", org: "Hirschman Lab of Sociology, Cornell", detail: "Modeled P&C insurance investment portfolios; analyzed climate risk disclosure trends 2012–2023" },
+                              ].map((item) => (
+                                <li key={item.role} className="flex flex-col gap-0.5">
+                                  <span className="font-semibold text-gray-900">{item.role}</span>
+                                  <span className="text-[#242EC0]">{item.org}</span>
+                                  <span className="text-gray-500">{item.detail}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                  <button onClick={() => setBinnyExpanded(!binnyExpanded)} className="mt-4 text-[#242EC0] text-sm font-semibold hover:underline focus:outline-none">
+                    {binnyExpanded ? "Read Less" : "Read More"}
+                  </button>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg overflow-hidden">
+                <img src="/tun-onraksa.jpg" alt="Tun Onraksa" className="w-full h-56 object-cover object-top" />
+                <div className="p-6">
+                  <h4 className="text-lg font-bold mb-1 tracking-tight">Tun Onraksa</h4>
+                  <p className="text-[#242EC0] font-semibold text-xs uppercase tracking-wide mb-3">AI Engineer</p>
+                  <p className="text-gray-700 leading-relaxed text-sm">
+                    I'm passionate about creating technology that brings clarity, purpose, and connection to people's lives.
+                  </p>
+                  <AnimatePresence>
+                    {tunExpanded && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mt-3 space-y-3 text-gray-700 leading-relaxed text-sm">
+                          <p>With a background in Computer Science and Business at USC, I approach my work as the bridge between code, business, and people. I enjoy translating complex technical ideas into intuitive, human-centered products — combining analytical problem-solving with curiosity for how design and technology shape the way we live and work.</p>
+                          <p>Rooted in my Thai upbringing, I value hospitality, empathy, and attentiveness in how I collaborate and lead. I strive to bring these qualities into product development by creating experiences that feel genuine, inclusive, and welcoming.</p>
+                          <p>I'm driven by the belief that great products come from empathy — understanding both the user and the system behind the experience.</p>
+                          <div className="pt-2 border-t border-gray-100">
+                            <p className="font-semibold text-gray-900 mb-3">Experience</p>
+                            <ul className="space-y-3">
+                              {[
+                                { role: "AI Engineer", org: "Global Student Startup Competition", detail: "Building the Venture Innovation Platform" },
+                                { role: "Incoming Software Engineer Intern", org: "Agoda", detail: "Bangkok, Thailand" },
+                                { role: "Assistant Director, International Student Assembly", org: "USC Undergraduate Student Government", detail: "2+ years in student government leadership and event programming" },
+                                { role: "Product Manager", org: "ProductSC", detail: "Year-long PM role at USC's product management organization" },
+                                { role: "FinTech Commercial Intern", org: "Agoda", detail: "Bangkok, Thailand" },
+                                { role: "Associate Backend Developer", org: "Q-CHANG", detail: "Golang & Next.js, Bangkok (hybrid)" },
+                                { role: "Project Member", org: "Engineers Without Borders – USC", detail: "Uganda and Malawi projects" },
+                                { role: "Human Practices Leader & Lab Member", org: "iGEM Competition – Thailand RIS", detail: "Stakeholder management, team leadership, Bangkok" },
+                              ].map((item) => (
+                                <li key={item.role + item.org} className="flex flex-col gap-0.5">
+                                  <span className="font-semibold text-gray-900">{item.role}</span>
+                                  <span className="text-[#242EC0]">{item.org}</span>
+                                  <span className="text-gray-500">{item.detail}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                  <button onClick={() => setTunExpanded(!tunExpanded)} className="mt-4 text-[#242EC0] text-sm font-semibold hover:underline focus:outline-none">
+                    {tunExpanded ? "Read Less" : "Read More"}
+                  </button>
+                </div>
+              </div>
             </div>
           </motion.div>
 
@@ -196,133 +303,6 @@ export default function AILabs() {
               <p className="text-white/90 leading-relaxed">
                 Products are built for a global user base — university students, organizers, and program participants around the world.
               </p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Meet the Team */}
-      <section className="py-24 bg-[#E4E6F3]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div {...fadeInUp} className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-              Meet the Team
-            </h2>
-            <p className="text-xl text-gray-700 leading-relaxed max-w-2xl">
-              The first cohort of AI Labs builders, working on the Venture Innovation Platform.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl">
-            <motion.div {...fadeInUp} className="bg-white rounded-lg overflow-hidden">
-              <img src="/src/assets/binny-park.jpg" alt="Su Bin Park" className="w-full h-64 object-cover object-top" />
-              <div className="p-8">
-                <h3 className="text-xl font-bold mb-1 tracking-tight">Su Bin "Binny" Park</h3>
-                <p className="text-[#242EC0] font-semibold text-sm uppercase tracking-wide mb-4">Product Manager</p>
-                <p className="text-gray-700 leading-relaxed text-sm">
-                  I'm drawn to the places where skill and opportunity don't align — and to the ways to bridge that gap.
-                </p>
-                <AnimatePresence>
-                  {binnyExpanded && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="mt-3 space-y-3 text-gray-700 leading-relaxed text-sm">
-                        <p>In my writing, this means studying how capital flows around scientific uncertainty: how investors price risk in markets where the underlying biology is still being written, and how the structures of scientific inquiry shape what we believe is possible. I think about this through a philosophical and historical lens — understanding how our methods of doing science are themselves changing, and how innovation always inherits the assumed knowledge of those who came before.</p>
-                        <p>That same instinct follows me into my entrepreneurship work connecting founders to capital and legal foundations, as a teaching assistant helping PhD researchers communicate their findings to the world, and as a Science Olympiad supervisor supporting the next generation of scientists.</p>
-                        <p>On my Substack, <em>The Art of Perceiving</em>, I follow the same thread inward — exploring how the natural laws I encounter in science shape the way we experience life, language, and what we're able to say to each other.</p>
-                        <p>Feel free to reach out at <a href="mailto:sp2587@cornell.edu" className="text-[#242EC0] hover:underline">sp2587@cornell.edu</a></p>
-
-                        <div className="pt-2 border-t border-gray-100">
-                          <p className="font-semibold text-gray-900 mb-3">Experience</p>
-                          <ul className="space-y-3">
-                            {[
-                              { role: "Organizational Associate", org: "Global Student Startup Competition", detail: "Logistics for GSSC 2026 Seoul · Pre-Seed Campus Expansion team" },
-                              { role: "Marketing Director & Senior Analyst", org: "180 Degrees Consulting at Cornell", detail: "Sustainability consulting for Fortune 300 brands and Better Cotton Initiative" },
-                              { role: "Fellow", org: "Blackstone LaunchPad at Cornell", detail: "Managing Startup Office Hours · Emcee, Big Idea Pitch Competition" },
-                              { role: "Undergraduate Consultant", org: "International Teaching Assistant Program, Cornell", detail: "English communications support for international PhD researchers" },
-                              { role: "Finance & Markets Analyst", org: "RemNeuro (Cornell Tech)", detail: "Health-tech SaaS startup in senior care and mental health" },
-                              { role: "Nexus Summer Scholar", org: "Hirschman Lab of Sociology, Cornell", detail: "Modeled P&C insurance investment portfolios; analyzed climate risk disclosure trends 2012–2023" },
-                            ].map((item) => (
-                              <li key={item.role} className="flex flex-col gap-0.5">
-                                <span className="font-semibold text-gray-900">{item.role}</span>
-                                <span className="text-[#242EC0]">{item.org}</span>
-                                <span className="text-gray-500">{item.detail}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-                <button
-                  onClick={() => setBinnyExpanded(!binnyExpanded)}
-                  className="mt-4 text-[#242EC0] text-sm font-semibold hover:underline focus:outline-none"
-                >
-                  {binnyExpanded ? "Read Less" : "Read More"}
-                </button>
-              </div>
-            </motion.div>
-
-            <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="bg-white rounded-lg overflow-hidden">
-              <img src="/src/assets/tun-onraksa.jpg" alt="Tun Onraksa" className="w-full h-64 object-cover object-top" />
-              <div className="p-8">
-                <h3 className="text-xl font-bold mb-1 tracking-tight">Tun Onraksa</h3>
-                <p className="text-[#242EC0] font-semibold text-sm uppercase tracking-wide mb-4">AI Engineer</p>
-                <p className="text-gray-700 leading-relaxed text-sm">
-                  I'm passionate about creating technology that brings clarity, purpose, and connection to people's lives.
-                </p>
-                <AnimatePresence>
-                  {tunExpanded && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: "auto" }}
-                      exit={{ opacity: 0, height: 0 }}
-                      transition={{ duration: 0.3 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="mt-3 space-y-3 text-gray-700 leading-relaxed text-sm">
-                        <p>With a background in Computer Science and Business at USC, I approach my work as the bridge between code, business, and people. I enjoy translating complex technical ideas into intuitive, human-centered products — combining analytical problem-solving with curiosity for how design and technology shape the way we live and work.</p>
-                        <p>Rooted in my Thai upbringing, I value hospitality, empathy, and attentiveness in how I collaborate and lead. I strive to bring these qualities into product development by creating experiences that feel genuine, inclusive, and welcoming.</p>
-                        <p>I'm driven by the belief that great products come from empathy — understanding both the user and the system behind the experience.</p>
-
-                        <div className="pt-2 border-t border-gray-100">
-                          <p className="font-semibold text-gray-900 mb-3">Experience</p>
-                          <ul className="space-y-3">
-                            {[
-                              { role: "AI Engineer", org: "Global Student Startup Competition", detail: "Building the Venture Innovation Platform" },
-                              { role: "Incoming Software Engineer Intern", org: "Agoda", detail: "Bangkok, Thailand" },
-                              { role: "Assistant Director, International Student Assembly", org: "USC Undergraduate Student Government", detail: "2+ years in student government leadership and event programming" },
-                              { role: "Product Manager", org: "ProductSC", detail: "Year-long PM role at USC's product management organization" },
-                              { role: "FinTech Commercial Intern", org: "Agoda", detail: "Bangkok, Thailand" },
-                              { role: "Associate Backend Developer", org: "Q-CHANG", detail: "Golang & Next.js, Bangkok (hybrid)" },
-                              { role: "Project Member", org: "Engineers Without Borders – USC", detail: "Uganda and Malawi projects" },
-                              { role: "Human Practices Leader & Lab Member", org: "iGEM Competition – Thailand RIS", detail: "Stakeholder management, team leadership, Bangkok" },
-                            ].map((item) => (
-                              <li key={item.role + item.org} className="flex flex-col gap-0.5">
-                                <span className="font-semibold text-gray-900">{item.role}</span>
-                                <span className="text-[#242EC0]">{item.org}</span>
-                                <span className="text-gray-500">{item.detail}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-                <button
-                  onClick={() => setTunExpanded(!tunExpanded)}
-                  className="mt-4 text-[#242EC0] text-sm font-semibold hover:underline focus:outline-none"
-                >
-                  {tunExpanded ? "Read Less" : "Read More"}
-                </button>
-              </div>
             </motion.div>
           </div>
         </div>
