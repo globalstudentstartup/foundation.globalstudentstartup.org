@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useState } from "react";
-import { Linkedin, Zap, Target } from "lucide-react";
+import { Zap, Target } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 export default function AILabs() {
@@ -207,13 +207,14 @@ export default function AILabs() {
               <div className="text-white/70 leading-relaxed">
                 {expandedBios.has('tun') ? (
                   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
-                    <p className="mb-4">Tun Onraksa is an AI Engineer on the Venture Innovation Platform at GSSF AI Labs, building the operational backbone of global student startup programs. A Computer Science and Business student at the University of Southern California, he works at the intersection of code, product, and people — translating complex technical systems into intuitive, human-centered experiences.</p>
-                    <p className="mb-4">At USC, Tun has led as Assistant Director of the International Student Assembly within USC Undergraduate Student Government, where he directed programming for one of the university's largest student communities. As a Product Manager at ProductSC, he spent a year developing his craft in product strategy and cross-functional collaboration. He has also served as a FinTech Commercial Intern at Agoda in Bangkok and as an Associate Backend Developer at Q-CHANG, building in Golang and Next.js.</p>
-                    <p className="mb-4">Rooted in his Thai upbringing, Tun brings hospitality, empathy, and attentiveness to everything he builds — a conviction that great products begin with understanding both the user and the system behind the experience.</p>
-                    <p>He is also an incoming Software Engineer Intern at Agoda and a former member of Engineers Without Borders USC, where he contributed to projects in Uganda and Malawi.</p>
+                    <p className="mb-4">Tun Onraksa is an AI Engineer at GSSF AI Labs — bringing to the role a rare combination of technical engineering depth, product intuition, and a people-centered approach to building shaped by his Thai upbringing and years of cross-cultural community leadership at USC.</p>
+                    <p className="mb-4">A Computer Science and Business student at the University of Southern California, Tun operates at the intersection of code, product, and human experience. He approaches every system he builds the same way: with genuine curiosity about how design and technology shape the way people live and work, and a conviction that the best products are built from empathy outward. As a Product Manager at ProductSC, USC's student-run product management organization, he developed that craft in a hands-on, collaborative environment. He is also an incoming Software Engineer Intern at Agoda, one of Southeast Asia's leading travel technology platforms — where he previously completed a FinTech Commercial internship — giving him direct exposure to product development at scale across two of the most dynamic tech markets in the world.</p>
+                    <p className="mb-4">Tun's technical range extends beyond product. As a backend development intern at Q-CHANG, a Thai home services platform, he worked in Golang and NextJS on real production systems. As a member of USC's Engineers Without Borders chapter, he contributed to infrastructure projects in both Malawi and Uganda — grounding his engineering instincts in contexts where technology has direct human stakes. Earlier, as a Human Practices Leader and Lab Member for Thailand_RIS at the iGEM Competition, he led stakeholder management and team coordination for an international synthetic biology team.</p>
+                    <p className="mb-4">Beyond his technical work, Tun has spent nearly three years building community at USC through the International Student Assembly, rising from Intern to Co-Chair of Programming to Assistant Director — organizing events and creating connections for one of USC's most globally diverse student communities.</p>
+                    <p>At GSSF AI Labs, Tun brings his full range — engineer, product thinker, and community builder — to the infrastructure that will power the next generation of the foundation's programs.</p>
                   </motion.div>
                 ) : (
-                  <p>{truncateText("Tun Onraksa is an AI Engineer on the Venture Innovation Platform at GSSF AI Labs, building the operational backbone of global student startup programs.")}</p>
+                  <p>{truncateText("Tun Onraksa is an AI Engineer at GSSF AI Labs — bringing to the role a rare combination of technical engineering depth, product intuition, and a people-centered approach to building shaped by his Thai upbringing and years of cross-cultural community leadership at USC.")}</p>
                 )}
                 <button onClick={() => toggleBio('tun')} className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors">
                   {expandedBios.has('tun') ? 'Read less' : 'Read more'}
