@@ -236,7 +236,7 @@ export default function GSSC() {
             <motion.div {...fadeInUp}>
               <div className="inline-block mb-6">
                 <span className="text-sm uppercase tracking-widest text-white/80 font-semibold">
-                  Fully Funded
+                  Free For Students
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight leading-tight">
