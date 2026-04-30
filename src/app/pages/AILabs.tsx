@@ -237,6 +237,26 @@ export default function AILabs() {
                         <p>That same instinct follows me into my entrepreneurship work connecting founders to capital and legal foundations, as a teaching assistant helping PhD researchers communicate their findings to the world, and as a Science Olympiad supervisor supporting the next generation of scientists.</p>
                         <p>On my Substack, <em>The Art of Perceiving</em>, I follow the same thread inward — exploring how the natural laws I encounter in science shape the way we experience life, language, and what we're able to say to each other.</p>
                         <p>Feel free to reach out at <a href="mailto:sp2587@cornell.edu" className="text-[#242EC0] hover:underline">sp2587@cornell.edu</a></p>
+
+                        <div className="pt-2 border-t border-gray-100">
+                          <p className="font-semibold text-gray-900 mb-3">Experience</p>
+                          <ul className="space-y-3">
+                            {[
+                              { role: "Organizational Associate", org: "Global Student Startup Competition", detail: "Logistics for GSSC 2026 Seoul · Pre-Seed Campus Expansion team" },
+                              { role: "Marketing Director & Senior Analyst", org: "180 Degrees Consulting at Cornell", detail: "Sustainability consulting for Fortune 300 brands and Better Cotton Initiative" },
+                              { role: "Fellow", org: "Blackstone LaunchPad at Cornell", detail: "Managing Startup Office Hours · Emcee, Big Idea Pitch Competition" },
+                              { role: "Undergraduate Consultant", org: "International Teaching Assistant Program, Cornell", detail: "English communications support for international PhD researchers" },
+                              { role: "Finance & Markets Analyst", org: "RemNeuro (Cornell Tech)", detail: "Health-tech SaaS startup in senior care and mental health" },
+                              { role: "Nexus Summer Scholar", org: "Hirschman Lab of Sociology, Cornell", detail: "Modeled P&C insurance investment portfolios; analyzed climate risk disclosure trends 2012–2023" },
+                            ].map((item) => (
+                              <li key={item.role} className="flex flex-col gap-0.5">
+                                <span className="font-semibold text-gray-900">{item.role}</span>
+                                <span className="text-[#242EC0]">{item.org}</span>
+                                <span className="text-gray-500">{item.detail}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </div>
                     </motion.div>
                   )}
