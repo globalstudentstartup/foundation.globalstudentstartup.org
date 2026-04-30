@@ -187,16 +187,6 @@ export default function Home() {
                 </Link>
               </motion.div>
 
-              <motion.div {...fadeInUp} transition={{ delay: 0.5 }}>
-                <Link to="/advisory">
-                  <div className="bg-white p-8 rounded-lg hover:shadow-xl transition-shadow group cursor-pointer h-full flex flex-col">
-                    <h3 className="text-2xl font-bold mb-3 group-hover:text-[#242EC0] transition-colors uppercase">Advisory</h3>
-                    <p className="text-gray-900 font-semibold mb-2">Ecosystem assessment and design</p>
-                    <p className="text-gray-600 mb-3 flex-grow">Assessing and designing startup ecosystem infrastructure for governments, embassies, and universities.</p>
-                    <p className="text-[#242EC0] font-semibold text-sm">Net proceeds support student programs</p>
-                  </div>
-                </Link>
-              </motion.div>
             </div>
           </div>
         </section>
