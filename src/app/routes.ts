@@ -1,7 +1,6 @@
 import { createHashRouter } from "react-router";
 import Root from "./components/Root";
 import Home from "./pages/Home";
-import Programs from "./pages/Programs";
 import GSSC from "./pages/GSSC";
 import AICup from "./pages/AICup";
 import AILabs from "./pages/AILabs";
@@ -32,7 +31,6 @@ export const router = createHashRouter([
     Component: Root,
     children: [
       { index: true, Component: Home },
-      { path: "programs", Component: Programs },
       { path: "gssc", Component: GSSC },
       { path: "ai-cup", Component: AICup },
       { path: "ai-labs", Component: AILabs },
