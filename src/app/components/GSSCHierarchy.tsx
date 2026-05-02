@@ -167,7 +167,7 @@ export function GSSCHierarchy() {
             In the India region, teams compete at individual universities (IIT Delhi, Ashoka University, OP Jindal University, SRCC, etc.). Winners from each university then compete at the <span className="font-semibold">Regional Finals hosted at Ashoka University</span>. The regional champion earns a fully funded trip to GSSC Worlds in Seoul.
           </p>
           <div className="flex flex-wrap gap-3 items-center text-sm">
-            <div className="bg-white px-4 py-2 rounded-full font-semibold">University Competition</div>
+            <div className="bg-white px-4 py-2 rounded-full font-semibold">University Competitions</div>
             <ArrowRight className="text-gray-400" size={20} />
             <div className="bg-white px-4 py-2 rounded-full font-semibold">Regional Finals at Ashoka</div>
             <ArrowRight className="text-gray-400" size={20} />
