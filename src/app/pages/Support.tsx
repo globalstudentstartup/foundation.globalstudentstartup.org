@@ -376,8 +376,7 @@ export default function Support() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div {...fadeInUp} className="text-center">
             <p className="text-base text-gray-700 leading-relaxed max-w-4xl mx-auto">
-              The Global Student Startup Foundation is a registered 501(c)(3) nonprofit headquartered in Los Angeles. EIN: 41-3141550. All donations are tax-deductible. Powered by Zeffy — 100% fee-free, every dollar goes directly to GSSF.
-            </p>
+              The Global Student Startup Foundation is a registered 501(c)(3) nonprofit headquartered in Los Angeles. EIN: 41-3141550. All donations are tax-deductible.            </p>
           </motion.div>
         </div>
       </section>
