@@ -16,6 +16,16 @@ export default function Footer() {
     }
   };
 
+  const scrollToUniversities = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname === "/network") {
+      document.getElementById('universities')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/network');
+      setTimeout(() => document.getElementById('universities')?.scrollIntoView({ behavior: 'smooth' }), 100);
+    }
+  };
+
   return (
     <footer className="bg-white border-t border-black/8 py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -87,9 +97,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/network#universities" className="text-gray-600 hover:text-[#242EC0] transition-colors">
+                <a
+                  href="#"
+                  onClick={scrollToUniversities}
+                  className="text-gray-600 hover:text-[#242EC0] transition-colors cursor-pointer"
+                >
                   Universities
-                </Link>
+                </a>
               </li>
               <li>
                 <Link to="/network#mentors" className="text-gray-600 hover:text-[#242EC0] transition-colors">
