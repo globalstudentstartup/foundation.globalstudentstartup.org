@@ -71,7 +71,7 @@ export default function Network() {
               Mentors
             </h2>
             <p className="text-lg text-white/70 max-w-3xl">
-              GSSF programs are powered by mentors and advisors from the world's most influential technology, media, academic, diplomatic, and public sector institutions. Individual participation; no implied institutional endorsement.
+              GSSF programs are powered by mentors from the world's most influential technology, media, academic, diplomatic, and public sector institutions. Individual participation; no implied institutional endorsement.
             </p>
           </motion.div>
 
