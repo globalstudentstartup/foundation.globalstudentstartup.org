@@ -1,9 +1,20 @@
-import { Link, useLocation } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { Linkedin, Instagram } from "lucide-react";
 import logoBlack from "figma:asset/79566f8df6b5c3761b519dc9d46ef31e438a7a0b.png";
 
 export default function Footer() {
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToPrograms = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname === "/") {
+      document.getElementById('programs')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => document.getElementById('programs')?.scrollIntoView({ behavior: 'smooth' }), 100);
+    }
+  };
 
   return (
     <footer className="bg-white border-t border-black/8 py-16">
@@ -57,9 +68,13 @@ export default function Footer() {
             <h4 className="font-semibold text-gray-900 mb-4">About</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/#programs" className="text-gray-600 hover:text-[#242EC0] transition-colors">
+                <a
+                  href="#"
+                  onClick={scrollToPrograms}
+                  className="text-gray-600 hover:text-[#242EC0] transition-colors cursor-pointer"
+                >
                   Programs
-                </Link>
+                </a>
               </li>
               <li>
                 <Link to="/leadership#global-leadership" className="text-gray-600 hover:text-[#242EC0] transition-colors">
