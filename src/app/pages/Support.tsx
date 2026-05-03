@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Button } from "../components/ui/button";
+import { Link } from "react-router";
 import { SEO } from "../components/SEO";
 import { ExternalLink } from "lucide-react";
 
@@ -9,6 +10,11 @@ export default function Support() {
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true },
     transition: { duration: 0.5 }
+  };
+
+  const scrollToSection = (id: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const namedScholarships = [
@@ -95,7 +101,7 @@ export default function Support() {
             </h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            <a href="#general" className="flex">
+            <a href="#" onClick={scrollToSection('general')} className="flex">
               <motion.div 
                 whileHover={{ scale: 1.05 }} 
                 whileTap={{ scale: 0.95 }}
@@ -109,7 +115,7 @@ export default function Support() {
               </motion.div>
             </a>
 
-            <a href="#universities" className="flex">
+            <a href="#" onClick={scrollToSection('universities')} className="flex">
               <motion.div 
                 whileHover={{ scale: 1.05 }} 
                 whileTap={{ scale: 0.95 }}
@@ -123,7 +129,7 @@ export default function Support() {
               </motion.div>
             </a>
 
-            <a href="#regions" className="flex">
+            <a href="#" onClick={scrollToSection('regions')} className="flex">
               <motion.div 
                 whileHover={{ scale: 1.05 }} 
                 whileTap={{ scale: 0.95 }}
@@ -137,7 +143,7 @@ export default function Support() {
               </motion.div>
             </a>
 
-            <a href="#prizes" className="flex">
+            <a href="#" onClick={scrollToSection('prizes')} className="flex">
               <motion.div 
                 whileHover={{ scale: 1.05 }} 
                 whileTap={{ scale: 0.95 }}
@@ -176,7 +182,7 @@ export default function Support() {
             className="text-center"
           >
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="/gssc">
+              <Link to="/gssc">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button
                     size="lg"
@@ -185,7 +191,7 @@ export default function Support() {
                     Learn About Pathways to GSSC Worlds →
                   </Button>
                 </motion.div>
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -232,8 +238,8 @@ export default function Support() {
                     Funding activates
                   </p>
                 )}
-                <a 
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-block mt-auto"
                 >
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -244,7 +250,7 @@ export default function Support() {
                       Inquire →
                     </Button>
                   </motion.div>
-                </a>
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -289,8 +295,8 @@ export default function Support() {
                 <p className={`text-sm mb-4 font-semibold ${scholarship.tierLevel === 3 ? 'text-gray-600' : 'text-white/80'}`}>
                   {scholarship.status}
                 </p>
-                <a 
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-block mt-auto"
                 >
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
@@ -305,7 +311,7 @@ export default function Support() {
                       {scholarship.ctaText}
                     </Button>
                   </motion.div>
-                </a>
+                </Link>
               </motion.div>
             ))}
           </div>
