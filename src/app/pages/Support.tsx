@@ -87,7 +87,7 @@ export default function Support() {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
               Put the World's Next Generation of Founders on the Global Stage
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">The Global Student Startup Foundation is a 501(c)(3) nonprofit (EIN: 41-3141550) headquartered in Los Angeles. Every dollar raised supports students and programs directly. Ways to give: Global Sponsorship, Named Scholarships, and Named Prizes.</p>
+            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">The Global Student Startup Foundation is a 501(c)(3) nonprofit (EIN: 41-3141550) headquartered in Los Angeles. Every dollar raised supports students and programs directly. Ways to give: Named Scholarships and Named Prizes.</p>
           </motion.div>
         </div>
       </section>
@@ -101,21 +101,7 @@ export default function Support() {
             </h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            <a href="#" onClick={scrollToSection('general')} className="flex">
-              <motion.div 
-                whileHover={{ scale: 1.05 }} 
-                whileTap={{ scale: 0.95 }}
-                className="bg-[#E4E6F3] p-8 rounded-lg text-center border-2 border-transparent hover:border-[#242EC0] transition-all cursor-pointer flex flex-col w-full"
-              >
-                <h3 className="text-xl font-bold mb-3">Global Sponsor</h3>
-                <p className="text-gray-700 text-sm mb-4 flex-grow">Global brand exposure across all foundation programs, including at the Asian Leadership Conference.</p>
-                <Button className="bg-[#242EC0] text-white hover:bg-[#08044C] font-semibold mt-auto">
-                  Give Now →
-                </Button>
-              </motion.div>
-            </a>
-
-            <a href="#" onClick={scrollToSection('universities')} className="flex">
+<a href="#" onClick={scrollToSection('universities')} className="flex">
               <motion.div 
                 whileHover={{ scale: 1.05 }} 
                 whileTap={{ scale: 0.95 }}
@@ -342,33 +328,7 @@ export default function Support() {
         </div>
       </section>
 
-      {/* General Giving Section */}
-      <section id="general" className="py-24 bg-[#E4E6F3]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <motion.div {...fadeInUp} className="text-center max-w-4xl mx-auto">
-            <h2 className="text-sm uppercase tracking-widest text-[#242EC0] mb-6 font-bold">
-              GENERAL GIVING
-            </h2>
-            <p className="text-xl text-gray-700 leading-relaxed mb-8">Support all teams competing at GSSC Worlds. Approximately 100 undergraduate founders. 23+ universities. 5 continents. One stage in Seoul. Your gift funds the flights, hotel, and program costs that make it possible for the world's best student founders to compete.</p>
-            <a 
-              href="https://www.zeffy.com/en-US/donation-form/send-the-worlds-best-student-founders-to-gssc-worlds--2026"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button
-                  size="lg"
-                  className="bg-[#242EC0] text-white hover:bg-[#08044C] px-12 py-6 h-auto uppercase tracking-wide text-base font-semibold"
-                >
-                  Support GSSC Worlds 2026 →
-                </Button>
-              </motion.div>
-            </a>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Footer Trust Bar */}
+{/* Footer Trust Bar */}
       <section className="py-12 bg-[#E4E6F3]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div {...fadeInUp} className="text-center">
