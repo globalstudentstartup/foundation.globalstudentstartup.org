@@ -1051,6 +1051,60 @@ export default function Leadership() {
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+            {/* Carolina Avila */}
+            <motion.div {...fadeInUp}>
+              <img
+                src={carolinaAvilaPhoto}
+                alt="Carolina Avila"
+                className="w-48 h-48 object-cover rounded-lg mb-6 grayscale"
+              />
+              <h3 className="text-2xl font-bold text-white mb-2 uppercase">Carolina Avila</h3>
+              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">
+                Regional Advisor, Colombia
+              </p>
+              <a
+                href="https://www.linkedin.com/in/caroavi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span className="text-sm">LinkedIn</span>
+              </a>
+              <div className="text-white/70 leading-relaxed">
+                {expandedBios.has('carolina') ? (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p className="mb-4">
+                      Carolina Avila is a global innovation leader and one of the world's most experienced builders of entrepreneurship programs. Over 15+ years, she has designed and led transformative programs across two continents — at the intersection of innovation strategy, education, and ecosystem building — helping startups, students, and institutions unlock creativity and drive real-world impact.
+                    </p>
+                    <p className="mb-4">
+                      Her career spans some of the most respected organizations in global innovation. As Project Director for the Mayor's Office of Bogotá, Carolina led Ciempiés — an award-winning initiative that redesigned safe school commutes for children and won the 2016 Bloomberg Mayors Challenge, one of the most prestigious recognitions for bold public sector innovation. She has consulted for the UNDP across Colombia, Bolivia, and the Dominican Republic, designing innovation portfolios and sustainable development strategies for some of the world's most complex challenges.
+                    </p>
+                    <p className="mb-4">
+                      As Head of Program Development and Innovation at the European Innovation Academy — one of the world's largest innovation programs for students and startups — Carolina led the end-to-end design and delivery of a flagship three-week program serving 350+ students and 50+ mentors across multiple international locations. She has also led the achievement of Ashoka Changemaker Campus designation, launched university innovation centers, and built global partnerships with NGOs, accelerators, and leading institutions worldwide.
+                    </p>
+                    <p>
+                      At GSSF, Carolina brings this rare depth of program-building expertise to design in-person, theory-to-execution experiences that prepare the world's most promising undergraduate founders to compete and lead on the global stage.
+                    </p>
+                  </motion.div>
+                ) : (
+                  <p>
+                    {truncateText("Carolina Avila is a global innovation leader and one of the world's most experienced builders of entrepreneurship programs. Over 15+ years, she has designed and led transformative programs across two continents — at the intersection of innovation strategy, education, and ecosystem building — helping startups, students, and institutions unlock creativity and drive real-world impact.")}
+                  </p>
+                )}
+                <button
+                  onClick={() => toggleBio('carolina')}
+                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
+                >
+                  {expandedBios.has('carolina') ? 'Read less' : 'Read more'}
+                </button>
+              </div>
+            </motion.div>
+
             {/* Felix Litvinsky */}
             <motion.div {...fadeInUp}>
               <img
@@ -1400,59 +1454,6 @@ export default function Leadership() {
               </div>
             </motion.div>
 
-            {/* Carolina Avila */}
-            <motion.div {...fadeInUp} transition={{ delay: 0.7 }}>
-              <img
-                src={carolinaAvilaPhoto}
-                alt="Carolina Avila"
-                className="w-48 h-48 object-cover rounded-lg mb-6 grayscale"
-              />
-              <h3 className="text-2xl font-bold text-white mb-2 uppercase">Carolina Avila</h3>
-              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">
-                Regional Advisor, Colombia & Europe
-              </p>
-              <a
-                href="https://www.linkedin.com/in/caroavi/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span className="text-sm">LinkedIn</span>
-              </a>
-              <div className="text-white/70 leading-relaxed">
-                {expandedBios.has('carolina') ? (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <p className="mb-4">
-                      Carolina Avila is a global innovation leader and one of the world's most experienced builders of entrepreneurship programs. Over 15+ years, she has designed and led transformative programs across two continents — at the intersection of innovation strategy, education, and ecosystem building — helping startups, students, and institutions unlock creativity and drive real-world impact.
-                    </p>
-                    <p className="mb-4">
-                      Her career spans some of the most respected organizations in global innovation. As Project Director for the Mayor's Office of Bogotá, Carolina led Ciempiés — an award-winning initiative that redesigned safe school commutes for children and won the 2016 Bloomberg Mayors Challenge, one of the most prestigious recognitions for bold public sector innovation. She has consulted for the UNDP across Colombia, Bolivia, and the Dominican Republic, designing innovation portfolios and sustainable development strategies for some of the world's most complex challenges.
-                    </p>
-                    <p className="mb-4">
-                      As Head of Program Development and Innovation at the European Innovation Academy — one of the world's largest innovation programs for students and startups — Carolina led the end-to-end design and delivery of a flagship three-week program serving 350+ students and 50+ mentors across multiple international locations. She has also led the achievement of Ashoka Changemaker Campus designation, launched university innovation centers, and built global partnerships with NGOs, accelerators, and leading institutions worldwide.
-                    </p>
-                    <p>
-                      At GSSF, Carolina brings this rare depth of program-building expertise to design in-person, theory-to-execution experiences that prepare the world's most promising undergraduate founders to compete and lead on the global stage.
-                    </p>
-                  </motion.div>
-                ) : (
-                  <p>
-                    {truncateText("Carolina Avila is a global innovation leader and one of the world's most experienced builders of entrepreneurship programs. Over 15+ years, she has designed and led transformative programs across two continents — at the intersection of innovation strategy, education, and ecosystem building — helping startups, students, and institutions unlock creativity and drive real-world impact.")}
-                  </p>
-                )}
-                <button
-                  onClick={() => toggleBio('carolina')}
-                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
-                >
-                  {expandedBios.has('carolina') ? 'Read less' : 'Read more'}
-                </button>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
