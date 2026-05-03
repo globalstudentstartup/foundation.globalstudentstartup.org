@@ -87,7 +87,7 @@ export default function Support() {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
               Put the World's Next Generation of Founders on the Global Stage
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">The Global Student Startup Foundation is a 501(c)(3) nonprofit (EIN: 41-3141550) headquartered in Los Angeles. Every dollar raised supports students and programs directly. Three ways to give: Global Sponsorship, Named Scholarships, and Named Prizes.</p>
+            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">The Global Student Startup Foundation is a 501(c)(3) nonprofit (EIN: 41-3141550) headquartered in Los Angeles. Every dollar raised supports students and programs directly. Ways to give: Global Sponsorship, Named Scholarships, and Named Prizes.</p>
           </motion.div>
         </div>
       </section>
