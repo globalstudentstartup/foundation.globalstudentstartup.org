@@ -57,6 +57,11 @@ export default function Footer() {
             <h4 className="font-semibold text-gray-900 mb-4">About</h4>
             <ul className="space-y-2">
               <li>
+                <Link to="/#programs" className="text-gray-600 hover:text-[#242EC0] transition-colors">
+                  Programs
+                </Link>
+              </li>
+              <li>
                 <Link to="/leadership#global-leadership" className="text-gray-600 hover:text-[#242EC0] transition-colors">
                   Leadership
                 </Link>
@@ -67,18 +72,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/network#mentors" className="text-gray-600 hover:text-[#242EC0] transition-colors">
-                  Mentors
-                </Link>
-              </li>
-              <li>
                 <Link to="/network#universities" className="text-gray-600 hover:text-[#242EC0] transition-colors">
                   Universities
                 </Link>
               </li>
               <li>
-                <Link to="/partners" className="text-gray-600 hover:text-[#242EC0] transition-colors">
-                  Partners
+                <Link to="/network#mentors" className="text-gray-600 hover:text-[#242EC0] transition-colors">
+                  Mentors
                 </Link>
               </li>
               <li>
