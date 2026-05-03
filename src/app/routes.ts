@@ -14,7 +14,6 @@ import ConflictOfInterest from "./pages/policies/ConflictOfInterest";
 import UseOfFunds from "./pages/policies/UseOfFunds";
 import PrivacyPolicy from "./pages/policies/PrivacyPolicy";
 import BusinessCardPage from "./pages/BusinessCardPage";
-import FAQ from "./pages/FAQ";
 import IndiaDonation from "./pages/IndiaDonation";
 import FinlandDonation from "./pages/FinlandDonation";
 import USCDonation from "./pages/USCDonation";
@@ -44,7 +43,6 @@ export const router = createHashRouter([
       { path: "use-of-funds", Component: UseOfFunds },
       { path: "privacy-policy", Component: PrivacyPolicy },
       { path: "business-card", Component: BusinessCardPage },
-      { path: "faq", Component: FAQ },
       { path: "india-donation", Component: IndiaDonation },
       { path: "finland-donation", Component: FinlandDonation },
       { path: "usc-donation", Component: USCDonation },

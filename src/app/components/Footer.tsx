@@ -87,11 +87,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="text-gray-600 hover:text-[#242EC0] transition-colors">
-                  FAQ
-                </Link>
-              </li>
-              <li>
                 <Link to="/contact" className="text-gray-600 hover:text-[#242EC0] transition-colors">
                   Contact Us
                 </Link>

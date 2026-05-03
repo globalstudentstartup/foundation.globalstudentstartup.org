@@ -1105,8 +1105,51 @@ export default function Leadership() {
               </div>
             </motion.div>
 
+            {/* Maxime Chaury */}
+            <motion.div {...fadeInUp} transition={{ delay: 0.1 }}>
+              <img
+                src={maximeChauryPhoto}
+                alt="Maxime Chaury"
+                className="w-48 h-48 object-cover rounded-lg mb-6 grayscale"
+              />
+              <h3 className="text-2xl font-bold text-white mb-2 uppercase">Maxime Chaury</h3>
+              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Regional Advisor, Singapore</p>
+              <a
+                href="https://www.linkedin.com/in/maximechaury/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span className="text-sm">LinkedIn</span>
+              </a>
+              <div className="text-white/70 leading-relaxed">
+                {expandedBios.has('maxime') ? (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p>
+                      Maxime Chaury is a serial entrepreneur, operator, and startup ecosystem builder whose career spans four continents and some of the most dynamic emerging markets in the world. Currently serving as General Manager of Southeast Asia at Taptap Send — a cross-border fintech on a mission to reduce the cost of sending money home for immigrants across emerging markets — Maxime owns the full P&L and growth strategy for the region. A Forbes 30 Under 30 honoree, his operator track record is rare in its breadth: as Co-Founder of Upworth, he built a money management platform from zero; as Managing Director of Flash Coffee Indonesia, he grew the business from 14 stores to 90+, scaled monthly sales by 30x, and returned the country to profitability; and as Managing Director of Malaysia for Rocket Internet's Zen Rooms, he built a 30-person team and expanded the partner base from 20 to over 100 accounts — earning a seat on the company's Executive Board. Before becoming an operator, Maxime honed his strategic instincts at Roland Berger and Strategy& (PwC) across North and West Africa, and in private equity at Adenia Partners in Côte d'Ivoire. He holds degrees from Sciences Po Paris, ESSEC, The University of Chicago, Seoul National University, and Saint-Cyr Coëtquidan — France's foremost officer school. As GSSF's Regional Advisor for Singapore, Maxime brings deep Southeast Asian operator experience and a founder's instinct to the GSSF network — and plays a central role in ensuring that Singapore's most promising undergraduate entrepreneurs have a path to the global stage.
+                    </p>
+                  </motion.div>
+                ) : (
+                  <p>
+                    {truncateText("Maxime Chaury is a serial entrepreneur, operator, and startup ecosystem builder whose career spans four continents and some of the most dynamic emerging markets in the world. Currently serving as General Manager of Southeast Asia at Taptap Send — a cross-border fintech on a mission to reduce the cost of sending money home for immigrants across emerging markets.")}
+                  </p>
+                )}
+                <button
+                  onClick={() => toggleBio('maxime')}
+                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
+                >
+                  {expandedBios.has('maxime') ? 'Read less' : 'Read more'}
+                </button>
+              </div>
+            </motion.div>
+
             {/* Felix Litvinsky */}
-            <motion.div {...fadeInUp}>
+            <motion.div {...fadeInUp} transition={{ delay: 0.2 }}>
               <img
                 src={felixLitvinskyPhoto}
                 alt="Felix Litvinsky"
@@ -1157,8 +1200,103 @@ export default function Leadership() {
               </div>
             </motion.div>
 
+            {/* Dolapo Sunmola */}
+            <motion.div {...fadeInUp} transition={{ delay: 0.3 }}>
+              <img
+                src={dolapoSunmolaPhoto}
+                alt="Dolapo Sunmola"
+                className="w-48 h-48 object-cover rounded-lg mb-6 grayscale"
+              />
+              <h3 className="text-2xl font-bold text-white mb-2 uppercase">Dolapo Sunmola</h3>
+              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Regional Advisor, Nigeria</p>
+              <a
+                href="https://www.linkedin.com/in/dolaposunmola/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span className="text-sm">LinkedIn</span>
+              </a>
+              <div className="text-white/70 leading-relaxed">
+                {expandedBios.has('dolapo') ? (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p className="mb-4">
+                      Dolapo Sunmola is a seasoned operator, strategist, and ecosystem builder whose 15-year career spans continents, sectors, and some of the most complex challenges at the intersection of business and human development. Based in the United States and working across global markets, Dolapo brings to GSSF a rare combination of corporate operational rigor and a deep, long-standing commitment to unlocking economic opportunity across Africa.
+                    </p>
+                    <p className="mb-4">
+                      As the Founding Partner of Optimize Africa Dev, Dolapo leads a consulting and advisory firm purpose-built to drive sustainable, inclusive growth across the African continent. The firm works with governments, private companies, NGOs, international development agencies, and multilateral investors — delivering supply chain transformation, socioeconomic advisory, market entry strategy, and digital transformation solutions that bridge the gap between capital, policy, and on-the-ground execution. It is precisely the kind of institution-building work that GSSF's mission was designed to complement: identifying where talent exists, and creating the infrastructure for it to reach the world.
+                    </p>
+                    <p className="mb-4">
+                      His operational background is equally global. At CEVA Logistics, one of the world's largest supply chain management companies, Dolapo led supply chain operations across complex international logistics environments. Earlier, as a Business Strategist at Media Gear Interactive in London, he spent nearly six years developing the strategic instincts that now define his cross-sector advisory practice. He currently serves as a Strategic Advisor at JDF Solution LLC and as an Advisory Council Member at the YMCA of Pierce and Kitsap Counties — where he provides governance oversight, evaluates community needs, and mentors emerging leaders.
+                    </p>
+                    <p>
+                      As GSSF's Regional Advisor for Nigeria, Dolapo brings his continental relationships, development expertise, and operator credibility to bear on one of Africa's most dynamic student ecosystems — helping to build the pathways that connect Nigeria's next generation of founders to the global stage.
+                    </p>
+                  </motion.div>
+                ) : (
+                  <p>
+                    {truncateText("Dolapo Sunmola is a seasoned operator, strategist, and ecosystem builder whose 15-year career spans continents, sectors, and some of the most complex challenges at the intersection of business and human development. Based in the United States and working across global markets, Dolapo brings to GSSF a rare combination of corporate operational rigor and a deep, long-standing commitment to unlocking economic opportunity across Africa.")}
+                  </p>
+                )}
+                <button
+                  onClick={() => toggleBio('dolapo')}
+                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
+                >
+                  {expandedBios.has('dolapo') ? 'Read less' : 'Read more'}
+                </button>
+              </div>
+            </motion.div>
+
+            {/* Gabriela Martinez Altamirano */}
+            <motion.div {...fadeInUp} transition={{ delay: 0.4 }}>
+              <img
+                src={gabrielaMartinezPhoto}
+                alt="Gabriela Martinez Altamirano"
+                className="w-48 h-48 object-cover rounded-lg mb-6 grayscale"
+              />
+              <h3 className="text-2xl font-bold text-white mb-2 uppercase">Gabriela Martinez Altamirano</h3>
+              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Regional Advisor, Mexico</p>
+              <a
+                href="https://www.linkedin.com/in/gabrielamtzaltamirano/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span className="text-sm">LinkedIn</span>
+              </a>
+              <div className="text-white/70 leading-relaxed">
+                {expandedBios.has('gabriela') ? (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p>
+                      A former member of the Mexican National Soccer Team, Gabriela brings the discipline, competitive drive, and team-first mentality of an elite athlete to everything she builds. A two-time alumna of the European Innovation Academy — first as a student founder developing a healthcare startup, then returning as a keynote speaker and mentor — she embodies the GSSF belief that the most powerful leaders are those who come back to lift others. Her professional career spans founding GAMA Business Solutions, leading marketplace growth and partner development at a Series-funded proptech company, and managing B2B marketing and events at scale. What distinguishes Gabriela is her lived fluency in cross-cultural collaboration: she has worked, studied, and competed across Mexico, the United States, Portugal, and Europe, giving her a rare instinct for the human dynamics that make global teams succeed. As GSSF's Regional Advisor for Mexico, she guides the exploration of Mexico as the foundation's next major region — drawing on her deep roots and cultural fluency to navigate the local university landscape, build early ecosystem relationships, and lay the groundwork for Mexican student founders to access the global stage.
+                    </p>
+                  </motion.div>
+                ) : (
+                  <p>
+                    {truncateText("A former member of the Mexican National Soccer Team, Gabriela brings the discipline, competitive drive, and team-first mentality of an elite athlete to everything she builds. A two-time alumna of the European Innovation Academy — first as a student founder developing a healthcare startup, then returning as a keynote speaker and mentor — she embodies the GSSF belief that the most powerful leaders are those who come back to lift others.")}
+                  </p>
+                )}
+                <button
+                  onClick={() => toggleBio('gabriela')}
+                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
+                >
+                  {expandedBios.has('gabriela') ? 'Read less' : 'Read more'}
+                </button>
+              </div>
+            </motion.div>
+
             {/* Apurva Ganoo */}
-            <motion.div {...fadeInUp} transition={{ delay: 0.1 }}>
+            <motion.div {...fadeInUp} transition={{ delay: 0.5 }}>
               <img
                 src={apurvaGanooPhoto}
                 alt="Apurva Ganoo"
@@ -1210,7 +1348,7 @@ export default function Leadership() {
             </motion.div>
 
             {/* Danielle Vivo */}
-            <motion.div {...fadeInUp} transition={{ delay: 0.2 }}>
+            <motion.div {...fadeInUp} transition={{ delay: 0.6 }}>
               <img
                 src={danielleVivoPhoto}
                 alt="Danielle Vivo"
@@ -1262,7 +1400,7 @@ export default function Leadership() {
             </motion.div>
 
             {/* Ricardo Marvão */}
-            <motion.div {...fadeInUp} transition={{ delay: 0.3 }}>
+            <motion.div {...fadeInUp} transition={{ delay: 0.7 }}>
               <img
                 src={ricardoMarvaoPhoto}
                 alt="Ricardo Marvão"
@@ -1312,144 +1450,6 @@ export default function Leadership() {
                   className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
                 >
                   {expandedBios.has('ricardo') ? 'Read less' : 'Read more'}
-                </button>
-              </div>
-            </motion.div>
-
-            {/* Gabriela Martinez Altamirano */}
-            <motion.div {...fadeInUp} transition={{ delay: 0.4 }}>
-              <img
-                src={gabrielaMartinezPhoto}
-                alt="Gabriela Martinez Altamirano"
-                className="w-48 h-48 object-cover rounded-lg mb-6 grayscale"
-              />
-              <h3 className="text-2xl font-bold text-white mb-2 uppercase">Gabriela Martinez Altamirano</h3>
-              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Regional Advisor, Mexico</p>
-              <a
-                href="https://www.linkedin.com/in/gabrielamtzaltamirano/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span className="text-sm">LinkedIn</span>
-              </a>
-              <div className="text-white/70 leading-relaxed">
-                {expandedBios.has('gabriela') ? (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <p>
-                      A former member of the Mexican National Soccer Team, Gabriela brings the discipline, competitive drive, and team-first mentality of an elite athlete to everything she builds. A two-time alumna of the European Innovation Academy — first as a student founder developing a healthcare startup, then returning as a keynote speaker and mentor — she embodies the GSSF belief that the most powerful leaders are those who come back to lift others. Her professional career spans founding GAMA Business Solutions, leading marketplace growth and partner development at a Series-funded proptech company, and managing B2B marketing and events at scale. What distinguishes Gabriela is her lived fluency in cross-cultural collaboration: she has worked, studied, and competed across Mexico, the United States, Portugal, and Europe, giving her a rare instinct for the human dynamics that make global teams succeed. As GSSF's Regional Advisor for Mexico, she guides the exploration of Mexico as the foundation's next major region — drawing on her deep roots and cultural fluency to navigate the local university landscape, build early ecosystem relationships, and lay the groundwork for Mexican student founders to access the global stage.
-                    </p>
-                  </motion.div>
-                ) : (
-                  <p>
-                    {truncateText("A former member of the Mexican National Soccer Team, Gabriela brings the discipline, competitive drive, and team-first mentality of an elite athlete to everything she builds. A two-time alumna of the European Innovation Academy — first as a student founder developing a healthcare startup, then returning as a keynote speaker and mentor — she embodies the GSSF belief that the most powerful leaders are those who come back to lift others.")}
-                  </p>
-                )}
-                <button
-                  onClick={() => toggleBio('gabriela')}
-                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
-                >
-                  {expandedBios.has('gabriela') ? 'Read less' : 'Read more'}
-                </button>
-              </div>
-            </motion.div>
-
-            {/* Maxime Chaury */}
-            <motion.div {...fadeInUp} transition={{ delay: 0.5 }}>
-              <img
-                src={maximeChauryPhoto}
-                alt="Maxime Chaury"
-                className="w-48 h-48 object-cover rounded-lg mb-6 grayscale"
-              />
-              <h3 className="text-2xl font-bold text-white mb-2 uppercase">Maxime Chaury</h3>
-              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Regional Advisor, Singapore</p>
-              <a
-                href="https://www.linkedin.com/in/maximechaury/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span className="text-sm">LinkedIn</span>
-              </a>
-              <div className="text-white/70 leading-relaxed">
-                {expandedBios.has('maxime') ? (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <p>
-                      Maxime Chaury is a serial entrepreneur, operator, and startup ecosystem builder whose career spans four continents and some of the most dynamic emerging markets in the world. Currently serving as General Manager of Southeast Asia at Taptap Send — a cross-border fintech on a mission to reduce the cost of sending money home for immigrants across emerging markets — Maxime owns the full P&L and growth strategy for the region. A Forbes 30 Under 30 honoree, his operator track record is rare in its breadth: as Co-Founder of Upworth, he built a money management platform from zero; as Managing Director of Flash Coffee Indonesia, he grew the business from 14 stores to 90+, scaled monthly sales by 30x, and returned the country to profitability; and as Managing Director of Malaysia for Rocket Internet's Zen Rooms, he built a 30-person team and expanded the partner base from 20 to over 100 accounts — earning a seat on the company's Executive Board. Before becoming an operator, Maxime honed his strategic instincts at Roland Berger and Strategy& (PwC) across North and West Africa, and in private equity at Adenia Partners in Côte d'Ivoire. He holds degrees from Sciences Po Paris, ESSEC, The University of Chicago, Seoul National University, and Saint-Cyr Coëtquidan — France's foremost officer school. As GSSF's Regional Advisor for Singapore, Maxime brings deep Southeast Asian operator experience and a founder's instinct to the GSSF network — and plays a central role in ensuring that Singapore's most promising undergraduate entrepreneurs have a path to the global stage.
-                    </p>
-                  </motion.div>
-                ) : (
-                  <p>
-                    {truncateText("Maxime Chaury is a serial entrepreneur, operator, and startup ecosystem builder whose career spans four continents and some of the most dynamic emerging markets in the world. Currently serving as General Manager of Southeast Asia at Taptap Send — a cross-border fintech on a mission to reduce the cost of sending money home for immigrants across emerging markets.")}
-                  </p>
-                )}
-                <button
-                  onClick={() => toggleBio('maxime')}
-                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
-                >
-                  {expandedBios.has('maxime') ? 'Read less' : 'Read more'}
-                </button>
-              </div>
-            </motion.div>
-
-            {/* Dolapo Sunmola */}
-            <motion.div {...fadeInUp} transition={{ delay: 0.6 }}>
-              <img
-                src={dolapoSunmolaPhoto}
-                alt="Dolapo Sunmola"
-                className="w-48 h-48 object-cover rounded-lg mb-6 grayscale"
-              />
-              <h3 className="text-2xl font-bold text-white mb-2 uppercase">Dolapo Sunmola</h3>
-              <p className="text-sm uppercase tracking-wider text-white mb-4 font-bold">Regional Advisor, Nigeria</p>
-              <a
-                href="https://www.linkedin.com/in/dolaposunmola/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-white/60 hover:text-[#242EC0] transition-colors mb-4"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span className="text-sm">LinkedIn</span>
-              </a>
-              <div className="text-white/70 leading-relaxed">
-                {expandedBios.has('dolapo') ? (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <p className="mb-4">
-                      Dolapo Sunmola is a seasoned operator, strategist, and ecosystem builder whose 15-year career spans continents, sectors, and some of the most complex challenges at the intersection of business and human development. Based in the United States and working across global markets, Dolapo brings to GSSF a rare combination of corporate operational rigor and a deep, long-standing commitment to unlocking economic opportunity across Africa.
-                    </p>
-                    <p className="mb-4">
-                      As the Founding Partner of Optimize Africa Dev, Dolapo leads a consulting and advisory firm purpose-built to drive sustainable, inclusive growth across the African continent. The firm works with governments, private companies, NGOs, international development agencies, and multilateral investors — delivering supply chain transformation, socioeconomic advisory, market entry strategy, and digital transformation solutions that bridge the gap between capital, policy, and on-the-ground execution. It is precisely the kind of institution-building work that GSSF's mission was designed to complement: identifying where talent exists, and creating the infrastructure for it to reach the world.
-                    </p>
-                    <p className="mb-4">
-                      His operational background is equally global. At CEVA Logistics, one of the world's largest supply chain management companies, Dolapo led supply chain operations across complex international logistics environments. Earlier, as a Business Strategist at Media Gear Interactive in London, he spent nearly six years developing the strategic instincts that now define his cross-sector advisory practice. He currently serves as a Strategic Advisor at JDF Solution LLC and as an Advisory Council Member at the YMCA of Pierce and Kitsap Counties — where he provides governance oversight, evaluates community needs, and mentors emerging leaders.
-                    </p>
-                    <p>
-                      As GSSF's Regional Advisor for Nigeria, Dolapo brings his continental relationships, development expertise, and operator credibility to bear on one of Africa's most dynamic student ecosystems — helping to build the pathways that connect Nigeria's next generation of founders to the global stage.
-                    </p>
-                  </motion.div>
-                ) : (
-                  <p>
-                    {truncateText("Dolapo Sunmola is a seasoned operator, strategist, and ecosystem builder whose 15-year career spans continents, sectors, and some of the most complex challenges at the intersection of business and human development. Based in the United States and working across global markets, Dolapo brings to GSSF a rare combination of corporate operational rigor and a deep, long-standing commitment to unlocking economic opportunity across Africa.")}
-                  </p>
-                )}
-                <button
-                  onClick={() => toggleBio('dolapo')}
-                  className="text-[#242EC0] hover:text-[#242EC0]/80 font-semibold mt-3 transition-colors"
-                >
-                  {expandedBios.has('dolapo') ? 'Read less' : 'Read more'}
                 </button>
               </div>
             </motion.div>

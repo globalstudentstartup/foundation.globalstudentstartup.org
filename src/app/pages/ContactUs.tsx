@@ -85,26 +85,6 @@ export default function ContactUs() {
               </a>
             </motion.div>
 
-            {/* FAQ Card */}
-            <motion.div {...fadeInUp} transition={{ delay: 0.2 }} className="bg-[#E4E6F3] p-10 rounded-lg border-2 border-transparent hover:border-[#242EC0] transition-all flex flex-col">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">FAQ</h3>
-              <p className="text-lg text-gray-700 mb-6 flex-grow">
-                Everything you need to know about GSSC and GSSF
-              </p>
-              <a 
-                href="/faq"
-                className="inline-block"
-              >
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button
-                    size="lg"
-                    className="bg-[#242EC0] text-white hover:bg-[#08044C] font-semibold w-full"
-                  >
-                    Read FAQ →
-                  </Button>
-                </motion.div>
-              </a>
-            </motion.div>
           </div>
 
           {/* Follow Us Section */}
