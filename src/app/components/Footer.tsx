@@ -36,6 +36,16 @@ export default function Footer() {
     }
   };
 
+  const scrollToMentors = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname === "/network") {
+      document.getElementById('mentors')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/network');
+      setTimeout(() => document.getElementById('mentors')?.scrollIntoView({ behavior: 'smooth' }), 100);
+    }
+  };
+
   return (
     <footer className="bg-white border-t border-black/8 py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -120,9 +130,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <Link to="/network#mentors" className="text-gray-600 hover:text-[#242EC0] transition-colors">
+                <a
+                  href="#"
+                  onClick={scrollToMentors}
+                  className="text-gray-600 hover:text-[#242EC0] transition-colors cursor-pointer"
+                >
                   Mentors
-                </Link>
+                </a>
               </li>
               <li>
                 <Link to="/foundation" className="text-gray-600 hover:text-[#242EC0] transition-colors">
