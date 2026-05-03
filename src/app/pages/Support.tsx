@@ -87,7 +87,7 @@ export default function Support() {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
               Put the World's Next Generation of Founders on the Global Stage
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">The Global Student Startup Foundation is a 501(c)(3) nonprofit (EIN: 41-3141550) headquartered in Los Angeles. Every dollar raised supports students and programs directly. Ways to give: Named Scholarships and Named Prizes.</p>
+            <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed">The Global Student Startup Foundation is a 501(c)(3) nonprofit (EIN: 41-3141550) headquartered in Los Angeles. Every dollar raised supports students and programs directly. Ways to give: Global Sponsorship, Named Scholarships, and Named Prizes.</p>
           </motion.div>
         </div>
       </section>
@@ -101,6 +101,20 @@ export default function Support() {
             </h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <a href="#" onClick={scrollToSection('global-sponsor')} className="flex">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-[#E4E6F3] p-8 rounded-lg text-center border-2 border-transparent hover:border-[#242EC0] transition-all cursor-pointer flex flex-col w-full"
+              >
+                <h3 className="text-xl font-bold mb-3">Global Sponsor</h3>
+                <p className="text-gray-700 text-sm mb-4 flex-grow">Global brand exposure across all foundation programs, including at the Asian Leadership Conference.</p>
+                <Button className="bg-[#242EC0] text-white hover:bg-[#08044C] font-semibold mt-auto">
+                  Learn More →
+                </Button>
+              </motion.div>
+            </a>
+
 <a href="#" onClick={scrollToSection('universities')} className="flex">
               <motion.div 
                 whileHover={{ scale: 1.05 }} 
@@ -170,8 +184,37 @@ export default function Support() {
         </div>
       </section>
 
-      {/* University Support Section - Now First */}
-      <section id="universities" className="py-24 bg-white">
+      {/* Global Sponsor Section */}
+      <section id="global-sponsor" className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12">
+          <motion.div {...fadeInUp} className="mb-12">
+            <h2 className="text-sm uppercase tracking-widest text-[#242EC0] mb-6 font-bold">
+              GLOBAL SPONSORSHIP
+            </h2>
+            <div className="text-xl text-gray-700 leading-relaxed max-w-4xl space-y-4">
+              <p>Global Sponsorship provides brand exposure across all GSSF programs — including GSSC Worlds at the Asian Leadership Conference in Seoul.</p>
+              <p className="font-semibold">What the sponsor receives:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Named recognition across all GSSF digital platforms, program communications, and printed materials</li>
+                <li>Brand visibility at GSSC Worlds and the Asian Leadership Conference</li>
+                <li>Recognition as a founding global partner of GSSF</li>
+              </ul>
+            </div>
+          </motion.div>
+          <motion.div {...fadeInUp}>
+            <Link to="/contact">
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="inline-block">
+                <Button size="lg" className="bg-[#242EC0] text-white hover:bg-[#08044C] px-10 py-6 h-auto uppercase tracking-wide font-semibold">
+                  Inquire About Global Sponsorship →
+                </Button>
+              </motion.div>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* University Support Section */}
+      <section id="universities" className="py-24 bg-[#E4E6F3]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div {...fadeInUp} className="mb-12">
             <h2 className="text-sm uppercase tracking-widest text-[#242EC0] mb-6 font-bold">
@@ -231,7 +274,7 @@ export default function Support() {
       </section>
 
       {/* Named Scholarships Section - Regions */}
-      <section id="regions" className="py-24 bg-[#E4E6F3]">
+      <section id="regions" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div {...fadeInUp} className="mb-12">
             <h2 className="text-sm uppercase tracking-widest text-[#242EC0] mb-6 font-bold">
@@ -292,7 +335,7 @@ export default function Support() {
       </section>
 
       {/* Named Prizes Section */}
-      <section id="prizes" className="py-24 bg-white">
+      <section id="prizes" className="py-24 bg-[#E4E6F3]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div {...fadeInUp} className="mb-12">
             <h2 className="text-sm uppercase tracking-widest text-[#242EC0] mb-6 font-bold">
