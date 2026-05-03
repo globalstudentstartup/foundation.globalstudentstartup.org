@@ -1,10 +1,18 @@
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { motion } from "motion/react";
 import { Button } from "../components/ui/button";
 import { Globe, Users, Award } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const goToNetworkSection = (id: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate('/network');
+    setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 100);
+  };
+
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
     whileInView: { opacity: 1, y: 0 },
@@ -223,20 +231,20 @@ export default function Home() {
 
             <motion.div {...fadeInUp} className="text-center">
               <div className="flex flex-wrap gap-4 justify-center">
-                <Link to="/network#mentors">
+                <a href="#" onClick={goToNetworkSection('mentors')}>
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                     <Button size="lg" className="bg-white text-[#242EC0] border-2 border-[#242EC0] hover:bg-[#242EC0] hover:text-white px-10 py-6 h-auto uppercase tracking-wide font-semibold">
                       Mentors
                     </Button>
                   </motion.div>
-                </Link>
-                <Link to="/network#universities">
+                </a>
+                <a href="#" onClick={goToNetworkSection('universities')}>
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                     <Button size="lg" className="bg-[#242EC0] text-white hover:bg-[#242EC0]/90 px-10 py-6 h-auto uppercase tracking-wide font-semibold">
                       Universities
                     </Button>
                   </motion.div>
-                </Link>
+                </a>
                 <Link to="/partners">
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                     <Button size="lg" className="bg-white text-[#242EC0] border-2 border-[#242EC0] hover:bg-[#242EC0] hover:text-white px-10 py-6 h-auto uppercase tracking-wide font-semibold">
