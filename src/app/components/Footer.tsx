@@ -137,7 +137,7 @@ export default function Footer() {
 
         {/* Designer Credit */}
         <div className="mt-8 pt-6 border-t border-black/8 text-center">
-          <p className="text-gray-500 text-sm">Designed by Jacqueline Lee</p>
+          <p className="text-gray-500 text-sm">Designed by <a href="https://www.linkedin.com/in/jacquelinejiminlee/" target="_blank" rel="noopener noreferrer" className="hover:text-[#242EC0] transition-colors">Jacqueline Lee</a></p>
         </div>
       </div>
     </footer>
