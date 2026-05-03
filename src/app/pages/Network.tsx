@@ -68,7 +68,7 @@ export default function Network() {
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.div {...fadeInUp} className="mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight uppercase">
-              Mentors & Advisors
+              Mentors
             </h2>
             <p className="text-lg text-white/70 max-w-3xl">
               GSSF programs are powered by mentors and advisors from the world's most influential technology, media, academic, diplomatic, and public sector institutions. Individual participation; no implied institutional endorsement.
