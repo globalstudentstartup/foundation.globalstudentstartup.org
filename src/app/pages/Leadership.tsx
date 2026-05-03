@@ -774,7 +774,7 @@ export default function Leadership() {
       </section>
 
       {/* Advisors Section */}
-      <section className="py-16">
+      <section id="advisors" className="py-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <motion.h2 {...fadeInUp} className="text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight uppercase">
             Advisors

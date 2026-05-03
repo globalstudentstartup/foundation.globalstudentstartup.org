@@ -26,6 +26,16 @@ export default function Footer() {
     }
   };
 
+  const scrollToAdvisors = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname === "/leadership") {
+      document.getElementById('advisors')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/leadership');
+      setTimeout(() => document.getElementById('advisors')?.scrollIntoView({ behavior: 'smooth' }), 100);
+    }
+  };
+
   return (
     <footer className="bg-white border-t border-black/8 py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
@@ -92,9 +102,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/leadership#global-advisors" className="text-gray-600 hover:text-[#242EC0] transition-colors">
+                <a
+                  href="#"
+                  onClick={scrollToAdvisors}
+                  className="text-gray-600 hover:text-[#242EC0] transition-colors cursor-pointer"
+                >
                   Advisors
-                </Link>
+                </a>
               </li>
               <li>
                 <a
