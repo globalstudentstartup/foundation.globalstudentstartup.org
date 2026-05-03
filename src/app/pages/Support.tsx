@@ -21,13 +21,7 @@ export default function Support() {
     { name: "Nigeria", tier: "Pipeline 2028", status: "Pipeline 2028", tierLevel: 2, ctaText: "Inquire for 2028", fundedStatus: "FULLY FUNDED for 2028" },
     { name: "Australia", tier: "Pipeline 2028", status: "Pipeline 2028", tierLevel: 2, ctaText: "Inquire for 2028", fundedStatus: "FULLY FUNDED for 2028" },
     // Funding Activates regions (third tier) - alphabetical order
-    { name: "Armenia", tier: "Funding Activates", status: "Funding Activates", tierLevel: 3, ctaText: "Inquire" },
-    { name: "Brazil", tier: "Funding Activates", status: "Funding Activates", tierLevel: 3, ctaText: "Inquire" },
     { name: "China", tier: "Funding Activates", status: "Funding Activates", tierLevel: 3, ctaText: "Inquire" },
-    { name: "Germany", tier: "Funding Activates", status: "Funding Activates", tierLevel: 3, ctaText: "Inquire" },
-    { name: "Indonesia", tier: "Funding Activates", status: "Funding Activates", tierLevel: 3, ctaText: "Inquire" },
-    { name: "Israel", tier: "Funding Activates", status: "Funding Activates", tierLevel: 3, ctaText: "Inquire" },
-    { name: "Japan", tier: "Funding Activates", status: "Funding Activates", tierLevel: 3, ctaText: "Inquire" },
     { name: "Mexico", tier: "Funding Activates", status: "Funding Activates", tierLevel: 3, ctaText: "Inquire" },
     { name: "Philippines", tier: "Funding Activates", status: "Funding Activates", tierLevel: 3, ctaText: "Inquire" },
     { name: "Taiwan", tier: "Funding Activates", status: "Funding Activates", tierLevel: 3, ctaText: "Inquire" },
